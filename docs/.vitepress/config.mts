@@ -17,6 +17,7 @@ const chineLanguage = {
 
 export default defineConfig({
   title: "一条懒羊羊",
+  // base: '/blog.io/', // 打包github page处理css问题
   themeConfig: {
     nav,
     sidebar,
