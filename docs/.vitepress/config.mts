@@ -31,7 +31,7 @@ export default defineConfig({
       },
     },
     logo: {
-      src: "http://www.jwblog.cn/images/pc/user/user.png",
+      src: "/public/image/logo.svg",
       width: 24,
       height: 24,
     },

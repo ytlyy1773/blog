@@ -1,56 +1,5 @@
----
-layout: home
-
-head: [['link', { rel: 'icon', href: '/public/image/index-bag-logo.svg' }]]
-
-hero:
-    name: '一条懒羊羊的博客'
-    text: '基于 vitePress + antD 搭建的个人博客'
-    tagline: '仅供学习使用'
-    actions:
-        - theme: brand
-          text: 使用ChatGpt
-          link: /chatGPT/index.md
-        - theme: alt
-          text: 在 Github 上查看
-          link: https://github.com/jiangwan1773/blog
-    image:
-      src: /public/image/index-bag-logo.svg
-      alt: 一条懒羊羊
-
-features:
-    - icon: 📝
-      title: 持续集成
-      details: 随着内容的不断更新，博客也在不断丰富
-    - icon: '<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>内容丰富</title>
-    <defs>
-        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
-            <stop stop-color="#F191FF" offset="0%"></stop>
-            <stop stop-color="#FC6A44" offset="100%"></stop>
-        </linearGradient>
-        <linearGradient x1="50%" y1="100%" x2="50%" y2="1.90617488%" id="linearGradient-2">
-            <stop stop-color="#FFA09C" offset="0%"></stop>
-            <stop stop-color="#FFBA54" offset="100%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="画板" transform="translate(-43.000000, -41.000000)">
-            <g id="内容丰富" transform="translate(43.000000, 41.000000)">
-                <rect id="矩形" fill="#E8EAED" x="0" y="0" width="48" height="48" rx="6"></rect>
-                <g id="编组-2" transform="translate(9.000000, 8.000000)">
-                    <path d="M19.1700174,7.58141708 L28.1700174,10.3343583 C29.851574,10.8487168 31,12.4009505 31,14.159415 L31,28 C31,30.209139 29.209139,32 27,32 L18,32 C15.790861,32 14,30.209139 14,28 L14,11.4064739 C14,9.19733486 15.790861,7.40647386 18,7.40647386 C18.3965211,7.40647386 18.7908385,7.46543294 19.1700174,7.58141708 Z" id="矩形" fill="url(#linearGradient-1)"></path>
-                    <rect id="矩形" fill="url(#linearGradient-2)" x="0" y="0" width="22" height="30" rx="6"></rect>
-                    <rect id="矩形" fill="#FFFFFF" x="3" y="9" width="15" height="4" rx="2"></rect>
-                    <rect id="矩形" fill="#FFFFFF" x="3" y="17" width="9" height="4" rx="2"></rect>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>'
-      title: 内容丰富与互动性
-      details: 包含Vue和WeChat文档，支持体验chatGpt
-    - icon: '<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>用户体验</title>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
@@ -104,7 +53,4 @@ features:
             </g>
         </g>
     </g>
-</svg>'
-      title: 用户体验
-      details: 兼容pc端、平板、手机多种方式，满足不同场景需求
----
+</svg>
