@@ -15,6 +15,7 @@ function getWebBasics() {
         { text: "前端加密安全", link: "web/basics/codeSafety.md" },
         { text: "Promise理解", link: "web/basics/codePromise.md" },
         { text: "优雅的代码-es6实践", link: "web/basics/es6Practice.md" },
+        { text: "浏览器的回流与重绘", link: "web/basics/ReflowRepaint.md" },
       ],
     },
     {
@@ -55,6 +56,7 @@ function getWebVue() {
         { text: "Vue + ts项目技巧", link: "web/vue/projectTemplate.md" },
         { text: "vue2项目打包方式webpack升级vite", link: "web/vue/upgradation/index.md" },
         { text: "Vue2重置data里边的数据", link: "web/vue/resetData.md" },
+        { text: "妙用Computed", link: "web/vue/useComputed/index.md" },
       ],
     },
     {
