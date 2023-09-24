@@ -31,7 +31,7 @@ export default defineConfig({
       },
     },
     logo: {
-      src: "/public/image/logo.svg",
+      src: "image/logo.svg",
       width: 24,
       height: 24,
     },

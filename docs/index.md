@@ -1,7 +1,7 @@
 ---
 layout: home
 
-head: [['link', { rel: 'icon', href: '/public/image/index-bag-logo.svg' }]]
+head: [['link', { rel: 'icon', href: 'image/index-bag-logo.svg' }]]
 
 hero:
     name: '一条懒羊羊的博客'
@@ -15,7 +15,7 @@ hero:
           text: 在 Github 上查看
           link: https://github.com/jiangwan1773/blog
     image:
-      src: /public/image/index-bag-logo.svg
+      src: image/index-bag-logo.svg
       alt: 一条懒羊羊
 
 features:
