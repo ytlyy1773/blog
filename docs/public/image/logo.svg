@@ -1,0 +1,10 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect x="0" y="0" width="300" height="200" fill="lightblue"/>
+  <!-- 标题文本 -->
+  <text x="10" y="50" font-family="Verdana" font-size="24" fill="darkblue">一条懒羊羊的博客</text>
+  <!-- 羊羊图像（这里是一个简化的示例） -->
+  <circle cx="150" cy="130" r="40" fill="white"/>
+  <circle cx="140" cy="120" r="5" fill="black"/>
+  <circle cx="160" cy="120" r="5" fill="black"/>
+</svg>

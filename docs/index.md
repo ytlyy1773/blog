@@ -1,0 +1,29 @@
+---
+layout: home
+
+hero:
+    name: '一条懒羊羊的博客'
+    text: '基于 vitePress + antD 搭建的个人博客'
+    tagline: '仅供学习使用'
+    actions:
+        - theme: brand
+          text: 使用ChatGpt
+          link: /chatGPT/index.md
+        - theme: alt
+          text: 在 Github 上查看
+          link: /chatGPT/index.md
+    image:
+      src: /public/image/logo.svg
+      alt: 一条懒羊羊
+
+features:
+    - icon: 📝
+      title: 持续集成
+      details: 随着内容的不断更新，博客也在不断丰富
+    - icon: 📝
+      title: 内容丰富与互动性
+      details: 包含Vue和WeChat文档，支持体验chatGpt
+    - icon: 📝
+      title: 用户体验
+      details: 兼容pc端、平板、手机多种方式，满足不同场景需求
+---

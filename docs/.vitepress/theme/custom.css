@@ -1,0 +1,36 @@
+:root {
+    --vp-home-hero-name-color: transparent;
+    --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
+    --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
+    --vp-home-hero-image-filter: blur(40px);
+}
+
+.ant-input {
+    margin: 8px 0;
+}
+
+.vp-dja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cp-span {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 3px 6px;
+    background-color: var(--vp-code-bg);
+    transition: color 0.25s, background-color 0.5s;
+    font-size: var(--vp-code-font-size);
+    color: var(--vp-code-color);
+}
+
+.cp-span-warn {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 3px 6px;
+    background-color: #ffebec;
+    transition: color 0.25s, background-color 0.5s;
+    font-size: var(--vp-code-font-size);
+    color: #fc3b40;
+}

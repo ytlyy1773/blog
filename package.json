@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "dev": "vitepress dev docs",
+        "docs:build": "vitepress build docs",
+        "docs:preview": "vitepress preview docs"
+    },
+    "dependencies": {
+        "ant-design-vue": "^4.0.3",
+        "openai": "^4.10.0",
+        "vitepress": "^1.0.0-rc.15"
+    },
+    "devDependencies": {
+        "sass": "^1.67.0"
+    }
+}
