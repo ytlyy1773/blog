@@ -11,7 +11,7 @@ hero:
           link: /chatGPT/index.md
         - theme: alt
           text: 在 Github 上查看
-          link: /chatGPT/index.md
+          link: https://github.com/jiangwan1773/blog
     image:
       src: /public/image/logo.svg
       alt: 一条懒羊羊

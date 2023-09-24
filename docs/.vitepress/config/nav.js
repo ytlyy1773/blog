@@ -1,7 +1,7 @@
 export default [
     {
         text: 'chatGPT',
-        link: 'chatGPT/index.md',
+        link: 'chatGPT/index',
     },
     {
         text: '前端',
@@ -27,6 +27,10 @@ export default [
     {
         text: '其他',
         items: [
+            {
+                text: 'git命令',
+                link: 'other/gitCommand/index',
+            },
             {
                 text: '开发工具集',
                 link: 'other/tools/index',

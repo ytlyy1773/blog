@@ -5,21 +5,21 @@
 ## 软件推荐
 
 ::: info utools
-> 支持 `mac` 和 `win` [官网直通车 🚘'](https://www.u.tools/)
+> 支持 `mac` 和 `win` [官网直通车 🚘'](https://www.u.tools)
 ```js
 新一代效率工具平台，搭配插件使用yyds
 ```
 :::
 
 ::: info Snipaste
-> 支持 `mac` 和 `win` [官网直通车 🚘'](https://zh.snipaste.com/)
+> 支持 `mac` 和 `win` [官网直通车 🚘'](https://zh.snipaste.com)
 ```js
 简单但强大的 截图 + 贴图 + 取色器 工具
 ```
 :::
 
 ::: info ditto
-> 支持 `win` [官网直通车 🚘'](https://ditto-cp.sourceforge.io/)
+> 支持 `win` [官网直通车 🚘'](https://ditto-cp.sourceforge.io)
 ```js
 剪切版工具，比win自带的剪切版多了搜索功能
 ```

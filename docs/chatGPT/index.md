@@ -1,5 +1,9 @@
+---
+footer: false
+---
+
 <chat-gpt />
 
 <script setup>
-import ChatGpt from './index.vue'
+import ChatGpt from './gptApi.vue'
 </script>

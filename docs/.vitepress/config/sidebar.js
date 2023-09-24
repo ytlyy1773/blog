@@ -1,5 +1,13 @@
 export default {
-  "/web/basics": [
+  "/web/basics": getWebBasics(),
+  "/web/vue": getWebVue(),
+  "/web/weChat": getWebWeChat(),
+  "/web/H5": getWebH5(),
+  "/other/tools": getOtherTools(),
+};
+
+function getWebBasics() {
+  return [
     {
       text: "html+css+javaScript",
       items: [
@@ -35,8 +43,11 @@ export default {
         { text: "Html预览word，pdf，excel", link: "web/basics/preview.md" },
       ],
     },
-  ],
-  "/web/vue": [
+  ]
+}
+
+function getWebVue() {
+  return [
     {
       text: "vue",
       items: [
@@ -60,8 +71,11 @@ export default {
         { text: "BUG-el-table设置高度之后合计行不显示解决方法", link: "web/vue/bugTable.md" },
       ],
     },
-  ],
-  "/web/weChat": [
+  ]
+}
+
+function getWebWeChat() {
+  return [
     {
       text: "微信小程序",
       items: [
@@ -74,8 +88,11 @@ export default {
         { text: "微信request的二次封装", link: "web/weChat/apiRequest.md" },
       ],
     },
-  ],
-  "/web/H5": [
+  ]
+}
+
+function getWebH5() {
+  return [
     {
       text: "H5",
       items: [
@@ -85,8 +102,11 @@ export default {
         { text: "限制浏览器返回", link: "web/H5/limitBack.md" },
       ],
     },
-  ],
-  "/other": [
+  ]
+}
+
+function getOtherTools() {
+  return [
     {
       text: "tools",
       items: [
@@ -96,8 +116,8 @@ export default {
     {
       text: "前端",
       items: [
-        { text: "前端开发工具", link: "other/web/index.md" }
+        { text: "前端开发工具", link: "other/tools/web/index.md" }
       ],
     },
-  ],
-};
+  ]
+}
