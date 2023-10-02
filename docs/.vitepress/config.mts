@@ -17,6 +17,7 @@ const chineLanguage = {
 
 export default defineConfig({
   title: "一条懒羊羊",
+  lang: 'zh-CN',
   // base: '/blog.io/', // 打包github page处理css问题
   themeConfig: {
     nav,
@@ -24,9 +25,9 @@ export default defineConfig({
     search: {
       provider: "algolia",
       options: {
-        appId: "****",
-        apiKey: "****",
-        indexName: "****",
+        appId: "2TMERJKE3X",
+        apiKey: "281977021315cf1bb8e8678408f9c891",
+        indexName: "vitepressblog",
         placeholder: "该功能审核中...",
       },
     },
