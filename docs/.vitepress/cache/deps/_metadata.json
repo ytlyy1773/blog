@@ -1,29 +1,23 @@
 {
-  "hash": "a44547a5",
-  "browserHash": "d0ecc66d",
+  "hash": "788a27fc",
+  "browserHash": "22cd3982",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "6f6ee09e",
+      "fileHash": "938c2dd3",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "aabf0ae2",
+      "fileHash": "e293121d",
       "needsInterop": false
     },
     "ant-design-vue": {
       "src": "../../../../node_modules/ant-design-vue/es/index.js",
       "file": "ant-design-vue.js",
-      "fileHash": "c5f85de4",
-      "needsInterop": false
-    },
-    "openai": {
-      "src": "../../../../node_modules/openai/index.mjs",
-      "file": "openai.js",
-      "fileHash": "fc2264d1",
+      "fileHash": "bf6a9f00",
       "needsInterop": false
     }
   },

@@ -2,22 +2,21 @@ import { defineConfig } from "vitepress";
 import nav from "./config/nav";
 import sidebar from "./config/sidebar";
 
-
 const chineLanguage = {
   docFooter: {
     prev: "上一篇",
     next: "下一篇",
   },
-  sidebarMenuLabel: '菜单',
+  sidebarMenuLabel: "菜单",
   outline: {
-    label: '本页目录',
+    label: "本页目录",
   },
-  returnToTopLabel: '返回顶部'
-}
+  returnToTopLabel: "返回顶部",
+};
 
 export default defineConfig({
   title: "一条懒羊羊",
-  lang: 'zh-CN',
+  lang: "zh-CN",
   // base: '/blog.io/', // 打包github page处理css问题
   themeConfig: {
     nav,
@@ -28,9 +27,12 @@ export default defineConfig({
         appId: "2TMERJKE3X",
         apiKey: "281977021315cf1bb8e8678408f9c891",
         indexName: "vitepressblog",
-        placeholder: "该功能审核中...",
+        placeholder: "请输入关键词",
       },
     },
+    // search: {
+    //   provider: 'local'
+    // },
     logo: {
       src: "image/logo.svg",
       width: 24,
@@ -43,7 +45,6 @@ export default defineConfig({
       message: '<a href="https://beian.miit.gov.cn/">豫ICP-备2023019165</a>',
       copyright: "版权所有 © 2023-至今 jiangwan1773",
     },
-    ...chineLanguage
+    ...chineLanguage,
   },
 });
-

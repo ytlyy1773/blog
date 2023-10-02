@@ -42,7 +42,7 @@ export default [
         items: [
             {
                 text: '简历',
-                link: 'http://www.jwblog.cn/resume',
+                link: 'http://www.jwblog.cn/resume.pdf',
             },
             {
                 text: '联系作者',
