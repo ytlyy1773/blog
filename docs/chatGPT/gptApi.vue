@@ -17,7 +17,7 @@
       class="blog-textarea"
       autofocus
       v-model="input"
-      placeholder="请输入您的问题"
+      placeholder="请输入您的问题，该功能需要魔法"
       @input="autoHeight"
     />
     <a-button type="primary" :disabled="loading" @click="onSearch">

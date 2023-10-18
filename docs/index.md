@@ -9,11 +9,11 @@ hero:
     tagline: '仅供学习使用'
     actions:
         - theme: brand
-          text: 使用ChatGpt
-          link: /chatGPT/index.md
-        - theme: alt
           text: 在 Github 上查看
           link: https://github.com/jiangwan1773/blog
+        - theme: alt
+          text: 使用 Github Page 访问
+          link: https://jiangwan1773.github.io/blog.io
     image:
       src: image/index-bag-logo.svg
       alt: 一条懒羊羊
