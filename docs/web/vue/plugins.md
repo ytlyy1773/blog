@@ -61,3 +61,9 @@ gzip压缩，需要nginx开启GZIP，打包之后可以明显提高项目的打�
 本地静态图片压缩
 ```
 :::
+
+::: info 六、扩展篇
+```js
+1、vite-plugin-vue-inspector
+快捷键开启和关闭，点击page元素可以打开对应的.vue文件
+:::

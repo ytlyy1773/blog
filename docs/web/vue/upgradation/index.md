@@ -91,3 +91,24 @@ requireAll(req)
 </script>
 ```
 :::
+
+
+## 使用说明
+::: info vue-router的使用
+vue2可以使用`ref`和`reactive`，没有使用`proxy`实现，还是用了`defineProperty`的`getter, setter`
+> 先看一下`vue3` + `vue-router ^4.0`
+```js-vue{2}
+<script>
+    import { useRoute } from 'vue-router';
+    const route = useRoute();
+    route.path // /home
+</script>
+```
+> 如何在`vue2.7 + vite`中使用`vue-router`
+```js-vue{2}
+<script>
+    import { useRoute } from 'vue-router/composables'
+    const route = useRoute();
+</script>
+```
+:::
