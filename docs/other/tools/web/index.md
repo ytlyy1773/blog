@@ -5,7 +5,7 @@
 ## 软件推荐
 
 ::: info nvm
-> 支持 `mac` 和 `win` [官网直通车 🚘'](https://github.com/nvm-sh/nvm)
+> 支持 `mac` 和 `win` [官网直通车 🚘](https://github.com/nvm-sh/nvm)
 ```js
 node的包管理器
 ```

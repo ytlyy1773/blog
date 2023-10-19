@@ -9,7 +9,7 @@ footer: false
 ## git操作软件推荐
 
 ::: info GitHub Desktop
-> 支持 `mac` 和 `win` [官网直通车 🚘'](https://desktop.github.com)
+> 支持 `mac` 和 `win` [官网直通车 🚘](https://desktop.github.com)
 ```js
 优点：可以复制操作代码
 缺点：没有中文界面
@@ -17,7 +17,7 @@ footer: false
 :::
 
 ::: info sourcetree
-> 支持 `mac` 和 `win` [官网直通车 🚘'](https://www.sourcetreeapp.com)
+> 支持 `mac` 和 `win` [官网直通车 🚘](https://www.sourcetreeapp.com)
 ```js
 优点：支持中文界面
 缺点：不可以复制操作代码
