@@ -14,6 +14,9 @@ hero:
         - theme: alt
           text: 使用 Github Page 访问
           link: https://jiangwan1773.github.io/blog.io
+        # - theme: alt
+        #   text: 使用 官网 访问
+        #   link: https://jwblog.cn
     image:
       src: image/index-bag-logo.svg
       alt: 一条懒羊羊
