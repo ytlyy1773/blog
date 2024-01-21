@@ -1,8 +1,8 @@
 export default [
-    {
-        text: 'chatGPT',
-        link: '/chatGPT/index.md',
-    },
+    // {
+    //     text: 'chatGPT',
+    //     link: '/chatGPT/index.md',
+    // },
     {
         text: '前端',
         items: [
