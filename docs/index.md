@@ -14,9 +14,6 @@ hero:
         - theme: alt
           text: 使用 Github Page 访问
           link: https://jiangwan1773.github.io/blog.io
-        # - theme: brand
-        #   text: Github
-        #   link: https://github.com/jiangwan1773/blog
         # - theme: alt
         #   text: 使用 官网 访问
         #   link: http://www.jwblog.cn
