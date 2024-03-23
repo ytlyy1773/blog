@@ -69,6 +69,7 @@ function getWebVue() {
         { text: "vue2项目打包方式webpack升级vite", link: "web/vue/upgradation/index.md" },
         { text: "Vue2重置data里边的数据", link: "web/vue/resetData.md" },
         { text: "妙用Computed", link: "web/vue/useComputed/index.md" },
+        { text: "js获取电脑ip", link: "web/vue/local.md" },
       ],
     },
     {

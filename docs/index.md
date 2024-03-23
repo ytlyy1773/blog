@@ -9,8 +9,8 @@ hero:
     tagline: '仅供学习使用'
     actions:
         - theme: brand
-          text: 在 Github 上查看
-          link: https://github.com/jiangwan1773/blog
+          text: Vue
+          link: /web/vue/plugins.html
         - theme: alt
           text: 使用 Github Page 访问
           link: https://jiangwan1773.github.io/blog.io
