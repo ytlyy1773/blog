@@ -19,8 +19,6 @@ hero:
         #   link: http://www.jwblog.cn
     image:
       src: image/index-bag-logo.svg
-      alt: 一条懒羊羊
-
 features:
     - icon: 📝
       title: 持续集成

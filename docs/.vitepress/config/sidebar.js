@@ -34,7 +34,9 @@ function getWebBasics() {
       text: "javaScript",
       items: [
         { text: "JS数组的清空", link: "web/basics/clearArray.md" },
-        { text: "JS实现文件下载", link: "web/basics/download.md" }
+        { text: "JS实现文件下载", link: "web/basics/download.md" },
+        { text: "javascript(js)判断对象是否包含某个 key", link: "web/basics/containKey.md" },
+        { text: "js判断内容是不是是NaN", link: "web/basics/isNaN.md" }
       ],
     },
     {
