@@ -17,7 +17,8 @@ const chineLanguage = {
 export default defineConfig({
   title: "一条懒羊羊",
   lang: "zh-CN",
-  base: process.env.BUILD_ENV === 'github' ? '/blog/' : '/', // 打包兼容github page处理
+  // base: process.env.BUILD_ENV === 'github' ? '/blog/' : '/', // 打包兼容github page处理
+  base: '/blog/',
   themeConfig: {
     nav,
     sidebar,
