@@ -42,8 +42,9 @@ ipLocal = {
 ```
 :::
 
-::: info 支持require引入的项目使用`(CommonJS)`
-```js-vue
+::: code-group
+```js-vue [CommonJS]
+// 支持require引入的项目使用`CommonJS`
 // 新建domainName.js文件
 const os = require('os')
 const { execSync } = require('child_process')
@@ -86,10 +87,10 @@ module.exports = {
     host: require('./domainName').domainName() // 替换掉'0.0.0.0'
   },
 };
-:::
+```
 
-::: info 不支持require引入的项目使用`(EsModule)`
-```js-vue
+```js-vue [EsModule]
+// 不支持require引入的项目使用`(EsModule)`
 import os from 'os'
 import { execSync } from 'child_process'
 
