@@ -46,8 +46,8 @@ jobs:
         run: pnpm install # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
         env:
-          BUILD_ENV: github
-        run: pnpm run build:github # 打包命令
+          BUILD_ENV: github # 配置环境变量
+        run: pnpm run build # 打包命令
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
