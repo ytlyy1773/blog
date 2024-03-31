@@ -2,7 +2,6 @@
     "scripts": {
         "dev": "vitepress dev docs",
         "build": "vitepress build docs",
-        "build:github": "vitepress build docs --base '/blog.io/'",
         "preview": "vitepress preview docs"
     },
     "dependencies": {

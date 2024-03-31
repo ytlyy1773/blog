@@ -72,6 +72,7 @@ function getWebVue() {
         { text: "Vue2重置data里边的数据", link: "web/vue/resetData.md" },
         { text: "妙用Computed", link: "web/vue/useComputed/index.md" },
         { text: "js获取电脑ip", link: "web/vue/local.md" },
+        { text: "在css中使用vue的变量", link: "web/vue/sassLinkage.md" },
       ],
     },
     {

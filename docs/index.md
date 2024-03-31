@@ -12,11 +12,8 @@ hero:
           text: Vue
           link: /web/vue/plugins.html
         - theme: alt
-          text: 使用 Github Page 访问
-          link: https://jiangwan1773.github.io/blog.io
-        # - theme: alt
-        #   text: 使用 官网 访问
-        #   link: http://www.jwblog.cn
+          text: Github
+          link: https://github.com/jiangwan1773/blog
     image:
       src: image/index-bag-logo.svg
 features:

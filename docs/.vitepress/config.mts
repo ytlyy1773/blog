@@ -17,7 +17,8 @@ const chineLanguage = {
 export default defineConfig({
   title: "一条懒羊羊",
   lang: "zh-CN",
-  // base: '/blog.io/', // 打包github page处理css问题
+  // 打包配置来源子deploy.yml文件，  deploy.yml：这是一个github的自动化打包配置文件
+  base: process.env.BUILD_ENV === 'github' ? '/blog/' : '/', // 打包兼容github page处理
   themeConfig: {
     nav,
     sidebar,
@@ -30,9 +31,6 @@ export default defineConfig({
         placeholder: "请输入关键词",
       },
     },
-    // search: {
-    //   provider: 'local'
-    // },
     logo: {
       src: "image/logo.svg",
       width: 24,
