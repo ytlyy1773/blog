@@ -18,5 +18,7 @@ pnpm run dev
 ```
 
 ## 赞助
-<img src="http://www.jwblog.cn/assets/wechat.CDdxMHAw.png" alt="微信赞助" width="300" height="450" />
-<img src="http://www.jwblog.cn/assets/zhifubao.D9wm-LBr.png" alt="支付宝赞助" width="300" height="450" />
+<div style="display: flex">
+    <img src="http://www.jwblog.cn/assets/wechat.CDdxMHAw.png" alt="微信赞助" width="300" height="450" />
+    <img src="http://www.jwblog.cn/assets/zhifubao.D9wm-LBr.png" alt="支付宝赞助" width="300" height="450" />
+</div>
