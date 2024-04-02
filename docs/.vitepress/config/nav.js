@@ -38,6 +38,10 @@ export default [
             {
                 text: '开发工具集',
                 link: 'other/tools/index',
+            },
+            {
+                text: 'Monorepo开发策略',
+                link: 'https://jiangwan1773.github.io/Monorepo-project/',
             }
         ],
     },
