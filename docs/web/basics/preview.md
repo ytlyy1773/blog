@@ -1,3 +1,8 @@
+---
+title: Html预览word，pdf，excel
+description: Html预览word，pdf，excel
+---
+
 <c-title title="Html预览word，pdf，excel" />
 
 > 核心就是`<iframe />`标签；只有pdf是可以直接被预览的，word格式需要使用做拼接

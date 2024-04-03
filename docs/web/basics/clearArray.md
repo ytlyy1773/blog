@@ -1,3 +1,8 @@
+---
+title: Array常见的两种重置方法对比
+description: Array常见的两种重置方法对比
+---
+
 <c-title title="Array常见的两种重置方法对比" />
 
 ## 示例

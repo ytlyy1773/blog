@@ -1,3 +1,8 @@
+---
+title: vue封装dialog弹窗
+description: 在vue项目中使用函数式封装一个dialog弹窗
+---
+
 <c-title title="封装dialog弹窗" />
 
 > Vue3 + ts函数式封装

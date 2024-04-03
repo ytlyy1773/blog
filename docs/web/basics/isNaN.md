@@ -1,3 +1,8 @@
+---
+title: js判断内容是不是是NaN
+description: js判断内容是不是是NaN
+---
+
 <c-title title="js判断内容是不是是NaN" />
 
 ## 示例

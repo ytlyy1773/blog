@@ -1,3 +1,8 @@
+---
+title: 微信request的二次封装
+description: 微信使用promise对request的二次封装
+---
+
 <c-title title="微信request的二次封装" />
 
 ## 代码

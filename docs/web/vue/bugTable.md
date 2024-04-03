@@ -1,3 +1,8 @@
+---
+title: el-table设置高度之后合计行不显示解决方法
+description: el-table设置高度之后合计行不显示解决方法
+---
+
 <c-title title="el-table设置高度之后合计行不显示解决方法" />
 
 ## 示例

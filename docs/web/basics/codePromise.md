@@ -1,3 +1,8 @@
+---
+title: Promise理解
+description: Promise理解
+---
+
 <c-title title="Promise理解" />
 
 ## 示例

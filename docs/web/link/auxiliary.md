@@ -1,3 +1,8 @@
+---
+title: GitHub徽标
+description: md文件里边使用GitHub徽标
+---
+
 <c-title title="GitHub徽标" />
 
 >GitHub Badge 也可以叫它徽章

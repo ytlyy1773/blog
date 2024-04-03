@@ -1,3 +1,8 @@
+---
+title: 前端加密安全
+description: 怎么做前端加密安全
+---
+
 <c-title title="前端加密安全" />
 
 > 核心使用了前端js库CryptoJS

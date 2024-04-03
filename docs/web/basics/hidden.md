@@ -1,3 +1,8 @@
+---
+title: CSS处理一行或多行文字超出用省略号
+description: CSS处理一行或多行文字超出用省略号
+---
+
 <c-title title="CSS处理一行或多行文字超出用省略号" />
 
 ## 示例

@@ -1,3 +1,8 @@
+---
+title: Vue3 + ts项目小技巧
+description: 作者开发Vue3 + ts项目的一些小技巧
+---
+
 <c-title title="Vue3 + ts项目小技巧" />
 
 ## 示例

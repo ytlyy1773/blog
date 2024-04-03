@@ -1,5 +1,6 @@
 ---
-next: /projectTemplate
+title: Vue项目常用插件
+description: Vue项目常用插件
 ---
 
 <c-title title="Vue项目常用插件" />

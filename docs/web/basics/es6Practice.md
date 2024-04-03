@@ -1,3 +1,8 @@
+---
+title: 优雅的代码-es6实践
+description: 优雅的代码-es6实践
+---
+
 <c-title title="优雅的代码-es6实践" />
 
 > 代码不规范，亲人两行泪

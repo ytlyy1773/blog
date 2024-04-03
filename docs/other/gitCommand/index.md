@@ -1,8 +1,9 @@
 ---
-footer: false
+title: 如何使用git提交代码
+description: 如何使用git提交代码，把git代码提交应用于实际项目
 ---
 
-<c-title title="开发工具集" />
+<c-title title="如何使用git提交代码" />
 
 > 工欲善其事，必先利其器
 
