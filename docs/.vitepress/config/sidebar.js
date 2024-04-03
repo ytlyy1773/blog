@@ -73,6 +73,7 @@ function getWebVue() {
         { text: "妙用Computed", link: "web/vue/useComputed/index.md" },
         { text: "js获取电脑ip", link: "web/vue/local.md" },
         { text: "在css中使用vue的变量", link: "web/vue/sassLinkage.md" },
+        { text: "Object.freeze() | Ts的Readonly 在vue中的应用", link: "web/vue/freeze.md" },
       ],
     },
     {

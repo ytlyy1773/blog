@@ -9,7 +9,7 @@ const chineLanguage = {
   },
   sidebarMenuLabel: "菜单",
   outline: {
-    label: "本页目录",
+    label: "目录",
   },
   returnToTopLabel: "返回顶部",
 };
