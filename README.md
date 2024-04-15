@@ -2,8 +2,9 @@
 基于vitepress开发的个人博客
 
 ## 官网链接
-- :car: [直达官网](http://www.jwblog.cn)
-- :beginner: [使用github访问](https://jiangwan1773.github.io/blog/)
+- :car: [直达官网 使用官网访问](http://www.jwblog.cn)
+- :beginner: [使用github访问 国际友人推荐](https://jiangwan1773.github.io/blog/)
+- :beginner: [使用gitee访问 国内用户推荐](https://jiangwan1773.github.io/blog/)
 
 ## 环境
 - node >= v18
