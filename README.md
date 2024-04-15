@@ -20,6 +20,6 @@ pnpm run dev
 
 ## 赞助
 <div style="display: flex">
-    <img src="http://www.jwblog.cn/assets/wechat.CDdxMHAw.png" alt="微信赞助" width="300" height="450" />
-    <img src="http://www.jwblog.cn/assets/zhifubao.D9wm-LBr.png" alt="支付宝赞助" width="300" height="450" />
+    <img src="./docs/public/image/wechat.png" alt="微信赞助" width="300" height="450" />
+    <img src="./docs/public/image/zhifubao.png" alt="支付宝赞助" width="300" height="450" />
 </div>
