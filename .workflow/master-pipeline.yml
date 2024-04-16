@@ -22,7 +22,7 @@ stages:
         artifacts:
           - name: BUILD_ARTIFACT
             path:
-              - ./dist
+              - ./docs/.vitepress/dist
         strategy: {}
       - step: publish@general_artifacts
         name: publish_general_artifacts
