@@ -4,7 +4,7 @@ layout: home
 head: [['link', { rel: 'icon', href: 'image/index-bag-logo.svg' }]]
 
 hero:
-    name: '一条懒羊羊的博客333'
+    name: '一条懒羊羊的博客'
     text: '基于 vitePress + antD 搭建的个人博客'
     tagline: '仅供学习使用'
     actions:
