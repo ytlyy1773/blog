@@ -3,7 +3,7 @@
 
 ## 官网链接
 - :car: [直达官网](http://www.jwblog.cn)
-- :beginner: [使用gitee访问 A](https://jiangwan1773.gitee.io/blog/)
+- :beginner: [使用gitee访问](https://jiangwan1773.gitee.io/blog/)
 - :beginner: [使用github访问](https://jiangwan1773.github.io/blog/)
 
 ## 环境

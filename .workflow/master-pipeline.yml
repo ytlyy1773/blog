@@ -18,7 +18,7 @@ stages:
         displayName: Nodejs 构建
         nodeVersion: 18.16.0
         commands:
-          - npm install -g pnpm && pnpm install && rm -rf ./dist && pnpm run build
+          - npm install -g pnpm && pnpm install && rm -rf ./dist && pnpm run build:github
         artifacts:
           - name: BUILD_ARTIFACT
             path:
