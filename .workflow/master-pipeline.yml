@@ -16,6 +16,8 @@ stages:
       - step: build@nodejs
         name: build_nodejs
         displayName: Nodejs 构建
+        env:
+          NODE_ENV: github
         nodeVersion: 18.16.0
         commands:
           - npm install -g pnpm && pnpm install && rm -rf ./dist && pnpm run build:github
