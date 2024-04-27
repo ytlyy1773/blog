@@ -15,7 +15,7 @@ jobs:
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token:  ${{ secrets.GITEE_TOKEN }}
           static_list: "learn-typescript"
-          force_update: true
+          # force_update: true
 			    debug: true
 
       - name: Build Gitee Pages
