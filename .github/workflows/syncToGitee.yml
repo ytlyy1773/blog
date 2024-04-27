@@ -15,8 +15,8 @@ jobs:
           dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
           dst_token:  ${{ secrets.GITEE_TOKEN }}
           static_list: "blog" #仓库名字
-          # force_update: true
-       # debug: true
+          force_update: true
+          debug: true
 
       - name: Build Gitee Pages
         uses: yanglbme/gitee-pages-action@master
