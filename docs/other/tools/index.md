@@ -48,7 +48,7 @@ description: 多年从事开发工作，整理的工具集
 :::
 
 ::: info 树洞
-> 稳定支持chatGpt `年费150¥` [官网直通车 🚘](https://balala.io/auth/register)
+> 稳定支持chatGpt `年费150¥` [官网直通车 🚘](https://com.ss.sssuusss.com/auth/register?code=QAVGMB)
 ```js
 全平台支持(ios + android + win + mac)
 ```

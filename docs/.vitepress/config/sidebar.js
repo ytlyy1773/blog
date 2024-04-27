@@ -3,20 +3,8 @@ export default {
   "/web/vue": getWebVue(),
   "/web/weChat": getWebWeChat(),
   "/web/H5": getWebH5(),
-  "/web/link": getWebLink(),
   "/other/tools": getOtherTools(),
 };
-
-function getWebLink () {
-  return [
-    {
-      text: "开发辅助",
-      items: [
-        { text: "GitHub徽标", link: "web/link/auxiliary.md" }
-      ],
-    }
-  ]
-}
 
 function getWebBasics() {
   return [
@@ -129,7 +117,9 @@ function getOtherTools() {
     {
       text: "tools",
       items: [
-        { text: "电脑工具合集", link: "other/tools/index.md" }
+        { text: "电脑工具合集", link: "other/tools/index.md" },
+        { text: "git命令", link: "other/tools/gitCommand/index.md" },
+        { text: "GitHub徽标", link: "other/tools/link/auxiliary.md" }
       ],
     },
     {

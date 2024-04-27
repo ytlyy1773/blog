@@ -22,19 +22,11 @@ export default [
                 text: 'html + cs + js',
                 link: 'web/basics/regExp',
             },
-            {
-                text: '开发辅助网站',
-                link: 'web/link/auxiliary',
-            },
         ],
     },
     {
         text: '其他',
         items: [
-            {
-                text: 'git命令',
-                link: 'other/gitCommand/index',
-            },
             {
                 text: '开发工具集',
                 link: 'other/tools/index',
