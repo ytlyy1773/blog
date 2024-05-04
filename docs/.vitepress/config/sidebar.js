@@ -1,10 +1,11 @@
 export default {
   "/web/basics": getWebBasics(),
   "/web/vue": getWebVue(),
+  "/web/Harmony": getWebHarmony(),
   "/web/weChat": getWebWeChat(),
   "/web/H5": getWebH5(),
   "/other/tools": getOtherTools(),
-  "/other/computer": getComputerList(),
+  "/other/computer": getComputerList()
 };
 
 function getWebBasics() {
@@ -79,6 +80,16 @@ function getWebVue() {
         { text: "BUG-el-table设置高度之后合计行不显示解决方法", link: "web/vue/bugTable.md" },
       ],
     },
+  ]
+}
+
+
+function getWebHarmony() {
+  return [
+    { text: "Harmony 属性和参数的区别", link: "web/Harmony/Difference.md" },
+    { text: "Harmony 实现双飞翼(圣杯)布局", link: "web/Harmony/HolyGrail.md" },
+    { text: "Harmony 实现宽高等比", link: "web/Harmony/AspectRatio.md" },
+    { text: "Harmony 使用Image资源的4种方法", link: "web/Harmony/UseImage.md" },
   ]
 }
 

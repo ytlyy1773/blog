@@ -11,6 +11,10 @@ export default [
                 link: 'web/vue/plugins',
             },
             {
+                text: 'Harmony',
+                link: 'web/Harmony/Difference.md',
+            },
+            {
                 text: 'WeChat',
                 link: 'web/weChat/codeWatch',
             },
