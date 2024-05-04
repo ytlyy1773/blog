@@ -4,6 +4,7 @@ export default {
   "/web/weChat": getWebWeChat(),
   "/web/H5": getWebH5(),
   "/other/tools": getOtherTools(),
+  "/other/computer": getComputerList(),
 };
 
 function getWebBasics() {
@@ -119,8 +120,7 @@ function getOtherTools() {
       items: [
         { text: "电脑工具合集", link: "other/tools/index.md" },
         { text: "git命令", link: "other/tools/gitCommand/index.md" },
-        { text: "GitHub徽标", link: "other/tools/link/auxiliary.md" },
-        { text: "如何除去Windows的快捷方式小图标", link: "other/tools/ClearIcon.md" }
+        { text: "GitHub徽标", link: "other/tools/link/auxiliary.md" }
       ],
     },
     {
@@ -129,5 +129,16 @@ function getOtherTools() {
         { text: "前端开发工具", link: "other/tools/web/index.md" }
       ],
     },
+  ]
+}
+
+function getComputerList() {
+  return [
+    {
+      text: "Win",
+      items: [
+        { text: "如何除去Windows的快捷方式小图标", link: "other/computer/win/ClearIcon.md" }
+      ],
+    }
   ]
 }

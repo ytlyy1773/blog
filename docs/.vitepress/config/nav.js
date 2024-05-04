@@ -28,6 +28,10 @@ export default [
         text: '其他',
         items: [
             {
+                text: '电脑使用',
+                link: 'other/computer/win/ClearIcon.md',
+            },
+            {
                 text: '开发工具集',
                 link: 'other/tools/index',
             },
