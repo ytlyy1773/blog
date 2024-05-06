@@ -90,6 +90,7 @@ function getWebHarmony() {
     { text: "Harmony 实现双飞翼(圣杯)布局", link: "web/Harmony/HolyGrail.md" },
     { text: "Harmony 实现宽高等比", link: "web/Harmony/AspectRatio.md" },
     { text: "Harmony 使用Image资源的4种方法", link: "web/Harmony/UseImage.md" },
+    { text: "Harmony 控制组件是否可见", link: "web/Harmony/ConditionalRendering.md" },
   ]
 }
 
