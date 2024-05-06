@@ -5,6 +5,7 @@
     --vp-home-hero-image-filter: blur(40px);
     --vp-button-brand-bg: #5d86ff;
     --vp-button-brand-hover-bg: #3366ff;
+    --vp-c-indigo-1: #3366ff;
 }
 
 .ant-input {
