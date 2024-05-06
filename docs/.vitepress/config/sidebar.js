@@ -12,6 +12,7 @@ function getWebBasics() {
   return [
     {
       text: "html+css+javaScript",
+      collapsed: false,
       items: [
         { text: "常用的正则表达式使用", link: "web/basics/regExp.md" },
         { text: "前端加密安全", link: "web/basics/codeSafety.md" },
@@ -22,6 +23,7 @@ function getWebBasics() {
     },
     {
       text: "javaScript",
+      collapsed: true,
       items: [
         { text: "JS数组的清空", link: "web/basics/clearArray.md" },
         { text: "JS实现文件下载", link: "web/basics/download.md" },
@@ -31,6 +33,7 @@ function getWebBasics() {
     },
     {
       text: "css",
+      collapsed: true,
       items: [
         { text: "CSS实现0.5px的线", link: "web/basics/line.md" },
         { text: "CSS处理一行或多行文字超出用省略号", link: "web/basics/hidden.md" },
@@ -43,6 +46,7 @@ function getWebBasics() {
     },
     {
       text: "html",
+      collapsed: true,
       items: [
         { text: "HTML元素之间有间隙", link: "web/basics/gap.md" },
         { text: "Html预览word，pdf，excel", link: "web/basics/preview.md" },
@@ -55,6 +59,7 @@ function getWebVue() {
   return [
     {
       text: "vue",
+      collapsed: false,
       items: [
         { text: "Vue项目常用插件", link: "web/vue/plugins.md" },
         { text: "Vue + ts项目技巧", link: "web/vue/projectTemplate.md" },
@@ -68,6 +73,7 @@ function getWebVue() {
     },
     {
       text: "Component",
+      collapsed: true,
       items: [
         { text: "Component-封装上传图片", link: "web/vue/uploadImage/index.md" },
         { text: "Component-封装dialog弹窗", link: "web/vue/dialog/index.md" },
@@ -76,6 +82,7 @@ function getWebVue() {
     },
     {
       text: "BUG",
+      collapsed: true,
       items: [
         { text: "BUG-el-table设置高度之后合计行不显示解决方法", link: "web/vue/bugTable.md" },
       ],
@@ -98,6 +105,7 @@ function getWebWeChat() {
   return [
     {
       text: "微信小程序",
+      collapsed: false,
       items: [
         { text: "借助Object.defineProperty实现小程序的watch", link: "web/weChat/codeWatch.md" },
         { text: "小程序自定义顶部导航栏组件", link: "web/weChat/customNav.md" },
@@ -115,6 +123,7 @@ function getWebH5() {
   return [
     {
       text: "H5",
+      collapsed: false,
       items: [
         { text: "font-size在移动端设备上字体变大的问题", link: "web/H5/fontDeformation.md" },
         { text: "iphone单机事件有300毫秒延迟的处理", link: "web/H5/delay.md" },
@@ -129,6 +138,7 @@ function getOtherTools() {
   return [
     {
       text: "tools",
+      collapsed: false,
       items: [
         { text: "电脑工具合集", link: "other/tools/index.md" },
         { text: "git命令", link: "other/tools/gitCommand/index.md" },
@@ -137,6 +147,7 @@ function getOtherTools() {
     },
     {
       text: "前端",
+      collapsed: true,
       items: [
         { text: "前端开发工具", link: "other/tools/web/index.md" }
       ],
@@ -148,6 +159,7 @@ function getComputerList() {
   return [
     {
       text: "Win",
+      collapsed: false,
       items: [
         { text: "如何除去Windows的快捷方式小图标", link: "other/computer/win/ClearIcon.md" }
       ],
