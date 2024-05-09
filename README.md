@@ -3,8 +3,9 @@
 
 ## 官网链接
 - :car: [直达官网](http://www.jwblog.cn)
-<!-- - :beginner: [使用gitee访问](https://jiangwan1773.gitee.io/blog/) -->
 - :beginner: [使用github访问](https://jiangwan1773.github.io/blog/)
+- :beginner: [gitee仓库地址](https://gitee.com/jiangwan1773/blog)
+> gitee page服务关闭，所以gitee的访问方式暂时关闭
 
 ## 环境
 - node >= v18
