@@ -3,7 +3,7 @@ title: onShow生命周期拿到onLoad生命周期里边的路由传参
 description: 微信小程序onShow生命周期拿到onLoad生命周期里边的路由传参
 ---
 
-<c-title title="onShow生命周期拿到onLoad生命周期里边的路由传参" />
+# onShow生命周期拿到onLoad生命周期里边的路由传参
 
 ## 示例
 

@@ -3,7 +3,7 @@ title: CSS使用sass语法
 description: CSS使用sass语法
 ---
 
-<c-title title="CSS使用sass语法" />
+# CSS使用sass语法
 
 ## 流程
 

@@ -3,7 +3,7 @@ title: 封装图片预览功能
 description: 在vue中封装一个图片预览功能
 ---
 
-<c-title title="封装图片预览功能" />
+# 封装图片预览功能
 
 ## 使用
 

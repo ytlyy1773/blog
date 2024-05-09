@@ -3,7 +3,7 @@ title: Harmony 实现双飞翼(圣杯)布局
 description: 鸿蒙一行代码实现双飞翼布局
 ---
 
-<c-title title="Harmony 实现双飞翼(圣杯)布局" />
+# Harmony 实现双飞翼(圣杯)布局
 > 一行代码实现双飞翼布局
 
 ## layoutWeight属性

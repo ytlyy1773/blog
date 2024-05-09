@@ -3,7 +3,7 @@ title: Vue2项目打包方式webpack升级vite
 description: Vue2项目打包方式webpack升级vite
 ---
 
-<c-title title="Vue2项目打包方式webpack升级vite" />
+# Vue2项目打包方式webpack升级vite
 
 ## 配置文件
 

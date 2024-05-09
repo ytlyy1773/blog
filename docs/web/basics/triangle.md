@@ -3,7 +3,7 @@ title: CSS绘制三角形
 description: CSS绘制三角形
 ---
 
-<c-title title="CSS绘制三角形" />
+# CSS绘制三角形
 
 ## 示例
 

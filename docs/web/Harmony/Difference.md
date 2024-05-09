@@ -3,7 +3,7 @@ title: Harmony 属性和参数的区别
 description: 鸿蒙属性和参数的区别
 ---
 
-<c-title title="Harmony 属性和参数的区别" />
+# Harmony 属性和参数的区别
 
 ::: info 什么是属性
 > 标签后以.开头的就是属性

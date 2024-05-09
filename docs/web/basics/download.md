@@ -3,7 +3,7 @@ title: JS实现文件下载
 description: JS实现文件下载
 ---
 
-<c-title title="JS实现文件下载" />
+# JS实现文件下载
 
 ## 示例
 

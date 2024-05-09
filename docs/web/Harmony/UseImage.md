@@ -3,7 +3,7 @@ title: Harmony 使用Image资源的4种方法
 description: 鸿蒙使用Image资源的4种方法
 ---
 
-<c-title title="Harmony 使用Image资源的4种方法" />
+# Harmony 使用Image资源的4种方法
 
 ## 具体使用
 ::: info 方法一：`assets` 目录

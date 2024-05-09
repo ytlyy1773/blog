@@ -3,7 +3,7 @@ title: js获取电脑ip
 description: 使用javascript获取电脑ip
 ---
 
-<c-title title="js获取电脑ip" />
+# js获取电脑ip
 
 ## 示例
 

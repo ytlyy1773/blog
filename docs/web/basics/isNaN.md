@@ -3,7 +3,7 @@ title: js判断内容是不是是NaN
 description: js判断内容是不是是NaN
 ---
 
-<c-title title="js判断内容是不是是NaN" />
+# js判断内容是不是是NaN
 
 ## 示例
 ::: info 1. 使用 isNaN() 函数

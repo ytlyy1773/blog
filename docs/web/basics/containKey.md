@@ -3,7 +3,7 @@ title: javascript(js)判断对象是否包含某个 key
 description: javascript(js)判断对象是否包含某个 key
 ---
 
-<c-title title="javascript(js)判断对象是否包含某个 key" />
+# javascript(js)判断对象是否包含某个 key
 
 ## 对比
 

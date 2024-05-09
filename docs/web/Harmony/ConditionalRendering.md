@@ -3,7 +3,7 @@ title: Harmony 控制组件是否可见
 description: 鸿蒙控制组件是否可见
 ---
 
-<c-title title="Harmony 控制组件是否可见" />
+# Harmony 控制组件是否可见
 
 ## 使用条件渲染
 ::: info 使用if和else

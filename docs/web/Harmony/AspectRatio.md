@@ -3,7 +3,7 @@ title: Harmony 实现宽高等比
 description: 鸿蒙实现宽高等比
 ---
 
-<c-title title="Harmony 实现宽高等比" />
+# Harmony 实现宽高等比
 > 一行代码实现宽高等比
 
 ::: info 借助`aspectRatio`属性

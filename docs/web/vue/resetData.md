@@ -3,7 +3,7 @@ title: Vue2重置data里边的数据
 description: Vue2重置data里边的数据
 ---
 
-<c-title title="Vue2重置data里边的数据" />
+# Vue2重置data里边的数据
 
 > 局限于vue2
 

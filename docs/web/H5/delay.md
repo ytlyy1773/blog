@@ -3,7 +3,7 @@ title: iphone单机事件有300毫秒延迟的处理
 description: 面试经典问题，iphone单机事件有300毫秒延迟的处理
 ---
 
-<c-title title="iphone单机事件有300毫秒延迟的处理" />
+# iphone单机事件有300毫秒延迟的处理
 
 > iphone手机H5页面有300毫秒延迟的处理
 

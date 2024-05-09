@@ -3,7 +3,7 @@ title: 在css中使用vue的变量
 description: 在css中使用vue的变量
 ---
 
-<c-title title="在css中使用vue的变量" />
+# 在css中使用vue的变量
 
 ## 原理
 

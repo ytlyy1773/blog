@@ -3,7 +3,7 @@ title: 妙用Computed
 description: 在vue中妙用Computed
 ---
 
-<c-title title="妙用Computed" />
+# 妙用Computed
 
 > vue 是`单项数据流`，子组件不能直接修改父组件传过来的 props
 
