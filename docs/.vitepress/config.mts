@@ -27,7 +27,7 @@ export default defineConfig({
       options: {
         appId: "2TMERJKE3X",
         apiKey: "281977021315cf1bb8e8678408f9c891",
-        indexName: "vitepressblog",
+        indexName: "一条懒羊羊",
         placeholder: "请输入关键词",
       },
     },
