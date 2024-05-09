@@ -32,7 +32,7 @@ export default defineConfig({
       },
     },
     logo: {
-      src: "image/logo.svg",
+      src: "/image/logo.svg",
       width: 24,
       height: 24,
     },
