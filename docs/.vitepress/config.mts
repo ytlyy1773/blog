@@ -19,6 +19,9 @@ export default defineConfig({
   lang: "zh-CN",
   // 打包配置来源子deploy.yml文件，  deploy.yml：这是一个github的自动化打包配置文件
   base: process.env.BUILD_ENV === 'github' ? '/blog/' : '/', // 打包兼容github page处理
+  head: [
+    ['meta', {name: 'google-site-verification', content: '8-lfYPcn5-i4zwxIJonLSNdzZ02BmOE7_EGEEwEFOa4'}]
+  ],
   themeConfig: {
     nav,
     sidebar,
