@@ -8,7 +8,7 @@
     "dependencies": {
         "ant-design-vue": "^4.0.3",
         "openai": "^4.10.0",
-        "vitepress": "^1.0.1"
+        "vitepress": "^1.2.3"
     },
     "devDependencies": {
         "cross-env": "^7.0.3",

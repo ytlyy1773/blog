@@ -23,6 +23,10 @@ export default defineConfig({
     ['meta', {name: 'google-site-verification', content: '8-lfYPcn5-i4zwxIJonLSNdzZ02BmOE7_EGEEwEFOa4'}],
     ['meta', {name: 'baidu-site-verification', content: 'codeva-ntA7Ws8139'}]
   ],
+  sitemap: {
+    hostname: process.env.BUILD_ENV === 'github' ? 'https://jiangwan1773.github.io/blog' : 'https://www.jwblog.cn'
+  },
+  lastUpdated: true,
   themeConfig: {
     nav,
     sidebar,
