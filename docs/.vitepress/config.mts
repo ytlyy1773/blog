@@ -32,13 +32,13 @@ export default defineConfig({
       `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
       gtag('config', 'G-ZDDKYX0QGS');`
     ]
   ],
   sitemap: {
     hostname: process.env.BUILD_ENV === 'github' ? 'https://jiangwan1773.github.io/blog' : 'https://www.jwblog.cn'
   },
+  mpa: true,
   lastUpdated: true,
   themeConfig: {
     nav,
