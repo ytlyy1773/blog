@@ -1,6 +1,10 @@
 ---
 title: 微信小程序出现弹窗页面禁止滚动
 description: 微信小程序出现弹窗页面禁止滚动
+head:
+  - - meta
+    - name: keywords
+      content: 小程序 禁止滚动
 ---
 
 # 微信小程序出现弹窗页面禁止滚动

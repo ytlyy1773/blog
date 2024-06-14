@@ -1,6 +1,10 @@
 ---
 title: Vue2重置data里边的数据
 description: Vue2重置data里边的数据
+head:
+  - - meta
+    - name: keywords
+      content: vue 重置数据
 ---
 
 # Vue2重置data里边的数据

@@ -1,6 +1,10 @@
 ---
 title: CSS解决纯英文文字不会自动换行
 description: CSS解决纯英文文字不会自动换行
+head:
+  - - meta
+    - name: keywords
+      content: css 英文换行
 ---
 
 # CSS解决纯英文文字不会自动换行

@@ -1,6 +1,10 @@
 ---
 title: Harmony 控制组件是否可见
 description: 鸿蒙控制组件是否可见
+head:
+  - - meta
+    - name: keywords
+      content: hm 组件显隐
 ---
 
 # Harmony 控制组件是否可见

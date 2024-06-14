@@ -1,6 +1,10 @@
 ---
 title: 限制浏览器返回
 description: vue代码里边如何限制浏览器返回
+head:
+  - - meta
+    - name: keywords
+      content: 代码 限制返回
 ---
 
 # 限制浏览器返回

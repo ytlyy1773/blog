@@ -1,6 +1,10 @@
 ---
 title: JS实现文件下载
 description: JS实现文件下载
+head:
+  - - meta
+    - name: keywords
+      content: js 文件下载
 ---
 
 # JS实现文件下载

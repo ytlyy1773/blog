@@ -1,6 +1,10 @@
 ---
 title: GitHub徽标
 description: md文件里边使用GitHub徽标
+head:
+  - - meta
+    - name: keywords
+      content: 使用 GitHub徽标
 ---
 
 # GitHub徽标

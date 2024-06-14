@@ -1,6 +1,10 @@
 ---
 title: Harmony 属性和参数的区别
 description: 鸿蒙属性和参数的区别
+head:
+  - - meta
+    - name: keywords
+      content: hm 属性参数
 ---
 
 # Harmony 属性和参数的区别

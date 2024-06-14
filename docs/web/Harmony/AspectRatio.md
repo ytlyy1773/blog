@@ -1,6 +1,10 @@
 ---
 title: Harmony 实现宽高等比
 description: 鸿蒙实现宽高等比
+head:
+  - - meta
+    - name: keywords
+      content: hm 宽高等比
 ---
 
 # Harmony 实现宽高等比

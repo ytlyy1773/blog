@@ -1,6 +1,10 @@
 ---
 title: 如何除去Windows的快捷方式小图标
 description: 多年从事开发工作，整理的工具集
+head:
+  - - meta
+    - name: keywords
+      content: Windows 小图标
 ---
 
 # 如何除去Windows的快捷方式小图标

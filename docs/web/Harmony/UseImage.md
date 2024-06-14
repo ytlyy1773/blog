@@ -1,6 +1,10 @@
 ---
 title: Harmony 使用Image资源的4种方法
 description: 鸿蒙使用Image资源的4种方法
+head:
+  - - meta
+    - name: keywords
+      content: hm image
 ---
 
 # Harmony 使用Image资源的4种方法

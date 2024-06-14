@@ -1,6 +1,10 @@
 ---
 title: 前端开发工具集
 description: 前端开发工具集
+head:
+  - - meta
+    - name: keywords
+      content: 前端开发工具
 ---
 
 # 前端开发工具

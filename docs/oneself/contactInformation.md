@@ -2,6 +2,10 @@
 title: 一条懒羊羊的联系方式
 description: 一条懒羊羊的联系方式，赞助一条懒羊羊
 footer: false
+head:
+  - - meta
+    - name: keywords
+      content: 联系懒羊羊
 ---
 
 # 一条懒羊羊的联系方式

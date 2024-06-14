@@ -1,6 +1,10 @@
 ---
 title: 借助Object.defineProperty实现小程序的watch
 description: 微信小程序page没有watch监听，借助Object.defineProperty实现小程序的watch
+head:
+  - - meta
+    - name: keywords
+      content: 小程序 watch监听
 ---
 
 # 借助Object.defineProperty实现小程序的watch

@@ -1,6 +1,10 @@
 ---
 title: el-table设置高度之后合计行不显示解决方法
 description: el-table设置高度之后合计行不显示解决方法
+head:
+  - - meta
+    - name: keywords
+      content: el-table 高度问题
 ---
 
 # el-table设置高度之后合计行不显示解决方法

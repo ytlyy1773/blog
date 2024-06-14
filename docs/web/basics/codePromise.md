@@ -1,6 +1,10 @@
 ---
 title: Promise理解
 description: Promise理解
+head:
+  - - meta
+    - name: keywords
+      content: promise
 ---
 
 # Promise理解

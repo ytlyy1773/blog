@@ -1,6 +1,10 @@
 ---
 title: iphone底部安全距离
 description: iphone手机底部预览安全距离
+head:
+  - - meta
+    - name: keywords
+      content: ios 安全距离
 ---
 
 # iphone底部安全距离

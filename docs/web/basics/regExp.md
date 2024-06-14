@@ -1,6 +1,10 @@
 ---
 title: 常用的正则表达式
 description: 前端常用的正则表达式
+head:
+  - - meta
+    - name: keywords
+      content: 正则
 ---
 
 # 常用的正则表达式

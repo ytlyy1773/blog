@@ -1,6 +1,10 @@
 ---
 title: iphone单机事件有300毫秒延迟的处理
 description: 面试经典问题，iphone单机事件有300毫秒延迟的处理
+head:
+  - - meta
+    - name: keywords
+      content: ios 300毫秒
 ---
 
 # iphone单机事件有300毫秒延迟的处理

@@ -1,6 +1,10 @@
 ---
 title: 封装图片预览功能
 description: 在vue中封装一个图片预览功能
+head:
+  - - meta
+    - name: keywords
+      content: 封装 预览
 ---
 
 # 封装图片预览功能

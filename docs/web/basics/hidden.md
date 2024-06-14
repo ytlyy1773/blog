@@ -1,6 +1,10 @@
 ---
 title: CSS处理一行或多行文字超出用省略号
 description: CSS处理一行或多行文字超出用省略号
+head:
+  - - meta
+    - name: keywords
+      content: css 省略号
 ---
 
 # CSS处理一行或多行文字超出用省略号

@@ -1,6 +1,10 @@
 ---
 title: 函数式封装上传图片组件
 description: 在vue中使用函数式封装上传图片组件
+head:
+  - - meta
+    - name: keywords
+      content: 封装 上传图片
 ---
 
 # 函数式封装上传图片组件

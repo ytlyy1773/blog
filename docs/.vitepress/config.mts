@@ -16,10 +16,12 @@ const chineLanguage = {
 
 export default defineConfig({
   title: "一条懒羊羊",
+  description: "一条懒羊羊的博客",
   lang: "zh-CN",
   // 打包配置来源子deploy.yml文件，  deploy.yml：这是一个github的自动化打包配置文件
   base: process.env.BUILD_ENV === 'github' ? '/blog/' : '/', // 打包兼容github page处理
   head: [
+    ['meta', {name: 'author', content: '一条懒羊羊, jiangwan1773@163.com, 中国深圳'}],
     ['meta', {name: 'google-site-verification', content: '8-lfYPcn5-i4zwxIJonLSNdzZ02BmOE7_EGEEwEFOa4'}], // jwblog.cn
     ['meta', {name: 'baidu-site-verification', content: 'codeva-ntA7Ws8139'}], // jwblog.cn
     [
@@ -33,7 +35,7 @@ export default defineConfig({
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-ZDDKYX0QGS');`
-    ]
+    ],
   ],
   sitemap: {
     hostname: process.env.BUILD_ENV === 'github' ? 'https://jiangwan1773.github.io/blog' : 'https://www.jwblog.cn'

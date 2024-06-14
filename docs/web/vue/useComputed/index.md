@@ -1,6 +1,10 @@
 ---
 title: 妙用Computed
 description: 在vue中妙用Computed
+head:
+  - - meta
+    - name: keywords
+      content: 使用 computed
 ---
 
 # 妙用Computed

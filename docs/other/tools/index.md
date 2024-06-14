@@ -1,6 +1,10 @@
 ---
 title: 开发工具集
 description: 多年从事开发工作，整理的工具集
+head:
+  - - meta
+    - name: keywords
+      content: 开发工具
 ---
 
 # 开发工具集

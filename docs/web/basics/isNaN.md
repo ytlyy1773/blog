@@ -1,6 +1,10 @@
 ---
 title: js判断内容是不是是NaN
 description: js判断内容是不是是NaN
+head:
+  - - meta
+    - name: keywords
+      content: 判断 NaN
 ---
 
 # js判断内容是不是是NaN
