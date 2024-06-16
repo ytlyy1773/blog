@@ -19,41 +19,61 @@ export default defineConfig({
   description: "一条懒羊羊的博客",
   lang: "zh-CN",
   // 打包配置来源子deploy.yml文件，  deploy.yml：这是一个github的自动化打包配置文件
-  base: process.env.BUILD_ENV === 'github' ? '/blog/' : '/', // 打包兼容github page处理
+  base: process.env.BUILD_ENV === "github" ? "/blog/" : "/", // 打包兼容github page处理
   head: [
-    ['meta', {name: 'author', content: '一条懒羊羊, jiangwan1773@163.com, 中国深圳'}],
-    ['meta', {name: 'google-site-verification', content: '8-lfYPcn5-i4zwxIJonLSNdzZ02BmOE7_EGEEwEFOa4'}], // jwblog.cn
-    ['meta', {name: 'baidu-site-verification', content: 'codeva-ntA7Ws8139'}], // jwblog.cn
     [
-      'script',
-      { async: '', src: 'https://www.googletagmanager.com/gtag/js?id=G-ZDDKYX0QGS' }
+      "meta",
+      { name: "author", content: "一条懒羊羊, jiangwan1773@163.com, 中国深圳" },
     ],
     [
-      'script',
+      "meta",
+      {
+        name: "google-site-verification",
+        content: "8-lfYPcn5-i4zwxIJonLSNdzZ02BmOE7_EGEEwEFOa4",
+      },
+    ], // jwblog.cn
+    ["meta", { name: "baidu-site-verification", content: "codeva-ntA7Ws8139" }], // jwblog.cn
+    [
+      "script",
+      {
+        async: "",
+        src: "https://www.googletagmanager.com/gtag/js?id=G-ZDDKYX0QGS",
+      },
+    ],
+    [
+      "script",
       {},
       `window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-ZDDKYX0QGS');`
+      gtag('config', 'G-ZDDKYX0QGS');`,
     ],
   ],
   sitemap: {
-    hostname: process.env.BUILD_ENV === 'github' ? 'https://jiangwan1773.github.io/blog' : 'https://www.jwblog.cn'
+    hostname:
+      process.env.BUILD_ENV === "github"
+        ? "https://jiangwan1773.github.io/blog"
+        : "https://www.jwblog.cn",
   },
   // mpa: true,
   lastUpdated: true,
   themeConfig: {
     nav,
     sidebar,
-    search: {
-      provider: "algolia",
-      options: {
-        appId: "2TMERJKE3X",
-        apiKey: "281977021315cf1bb8e8678408f9c891",
-        indexName: "一条懒羊羊",
-        placeholder: "请输入关键词",
-      },
-    },
+    search:
+      process.env.BUILD_ENV === "github"
+        ? {
+            provider: "local",
+          }
+        : {
+            provider: "algolia",
+            options: {
+              appId: "2TMERJKE3X",
+              apiKey: "281977021315cf1bb8e8678408f9c891",
+              indexName: "一条懒羊羊",
+              placeholder: "请输入关键词",
+            },
+          },
     logo: {
       src: "/image/logo.svg",
       width: 24,
