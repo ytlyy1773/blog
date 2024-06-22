@@ -37,7 +37,11 @@ export default [
             },
             {
                 text: '开发工具集',
-                link: 'other/tools/index',
+                link: 'other/tools/index.md',
+            },
+            {
+                text: '如何搭建博客',
+                link: 'other/blog/index.md',
             },
             {
                 text: 'Monorepo开发策略',

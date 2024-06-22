@@ -5,7 +5,8 @@ export default {
   "/web/weChat": getWebWeChat(),
   "/web/H5": getWebH5(),
   "/other/tools": getOtherTools(),
-  "/other/computer": getComputerList()
+  "/other/computer": getComputerList(),
+  "/other/blog": getDevelopBlog(),
 };
 
 function getWebBasics() {
@@ -147,7 +148,7 @@ function getOtherTools() {
     },
     {
       text: "前端",
-      collapsed: true,
+      collapsed: false,
       items: [
         { text: "前端开发工具", link: "/other/tools/web/index.md" }
       ],
@@ -164,5 +165,26 @@ function getComputerList() {
         { text: "如何除去Windows的快捷方式小图标", link: "/other/computer/win/ClearIcon.md" }
       ],
     }
+  ]
+}
+
+function getDevelopBlog() {
+  return [
+    {
+      text: "Develop Blog",
+      collapsed: false,
+      items: [
+        { text: "如何搭建博客", link: "/other/blog/index.md" },
+        { text: "部署发布", link: "/other/blog/deploy.md" },
+        { text: "Seo", link: "/other/blog/seoInfo.md" }
+      ],
+    },
+    {
+      text: "补充",
+      collapsed: false,
+      items: [
+        { text: "前端开发工具", link: "/other/tools/web/index.md" }
+      ],
+    },
   ]
 }
