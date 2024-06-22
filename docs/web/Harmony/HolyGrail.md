@@ -1,10 +1,6 @@
 ---
 title: Harmony 实现双飞翼(圣杯)布局
 description: 鸿蒙一行代码实现双飞翼布局
-head:
-  - - meta
-    - name: keywords
-      content: hm 双飞翼圣杯
 ---
 
 # Harmony 实现双飞翼(圣杯)布局

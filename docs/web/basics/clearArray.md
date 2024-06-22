@@ -1,10 +1,6 @@
 ---
 title: Array常见的两种重置方法对比
 description: Array常见的两种重置方法对比
-head:
-  - - meta
-    - name: keywords
-      content: 重置 数组
 ---
 
 # Array常见的两种重置方法对比

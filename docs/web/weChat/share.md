@@ -1,10 +1,6 @@
 ---
 title: 微信小程序全局添加分享功能
 description: 微信小程序全局添加分享功能
-head:
-  - - meta
-    - name: keywords
-      content: 小程序 分享
 ---
 
 # 微信小程序全局添加分享功能

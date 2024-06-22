@@ -1,10 +1,6 @@
 ---
 title: CSS清楚浮动
 description: CSS清楚浮动的几种方式
-head:
-  - - meta
-    - name: keywords
-      content: 清楚浮动
 ---
 
 # CSS清楚浮动

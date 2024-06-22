@@ -1,10 +1,6 @@
 ---
 title: 小程序自定义顶部导航栏组件
 description: 微信小程序自定义顶部导航栏组件
-head:
-  - - meta
-    - name: keywords
-      content: 小程序 导航栏
 ---
 
 # 小程序自定义顶部导航栏组件

@@ -1,10 +1,6 @@
 ---
 title: 优雅的代码-es6实践
 description: 优雅的代码-es6实践
-head:
-  - - meta
-    - name: keywords
-      content: es6
 ---
 
 # 优雅的代码-es6实践

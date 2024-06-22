@@ -1,10 +1,6 @@
 ---
 title: 冻结属性 Object.freeze | Readonly
 description: Object.freeze() | Ts的Readonly 在vue中的应用
-head:
-  - - meta
-    - name: keywords
-      content: 冻结 只读
 ---
 
 # Object.freeze() | Ts的Readonly 在vue中的应用

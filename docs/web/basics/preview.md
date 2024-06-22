@@ -1,10 +1,6 @@
 ---
 title: Html预览word，pdf，excel
 description: Html预览word，pdf，excel
-head:
-  - - meta
-    - name: keywords
-      content: 预览 pdf
 ---
 
 # Html预览word，pdf，excel

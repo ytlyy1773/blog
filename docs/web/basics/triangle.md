@@ -1,10 +1,6 @@
 ---
 title: CSS绘制三角形
 description: CSS绘制三角形
-head:
-  - - meta
-    - name: keywords
-      content: css 三角
 ---
 
 # CSS绘制三角形

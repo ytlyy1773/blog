@@ -1,10 +1,6 @@
 ---
 title: 前端加密安全
 description: 怎么做前端加密安全
-head:
-  - - meta
-    - name: keywords
-      content: 前端加密
 ---
 
 # 前端加密安全

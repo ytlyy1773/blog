@@ -1,10 +1,6 @@
 ---
 title: Vue2项目打包方式webpack升级vite
 description: Vue2项目打包方式webpack升级vite
-head:
-  - - meta
-    - name: keywords
-      content: webpack 升级 vite
 ---
 
 # Vue2项目打包方式webpack升级vite

@@ -1,10 +1,6 @@
 ---
 title: 微信request的二次封装
 description: 微信使用promise对request的二次封装
-head:
-  - - meta
-    - name: keywords
-      content: 小程序 接口
 ---
 
 # 微信request的二次封装

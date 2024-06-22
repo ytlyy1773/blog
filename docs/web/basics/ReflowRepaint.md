@@ -1,10 +1,6 @@
 ---
 title: 浏览器的回流与重绘
 description: 浏览器的回流与重绘
-head:
-  - - meta
-    - name: keywords
-      content: 回流 重绘
 ---
 
 # 浏览器的回流与重绘

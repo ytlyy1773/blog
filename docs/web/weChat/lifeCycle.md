@@ -1,10 +1,6 @@
 ---
 title: 小程序生命周期
 description: 微信小程序生命周期的全解
-head:
-  - - meta
-    - name: keywords
-      content: 小程序 生命周期
 ---
 
 # 小程序生命周期

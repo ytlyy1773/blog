@@ -1,10 +1,6 @@
 ---
 title: js获取电脑ip
 description: 使用javascript获取电脑ip
-head:
-  - - meta
-    - name: keywords
-      content: js ip
 ---
 
 # js获取电脑ip

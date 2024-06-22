@@ -1,10 +1,6 @@
 ---
 title: javascript(js)判断对象是否包含某个 key
 description: javascript(js)判断对象是否包含某个 key
-head:
-  - - meta
-    - name: keywords
-      content: 对象 key
 ---
 
 # javascript(js)判断对象是否包含某个 key

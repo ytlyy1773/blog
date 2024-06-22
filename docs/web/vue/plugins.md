@@ -1,10 +1,6 @@
 ---
 title: Vue项目常用插件
 description: Vue项目常用插件
-head:
-  - - meta
-    - name: keywords
-      content: vue 插件
 ---
 
 # Vue项目常用插件

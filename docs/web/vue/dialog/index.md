@@ -1,10 +1,6 @@
 ---
 title: vue封装dialog弹窗
 description: 在vue项目中使用函数式封装一个dialog弹窗
-head:
-  - - meta
-    - name: keywords
-      content: 封装 弹窗
 ---
 
 # 封装dialog弹窗

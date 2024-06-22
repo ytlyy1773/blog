@@ -1,10 +1,6 @@
 ---
 title: CSS使用sass语法
 description: CSS使用sass语法
-head:
-  - - meta
-    - name: keywords
-      content: 使用 sass
 ---
 
 # CSS使用sass语法

@@ -1,10 +1,6 @@
 ---
 title: Vue3 + ts项目小技巧
 description: 作者开发Vue3 + ts项目的一些小技巧
-head:
-  - - meta
-    - name: keywords
-      content: vue ts
 ---
 
 # Vue3 + ts项目小技巧

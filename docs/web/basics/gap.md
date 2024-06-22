@@ -1,10 +1,6 @@
 ---
 title: HTML元素之间有间隙
 description: HTML元素之间有间隙
-head:
-  - - meta
-    - name: keywords
-      content: 元素间隙
 ---
 
 # HTML元素之间有间隙

@@ -1,10 +1,6 @@
 ---
 title: onShow生命周期拿到onLoad生命周期里边的路由传参
 description: 微信小程序onShow生命周期拿到onLoad生命周期里边的路由传参
-head:
-  - - meta
-    - name: keywords
-      content: onShow 路由参数
 ---
 
 # onShow生命周期拿到onLoad生命周期里边的路由传参
