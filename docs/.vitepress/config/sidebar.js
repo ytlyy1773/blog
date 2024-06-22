@@ -174,7 +174,7 @@ function getDevelopBlog() {
       text: "Develop Blog",
       collapsed: false,
       items: [
-        { text: "如何搭建博客", link: "/other/blog/index.md" },
+        { text: "怎么写博客", link: "/other/blog/index.md" },
         { text: "部署发布", link: "/other/blog/deploy.md" },
         { text: "Seo", link: "/other/blog/seoInfo.md" }
       ],
