@@ -8,7 +8,7 @@ description: md文件里边使用GitHub徽标
 >GitHub Badge 也可以叫它徽章
 ## GithubLink
 
-[官网直通车 🚘](https://shields.io)
+[官网直通车&nbsp;&nbsp;&nbsp;🚘](https://shields.io)
 
 ## 示例
 

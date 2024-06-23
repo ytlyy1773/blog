@@ -1,5 +1,6 @@
 ---
 footer: false
+lastUpdated: false
 ---
 
 <chat-gpt />

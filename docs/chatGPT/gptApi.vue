@@ -21,7 +21,7 @@
       @input="autoHeight"
     />
     <a-button type="primary" :disabled="loading" @click="onSearch">
-      {{ loading ? "请求中..." : "⦊" }}
+      {{ loading ? "请求中..." : "⏎" }}
     </a-button>
   </div>
 </template>

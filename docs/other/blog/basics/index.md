@@ -7,10 +7,10 @@ outline: [2, 4]
 # 怎么写博客
 
 ## 个人经验
-* 一口吃不成一个胖子。第一次写建议想写什么写什么，等写的多了再去整合规划
-* `收费项目`建议用便宜实惠的产品，等博客质量累积起来再去适当`氪金升级`
-* 可以多参考其他`开源博客`的写法和内容
+* 一口吃不成一个胖子。第一次写建议想什么写什么，等写的多了再进行 `整合规划`
+* `收费项目` 建议用便宜实惠的产品，等博客质量积累起来再去适当 `氪金升级`
 * 博客是一个不断积累的过程，可以借鉴其他，但不建议完全照搬，要有自己的想法
+* 可以多参考其他 `开源博客` 的内容。[优质博客集&nbsp;&nbsp;&nbsp;🚘](https://github.com/foru17/front-end-collect?tab=readme-ov-file)
 
 #### 我的博客大概费用
 
@@ -40,7 +40,7 @@ outline: [2, 4]
 ## vitepress
 > 这里我们选择 `vue` 团队出品的 `vitepress`
 
-[官网直通车 🚘](https://vitepress.dev/zh/)
+[官网直通车&nbsp;&nbsp;&nbsp;🚘](https://vitepress.dev/zh/)
 
 #### 需要了解什么？
 
@@ -50,10 +50,10 @@ outline: [2, 4]
     * `markdown` 程序员的必修课
     * 轻量级标记语言，极易上手
     * 适用所有开发者，代码托管平台 `README.md` 文件语言
-    * [官方教程 🚘](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)&nbsp;&nbsp;或&nbsp;自行访问[GitHub 文档](https://docs.github.com/zh) 选择&nbsp;"入门"&nbsp;>&nbsp;"在&nbsp;GitHub&nbsp;上写入"
-    * md教程推荐 [菜鸟教程 🚘](https://www.runoob.com/markdown/md-tutorial.html)
+    * [官方教程&nbsp;&nbsp;&nbsp;🚘](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/quickstart-for-writing-on-github)&nbsp;&nbsp;或&nbsp;自行访问[GitHub 文档](https://docs.github.com/zh) 选择&nbsp;"入门"&nbsp;>&nbsp;"在&nbsp;GitHub&nbsp;上写入"
+    * md教程推荐 [菜鸟教程&nbsp;&nbsp;&nbsp;🚘](https://www.runoob.com/markdown/md-tutorial.html)
 2. `Vue` 语法
-    * [vue官网 🚘](https://cn.vuejs.org/)
+    * [vue官网&nbsp;&nbsp;&nbsp;🚘](https://cn.vuejs.org/)
 3. `Node` 环境
     * vitepress是一个前端框架，需要node环境
 

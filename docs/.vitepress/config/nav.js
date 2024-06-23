@@ -1,30 +1,30 @@
 export default [
-    // {
-    //     text: 'chatGPT',
-    //     link: '/chatGPT/index.md',
-    // },
+    {
+        text: 'chatGPT',
+        link: '/chatGPT/index.md',
+    },
     {
         text: '前端',
         items: [
             {
                 text: 'Vue',
-                link: 'web/vue/plugins',
+                link: '/web/vue/plugins',
             },
             {
                 text: 'Harmony',
-                link: 'web/Harmony/Difference.md',
+                link: '/web/Harmony/Difference.md',
             },
             {
                 text: 'WeChat',
-                link: 'web/weChat/codeWatch',
+                link: '/web/weChat/codeWatch',
             },
             {
                 text: 'H5',
-                link: 'web/H5/fontDeformation',
+                link: '/web/H5/fontDeformation',
             },
             {
                 text: 'html + cs + js',
-                link: 'web/basics/regExp',
+                link: '/web/basics/regExp',
             },
         ],
     },
@@ -32,16 +32,16 @@ export default [
         text: '其他',
         items: [
             {
-                text: '电脑使用',
-                link: 'other/computer/win/ClearIcon.md',
+                text: '操作系统',
+                link: '/other/system/win/ClearIcon.md',
             },
             {
                 text: '开发工具集',
-                link: 'other/tools/index.md',
+                link: '/other/tools/index.md',
             },
             {
                 text: '如何搭建博客',
-                link: 'other/blog/basics/index.md',
+                link: '/other/blog/basics/index.md',
             },
             {
                 text: 'Monorepo开发策略',

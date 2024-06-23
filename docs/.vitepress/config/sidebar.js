@@ -5,7 +5,7 @@ export default {
   "/web/weChat": getWebWeChat(),
   "/web/H5": getWebH5(),
   "/other/tools": getOtherTools(),
-  "/other/computer": getComputerList(),
+  "/other/system": getComputerList(),
   "/other/blog": getDevelopBlog(),
 };
 
@@ -159,10 +159,17 @@ function getOtherTools() {
 function getComputerList() {
   return [
     {
-      text: "Win",
+      text: "windows",
       collapsed: false,
       items: [
-        { text: "如何除去Windows的快捷方式小图标", link: "/other/computer/win/ClearIcon.md" }
+        { text: "如何除去Windows的快捷方式小图标", link: "/other/system/win/ClearIcon.md" }
+      ],
+    },
+    {
+      text: "linux",
+      collapsed: false,
+      items: [
+        { text: "linux常用命令", link: "/other/system/linux/command.md" }
       ],
     }
   ]
@@ -175,7 +182,7 @@ function getDevelopBlog() {
       collapsed: false,
       items: [
         { text: "怎么写博客", link: "/other/blog/basics/index.md" },
-        { text: "部署发布", link: "/other/blog/basics/deploy.md" },
+        { text: "网站的部署发布", link: "/other/blog/basics/deploy.md" },
         { text: "Seo", link: "/other/blog/basics/seoInfo.md" }
       ],
     },

@@ -5,7 +5,7 @@ description: 多年从事开发工作，整理的工具集
 
 # 如何除去Windows的快捷方式小图标
 
-## 去除前后对比
+## 去除前后效果对比
 ::: danger 去除之后（after）
 <image src="http://www.jwblog.cn/images/pc/blog/update-after.jpg" class="show-img" />
 :::
@@ -15,10 +15,11 @@ description: 多年从事开发工作，整理的工具集
 
 ## 具体实现
 ::: tip 步骤
-- 1.新建`clear.txt`文件<br />
-在win桌面新建一个`clear.txt`文件
-- 2.txt文件写入以下内容<br />
-```txt
+- 新建`clear.txt`文件
+    > 在win桌面新建一个`clear.txt`文件
+- txt文件写入以下脚本内容
+
+```bash
 reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 29 /d "%systemroot%\system32\imageres.dll,197" /t reg_sz /f
 taskkill /f /im explorer.exe
 attrib -s -r -h "%userprofile%\AppData\Local\iconcache.db"
@@ -26,11 +27,16 @@ del "%userprofile%\AppData\Local\iconcache.db" /f /q
 start explorer
 pause
 ```
-- 3.修改txt文件后缀为.bat<br />
-```txt
+
+- 修改txt文件后缀名为 `.bat`
+    > 变为可执行文件
+
+```bash
 .txt >>> .bat
 ```
-- 4.鼠标右键管理员执行.bat文件<br />
+
+- 鼠标右键 `管理员` 执行.bat文件
+
 :::
 
 <style lang="scss" scoped>

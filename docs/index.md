@@ -5,8 +5,8 @@ head: [['link', { rel: 'icon', href: 'image/index-bag-logo.svg' }]]
 
 hero:
     name: '一条懒羊羊的博客'
-    text: '基于 vitePress + antD 搭建的个人博客'
-    tagline: '仅供学习使用'
+    text: '仅供参考、学习使用'
+    tagline: '博客部分内容需要科学上网'
     actions:
         - theme: brand
           text: Vue
