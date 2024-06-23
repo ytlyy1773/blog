@@ -26,4 +26,5 @@ pnpm run dev
 </div>
 
 ## 缺陷
-- `master` 的 `dist` 目录是服务器使用git拉取打包后的代码使用的
+- 服务器需要使用 `master` 的 `dist` 目录做为网站
+> 后续会考虑使用 `Jenkins`
