@@ -12,6 +12,9 @@ hero:
           text: Vue
           link: /web/vue/plugins.html
         - theme: alt
+          text: 搭建博客教程
+          link: /other/blog/basics/index.md
+        - theme: alt
           text: Github
           link: https://github.com/jiangwan1773/blog
     image:
