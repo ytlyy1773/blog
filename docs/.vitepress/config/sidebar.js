@@ -174,16 +174,22 @@ function getDevelopBlog() {
       text: "Develop Blog",
       collapsed: false,
       items: [
-        { text: "怎么写博客", link: "/other/blog/index.md" },
-        { text: "部署发布", link: "/other/blog/deploy.md" },
-        { text: "Seo", link: "/other/blog/seoInfo.md" }
+        { text: "怎么写博客", link: "/other/blog/basics/index.md" },
+        { text: "部署发布", link: "/other/blog/basics/deploy.md" },
+        { text: "Seo", link: "/other/blog/basics/seoInfo.md" }
       ],
     },
     {
-      text: "补充",
+      text: "提升相关",
       collapsed: false,
       items: [
-        { text: "前端开发工具", link: "/other/tools/web/index.md" }
+        { text: "代码自动同步多个代码托管平台", link: "/other/blog/up/syncCode.md" },
+        { text: "github pages", link: "/other/blog/up/usePage.md" },
+        { text: "网站升级https", link: "/other/blog/up/upHttps.md" },
+        { text: "配置algolia", link: "/other/blog/up/configAlgolia.md" },
+        { text: "搭建对象存储OSS", link: "/other/blog/up/setupOss.md" },
+        { text: "如何备案", link: "/other/blog/up/operate.md" },
+        { text: "如何使用linux云服务器", link: "/other/blog/up/useLinux.md" },
       ],
     },
   ]

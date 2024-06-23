@@ -8,6 +8,8 @@ outline: [2, 4]
 
 ## 前置准备工作
 
+如果不想花钱可以使用 [`github pages`](/other/blog/up/usePage.html)
+
 ::: tip 所需
 - 云服务器 （年花费200rmb左右）
 - 域名 （年花费50rmb左右）
@@ -70,7 +72,7 @@ outline: [2, 4]
 
 ```bash
 # 启动 Nginx
-nginx
+start nginx
 
 # 停止 Nginx
 nginx -s stop
@@ -80,7 +82,7 @@ nginx -s reload
 ```
 :::
 
-#### nginx的使用
+#### windows系统下nginx的使用
 - 进入官网下载好nginx文件，进行解压
 - 进入nginx文件目录下打开 `cmd` 或者 `powershell`
 - 执行命令 `nginx` 启动nginx
@@ -94,7 +96,7 @@ nginx -s reload
 - 服务器在国内是需要进行备案
 - 备案周期大概是 `15-30` 天
 
-关于如何备案，请参考文章
+[关于如何备案，请参考文章](/other/blog/up/operate.html)
 
 ## 部署到云服务器
 
@@ -110,3 +112,7 @@ nginx -s reload
     - `2.`修改nginx配置文件，将项目地址映射到git拉取的dist目录下
     - 推荐使用地址映射，可以省去复制粘贴代码
 - 重载nginx，在服务器浏览器访问`localhost`看网站效果
+
+## 如何使用linux云服务器
+
+[请参考](/other/blog/up/useLinux.html)

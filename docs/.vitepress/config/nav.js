@@ -41,7 +41,7 @@ export default [
             },
             {
                 text: '如何搭建博客',
-                link: 'other/blog/index.md',
+                link: 'other/blog/basics/index.md',
             },
             {
                 text: 'Monorepo开发策略',
