@@ -19,7 +19,7 @@ outline: [2, 4]
 
 ::: tip 注意事项
 1. 初次使用云服务器建议先买一年最便宜的华为云试试
-2. 初次购买建议 `windows server` 服务器，可以快速上手
+2. 初次购买建议 `windows server` 服务器，可以快速上手。云服务器可以随时刷其他系统，也可以刷 `linux` 系统
 3. 充分掌握云服务器之后再换其他 `linux` 服务器
 3. 服务器配置 `2核2G3M` 够用了
 :::
@@ -57,39 +57,12 @@ outline: [2, 4]
 
 ## 配置nginx
 
-> 建议先用windows电脑本地先熟悉一下 `nginx` 的使用
+* 建议先用windows电脑本地先熟悉一下 `nginx` 的使用
+* 命令都需要在 `nginx文件目录下` 执行
 
 [官网直通车&nbsp;&nbsp;&nbsp;🚘](https://nginx.org/en/)
 
-::: info nginx的常用配置文件说明
-- `nginx.exe` nginx的启动文件，不推荐使用，建议使用命令行启动项目
-- `html` html文件夹下是默认的项目路径
-- `conf/nginx.conf` nginx的核心配置文件
-:::
-
-::: tip nginx的常用命令
-
-> 命令都需要在 `nginx文件目录下` 执行
-
-```bash
-# 启动 Nginx
-start nginx
-
-# 停止 Nginx
-nginx -s stop
-
-# 重新加载配置（项目需要更新操作执行，最常用）
-nginx -s reload
-```
-:::
-
-#### windows系统下nginx的使用
-- 进入官网下载好nginx文件，进行解压
-- 进入nginx文件目录下打开 `cmd` 或者 `powershell`
-- 执行命令 `nginx` 启动nginx
-- 打开浏览器访问 `localhost` 可以看到 `Welcome to nginx!` 界面即成功
-- 把自己的项目打包后文件放入 `nginx/html` 文件夹下
-- 执行 `nginx -s reload` 命令重新访问 `localhost` 预览自己的博客项目
+[nginx的详细使用](/other/blog/up/useNginx.html)
 
 ## 备案
 

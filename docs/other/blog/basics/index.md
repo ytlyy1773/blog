@@ -65,3 +65,38 @@ outline: [2, 4]
 #### 进入开发
 
 > `vitepress` 官网有详细的操作流程和初始化模版，直接参考官网
+
+## 遇到的问题
+
+> 略微区别于开发单页面应用程序的点
+
+#### 1.不同环境打包的问题
+
+* 正常的环境配置是 `不会生效` 的需要做特殊处理
+* github actions的运行环境默认是 Linux
+* 这里用 `github actions` 打包举例
+
+问题描述：本地使用 `pnpm run build:github` 打包没问题，但是配置了自动化命令的时候就不行了
+
+::: tip
+* 添加项目依赖 `cross-env`，解决跨平台环境之间的差异而导致的问题
+* 修改 `docs/.vitepress/config.mts` 文件下的 `base` 属性
+    > `deploy.yml` 这是一个github pages的自动化打包配置文件，存放于 `.github/workflows/` 目录下
+```ts
+// 环境变量的控制来源子deploy.yml文件
+base: process.env.BUILD_ENV === "github" ? "/blog/" : "/"
+```
+:::
+
+我们可以添加一条命令 `build:github` 本地看github打包效果
+
+> 验证过后可以删除这个 `build:github` 的命令
+
+```sh
+"scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "build:github": "cross-env BUILD_ENV=github vitepress build docs",
+    "preview": "vitepress preview docs"
+}
+```

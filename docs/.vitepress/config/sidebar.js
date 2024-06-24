@@ -192,9 +192,10 @@ function getDevelopBlog() {
       items: [
         { text: "代码自动同步多个代码托管平台", link: "/other/blog/up/syncCode.md" },
         { text: "github pages", link: "/other/blog/up/usePage.md" },
+        { text: "怎么使用nginx", link: "/other/blog/up/useNginx.md" },
         { text: "网站升级https", link: "/other/blog/up/upHttps.md" },
-        { text: "配置algolia", link: "/other/blog/up/configAlgolia.md" },
-        { text: "搭建对象存储OSS", link: "/other/blog/up/setupOss.md" },
+        { text: "vitepress配置algolia", link: "/other/blog/up/configAlgolia.md" },
+        { text: "nginx搭建对象存储OSS", link: "/other/blog/up/setupOss.md" },
         { text: "如何备案", link: "/other/blog/up/operate.md" },
         { text: "如何使用linux云服务器", link: "/other/blog/up/useLinux.md" },
       ],
