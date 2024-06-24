@@ -26,7 +26,7 @@ outline: [2, 4]
     - 下行流量：访问这个图片的流量
     - 一张图片大小 `100kb`，那么访问一次这个图片就是 `100kb` 下行流量
 
-## windows系统怎么搭建
+## windows系统搭建oss
 
 > 这里我们可以借助 `nginx` 做代理
 
@@ -64,4 +64,4 @@ location / {
 - 这里配置图片的转接地址是用 `alias` 而不是 `root`
 - 修改了nginx配置文件或者添加的新的图片，必须执行 `nginx -s reload`
 
-## linux系统怎么搭建
+## linux系统搭建oss
