@@ -98,7 +98,7 @@ yum install nginx
 
 #### 使用git
 
-[请参考&nbsp;&nbsp;&nbsp;🚘](/other/tools/gitCommand)
+[请参考&nbsp;&nbsp;&nbsp;🚘](/other/tools/gitCommand.html)
 
 ## 编写linux脚本
 
