@@ -142,7 +142,7 @@ function getOtherTools() {
       collapsed: false,
       items: [
         { text: "电脑工具合集", link: "/other/tools/index.md" },
-        { text: "git命令", link: "/other/tools/gitCommand/index.md" },
+        { text: "git命令", link: "/other/tools/gitCommand.md" },
         { text: "GitHub徽标", link: "/other/tools/link/auxiliary.md" }
       ],
     },
