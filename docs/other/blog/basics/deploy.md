@@ -64,13 +64,13 @@ outline: [2, 4]
 
 [nginx的详细使用](/other/blog/up/useNginx.html)
 
-## 备案
+## 网站备案
 
 - 服务器是香港或者国外是不需要进行备案的
 - 服务器在国内是需要进行备案
 - 备案周期大概是 `15-30` 天
 
-[关于如何备案，参考链接](/other/blog/up/operate.html)
+[关于网站如何备案，参考链接](/other/blog/up/operate.html)
 
 ## 部署到云服务器
 

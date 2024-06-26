@@ -51,5 +51,32 @@ nginx -s reload
 
 ## `linux` 系统
 
-> 待完善...
+> 使用的是 `CentOs`
 
+#### 下载nginx
+
+```sh
+yum install nginx
+```
+::: tip 文件位置
+- 配置文件路径
+```sh
+/etc/nginx
+```
+
+- html默认文件路径
+```sh
+/usr/share/nginx/html
+```
+:::
+
+#### 使用nginx
+
+```sh
+cd /etc/nginx
+vim ./nginx.conf
+```
+::: warning vim模式无法编辑，需要进入 `插入模式`
+* 要进入插入模式，请按 i 键。
+* 要返回命令模式，请按 Esc 键。
+:::
