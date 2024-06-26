@@ -100,6 +100,29 @@ yum install nginx
 
 [请参考&nbsp;&nbsp;&nbsp;🚘](/other/tools/gitCommand.html)
 
-## 编写linux脚本
+## 编写linux执行脚本
 
-> 待完善...
+这里默认nginx的网页配置指向我们打包后的dist目录
+
+> 只需执行脚本即可完成项目代码的拉取，nginx的重载
+
+* root文件下新建脚本文件
+```sh
+touch update.sh
+vim update.sh
+```
+* 按 i 进入插入模式
+* `/usr/local/code/demo` 为项目代码地址
+::: tip 脚本内容
+```sh
+cd /usr/local/code/demo && git pull
+nginx -s reload
+```
+:::
+* 报错提示权限不足
+::: warning 处理权限问题
+```sh
+chmod +x update.sh
+```
+:::
+* 配置完毕需要重启服务器实例才会生效
