@@ -13,7 +13,7 @@ hero:
           link: /web/vue/plugins.html
         - theme: alt
           text: 搭建博客教程
-          link: /other/blog/basics/index.md
+          link: /other/blog/basics/write.md
         - theme: brand
           text: Github官网
           link: https://jiangwan1773.github.io/blog/
