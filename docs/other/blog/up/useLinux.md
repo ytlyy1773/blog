@@ -171,3 +171,5 @@ jobs:
         # 'sudo /root/your_script.sh': 在连接的服务器上以 root 权限运行脚本
 ```
 :::
+
+#### 升级脚本
