@@ -31,3 +31,14 @@ jobs:
         # ssh -o StrictHostKeyChecking=no: 禁用 SSH 主机密钥检查
         # $SSH_USER@$SSH_HOST: 使用提供的用户名和主机名连接到服务器
         # 'sudo /root/your_script.sh': 在连接的服务器上以 root 权限运行脚本
+
+        # Capture the exit status of the script
+        EXIT_STATUS=$?
+
+        # Output the result of the script
+        if [ $EXIT_STATUS -ne 0 ]; then
+          echo "Script execution failed with exit status $EXIT_STATUS"
+          exit $EXIT_STATUS
+        else
+          echo "Script executed successfully"
+        fi
