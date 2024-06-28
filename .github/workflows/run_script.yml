@@ -25,7 +25,7 @@ jobs:
         SSH_USER: ${{ secrets.SSH_USER }}  # 从 GitHub Secrets 中读取 SSH 用户名
         SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}  # 从 GitHub Secrets 中读取 SSH 密码
       run: |
-        sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST '/root/update.sh > /root/update_output.log 2>&1'
+        sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST 'nohup /root/update.sh > /root/update_output.log 2>&1'
 
         # Capture the exit status of the script
         EXIT_STATUS=$?
