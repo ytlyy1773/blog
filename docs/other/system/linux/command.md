@@ -5,6 +5,10 @@ description: linux系统的常用命令
 
 # linux常用命令
 
+```js
+console.log('asd----')
+```
+
 ## 个人常用
 
 ```bash
