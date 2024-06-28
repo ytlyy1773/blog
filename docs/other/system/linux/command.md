@@ -5,6 +5,14 @@ description: linux系统的常用命令
 
 # linux常用命令
 
+## 个人常用
+
+```bash
+ssh-keygen -R ip # 清理服务器密钥
+unzip file.zip -d /etc/nginx # 解压文件到指定目录
+touch myscript.sh # 新建脚本
+```
+
 ## linux文件管理常用命令
 ::: info 文件管理
 * ls: 列出当前目录下的文件和文件夹。
