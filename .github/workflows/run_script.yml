@@ -25,7 +25,7 @@ jobs:
         SSH_USER: ${{ secrets.SSH_USER }}  # 从 GitHub Secrets 中读取 SSH 用户名
         SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}  # 从 GitHub Secrets 中读取 SSH 密码
       run: |
-        sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST './update.sh'
+        sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST '/root/update.sh'
         # 使用 sshpass 提供密码，并通过 SSH 连接到服务器运行 /root/your_script.sh 脚本
         # sshpass -p "$SSH_PASSWORD": 使用 sshpass 工具自动输入 SSH 密码
         # ssh -o StrictHostKeyChecking=no: 禁用 SSH 主机密钥检查
