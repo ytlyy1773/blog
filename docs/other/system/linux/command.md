@@ -9,6 +9,8 @@ description: linux系统的常用命令
 console.log('asd----')
 console.log('asd----')
 console.log('asd----')
+console.log('asd----')
+console.log('asd----')
 ```
 
 ## 个人常用
