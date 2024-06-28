@@ -33,6 +33,42 @@ ssr root@110.110.110.110
 * [45个常用Linux 命令&nbsp;&nbsp;&nbsp;🚘](https://juejin.cn/post/6844903930166509581)
 * [阿里云开发者社区&nbsp;&nbsp;&nbsp;🚘](https://developer.aliyun.com/article/842453)
 
+## Ubuntu
+
+#### Ubuntu是什么
+
+* 著名的Linux发行版之一，基于Debian，以桌面应用为主的Linux发行版
+* Ubuntu每六个月（即每年的四月与十月）发布一个新版本，长期支持（LTS）版本每两年发布一次。普通版本一般只支持9个月，但LTS版本一般能提供5年的支持。
+* `是目前最多用户的Linux版本`
+
+#### 下载包报错
+
+> 系统内置git
+
+
+#### Ubuntu下载命令
+```sh
+apt install packagesName
+```
+
+> 下载报错
+
+```bash
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+E: Unable to locate package nginx
+```
+
+使用 `apt update` 命令更新软件包列表。这将确保你拥有最新的软件包信息，在重新下载包。
+
+```bash
+apt update
+```
+
+#### 使用nginx教程
+
+[请参考&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useNginx.html)
 
 ## CentOs
 
@@ -45,7 +81,7 @@ ssr root@110.110.110.110
 #### CentOs下载git
 
 ```sh
-yum install nginx
+yum install git
 ```
 
 ::: tip 文件位置

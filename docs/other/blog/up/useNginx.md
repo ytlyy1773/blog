@@ -21,8 +21,10 @@ outline: [2, 4]
 > 命令都需要在 `nginx文件目录下` 执行
 
 ```bash
-# 启动 Nginx
+# windows server 启动 Nginx
 start nginx
+# linux启动 Nginx
+nginx
 
 # 停止 Nginx
 nginx -s stop
@@ -51,9 +53,28 @@ nginx -s reload
 
 ## `linux` 系统
 
-> 使用的是 `CentOs`
+#### Ubuntu下载nginx
 
-#### 下载nginx
+使用 `apt update` 命令更新软件包列表。这将确保你拥有最新的软件包信息。
+
+```sh
+apt update
+apt install nginx
+```
+
+::: tip 文件位置
+- 配置文件路径
+```sh
+/etc/nginx
+```
+
+- html默认文件路径
+```sh
+/var/www/html
+```
+:::
+
+#### CentOs下载nginx
 
 ```sh
 yum install nginx
@@ -70,7 +91,7 @@ yum install nginx
 ```
 :::
 
-#### 使用nginx
+#### 修改nginx配置
 
 ```sh
 cd /etc/nginx
