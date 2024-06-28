@@ -13,6 +13,7 @@ unzip file.zip -d /etc/nginx # 解压文件到指定目录
 touch myscript.sh # 新建脚本
 mkdir fileName # 新建文件夹
 mv moveFileName /path/to/package # 移动文件夹到某个位置
+rm -rf fileName # 删除文件夹和文以及子内容
 ```
 
 ## linux文件管理常用命令
