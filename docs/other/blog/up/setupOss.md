@@ -35,7 +35,7 @@ outline: [2, 4]
 > 访问链接 `/image` 的资源访问都被转接到 `alias 配置的文件地址目录下`
 
 ::: info `conf/nginx.conf` 文件
-```
+```nginx
 location /image {
     alias C:/Users/picture/; # 使用 alias 而不是 root
 }
@@ -65,3 +65,22 @@ location / {
 - 修改了nginx配置文件或者添加的新的图片，必须执行 `nginx -s reload`
 
 ## linux系统搭建oss
+
+linux的oss搭建，nginx内容同windows一样
+
+* Ubunto配置文件在
+    ```nginx
+    /etc/nginx/sites-available
+    ```
+* CentOs配置文件在
+    ```nginx
+    /etc/nginx/nginx.conf
+    ```
+
+添加oss配置代码
+
+```nginx
+location /image {
+    root /path/to/images;
+}
+```

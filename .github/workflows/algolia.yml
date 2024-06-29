@@ -1,19 +1,26 @@
-name: algolia
+name: algolia  # 工作流名称
+
 on:
   push:
     branches:
-      - master
+      - master  # 触发条件：当推送到 master 分支时触发此工作流
+
 jobs:
   algolia:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 在最新版本的 Ubuntu 环境中运行此作业
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Get the content of algolia.json as config
+      - uses: actions/checkout@v3  # 步骤1：使用 GitHub 官方的动作检出代码库
+
+      - name: Get the content of algolia.json as config  # 步骤2：读取 crawlerConfig.json 文件内容作为配置
         id: algolia_config
         run: echo "config=$(cat crawlerConfig.json | jq -r tostring)" >> $GITHUB_OUTPUT
-      - name: Push indices to Algolia
+        # 读取 crawlerConfig.json 文件的内容并转换为字符串格式，然后将其保存到 GitHub Actions 的输出变量中
+
+      - name: Push indices to Algolia  # 步骤3：将索引推送到 Algolia
         uses: signcl/docsearch-scraper-action@master
         env:
-          APPLICATION_ID: ${{ secrets.APPLICATION_ID }}
-          API_KEY: ${{ secrets.API_KEY }}
-          CONFIG: ${{ steps.algolia_config.outputs.config }}
+          APPLICATION_ID: ${{ secrets.APPLICATION_ID }}  # 从 GitHub Secrets 中读取 Algolia 应用程序 ID
+          API_KEY: ${{ secrets.API_KEY }}  # 从 GitHub Secrets 中读取 Algolia API 密钥
+          CONFIG: ${{ steps.algolia_config.outputs.config }}  # 使用上一步骤中读取的配置
+        # 使用 signcl/docsearch-scraper-action 动作，将配置推送到 Algolia

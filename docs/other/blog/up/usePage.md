@@ -50,7 +50,7 @@ outline: [2, 4]
 
 #### 自动化脚本
 
-[vitepress部署脚本](https://vitepress.dev/zh/guide/deploy)
+[vitepress部署脚本说明](https://vitepress.dev/zh/guide/deploy)
 
 * vitepress项目，`.github/workflows/` 新建 `deploy.yml` 脚本文件
 * 基于 `master` 新建分支 `github-pages`

@@ -43,6 +43,42 @@ head: [
 ]
 ```
 
+#### 禁止使用index.md/index.html
+
+* 除了首页使用index，其余一律不使用index
+* 使用index是一个重定向的目录，seo不会收录这样的目录
+
+::: danger 坏的示例
+```yml
+# 项目的文件目录结构
+web/vue/upgradation/index.md
+
+# 项目打包后的结果
+https://www.jwblog.cn/web/vue/upgradation/
+```
+:::
+
+::: tip 好的示例
+```yml
+# 项目的文件目录结构
+web/vue/upgradation/upVite.md
+
+# 项目打包后的结果
+https://www.jwblog.cn/web/vue/upgradation/upVite.html
+```
+:::
+
+
+::: warning 影响seo
+```yml
+# 谷歌的seo会收录以下路由
+https://www.jwblog.cn/web/vue/upgradation/upVite.html
+
+# 谷歌的seo检测重定向不会收录
+https://www.jwblog.cn/web/vue/upgradation/
+```
+:::
+
 ## 配置层面
 
 * `Gzip压缩`
@@ -89,6 +125,8 @@ head: [
     - 阿里云
     - 腾讯云
     - 华为云
+
+[如何配置ssl证书&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/upHttps.html)
 
 ## robots.txt
 

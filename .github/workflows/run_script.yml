@@ -1,45 +1,46 @@
-name: Run Root Script
+name: Run Root Script  # 工作流名称
 
 on:
   push:
     branches:
-      - master
-  workflow_dispatch:
+      - master  # 监控 master 分支上的推送事件
+  workflow_dispatch:  # 手动触发工作流
 
 jobs:
   run-script:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # 使用最新版本的 Ubuntu 作为运行环境
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: Checkout code  # 步骤1：检出代码
+      uses: actions/checkout@v2  # 使用官方的 checkout 动作
 
-    - name: Install SSH client and sshpass
+    - name: Install SSH client and sshpass  # 步骤2：安装 SSH 客户端和 sshpass
       run: |
-        sudo apt-get update
-        sudo apt-get install -y openssh-client sshpass
+        sudo apt-get update  # 更新包列表
+        sudo apt-get install -y openssh-client sshpass  # 安装 openssh-client 和 sshpass
 
-    - name: Run script on server
+    - name: Run script on server  # 步骤3：在服务器上运行脚本
       env:
         SSH_HOST: ${{ secrets.SSH_HOST }}  # 从 GitHub Secrets 中读取 SSH 主机名
         SSH_USER: ${{ secrets.SSH_USER }}  # 从 GitHub Secrets 中读取 SSH 用户名
         SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}  # 从 GitHub Secrets 中读取 SSH 密码
       run: |
+        # 使用 sshpass 和 SSH 密码进行 SSH 连接，并在服务器上运行脚本
         sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST 'nohup /root/update.sh > /root/update_output.log 2>&1'
 
-        # Capture the exit status of the script
+        # 捕获脚本的退出状态
         EXIT_STATUS=$?
 
-        # Fetch the output log from the server
+        # 从服务器获取输出日志文件
         sshpass -p "$SSH_PASSWORD" scp -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST:/root/update_output.log .
 
-        # Display the output log
+        # 显示输出日志文件内容
         cat update_output.log
 
-        # Output the result of the script
+        # 输出脚本执行结果
         if [ $EXIT_STATUS -ne 0 ]; then
-          echo "Script execution failed with exit status $EXIT_STATUS"
+          echo "Script execution failed with exit status $EXIT_STATUS"  # 如果脚本执行失败，输出错误状态并退出
           exit $EXIT_STATUS
         else
-          echo "Script executed successfully"
+          echo "Script executed successfully"  # 如果脚本执行成功，输出成功消息
         fi

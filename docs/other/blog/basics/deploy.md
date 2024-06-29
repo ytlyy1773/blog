@@ -62,7 +62,7 @@ outline: [2, 4]
 
 [官网直通车&nbsp;&nbsp;&nbsp;🚘](https://nginx.org/en/)
 
-[nginx的详细使用](/other/blog/up/useNginx.html)
+[nginx的详细使用&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useNginx.html)
 
 ## 网站备案
 
@@ -70,7 +70,7 @@ outline: [2, 4]
 - 服务器在国内是需要进行备案
 - 备案周期大概是 `15-30` 天
 
-[关于网站如何备案，参考链接](/other/blog/up/operate.html)
+[关于网站如何备案，参考链接&nbsp;&nbsp;&nbsp;🚘](https://beian.aliyun.com/)
 
 ## 部署到云服务器
 

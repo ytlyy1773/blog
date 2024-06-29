@@ -24,6 +24,8 @@ outline: [2, 4]
 ssr root@(ip)
 # 示例
 ssr root@110.110.110.110
+# 清理服务器密钥，可以重新输入服务器密钥
+ssh-keygen -R ip
 ```
 
 ## linu常用命令学习资源
@@ -40,11 +42,6 @@ ssr root@110.110.110.110
 * 著名的Linux发行版之一，基于Debian，以桌面应用为主的Linux发行版
 * Ubuntu每六个月（即每年的四月与十月）发布一个新版本，长期支持（LTS）版本每两年发布一次。普通版本一般只支持9个月，但LTS版本一般能提供5年的支持。
 * `是目前最多用户的Linux版本`
-
-#### 下载包报错
-
-> 系统内置git
-
 
 #### Ubuntu下载命令
 ```sh
@@ -78,7 +75,14 @@ apt update
 * CentOs广泛用于 Web 服务器、数据库服务器、邮件服务器等
 * `CentOs目前已经停止更新`
 
+#### Ubuntu下载命令
+
+```sh
+yum install packagesName
+```
+
 #### CentOs下载git
+
 
 ```sh
 yum install git
@@ -95,7 +99,7 @@ yum install git
 
 [请参考&nbsp;&nbsp;&nbsp;🚘](/other/tools/gitCommand.html)
 
-## CentOs编写linux执行脚本
+## 编写linux执行脚本
 
 这里默认nginx的网页配置指向我们打包后的dist目录
 
@@ -103,7 +107,9 @@ yum install git
 
 * root文件下新建脚本文件
 ```sh
+# 新建脚本文件
 touch update.sh
+# 编辑脚本
 vim update.sh
 ```
 * 按 i 进入插入模式
@@ -121,55 +127,74 @@ chmod +x update.sh
 ```
 :::
 * 配置完毕需要重启服务器实例才会生效
-
-## github执行CentOs系统脚本
-
-1. 编写 `github actions` 配置文件，提交代码自动执行服务器脚本
-
-2. 作者只需要关注代码提交，其余均是自动化脚本
-
-3. 在你的项目根目录下创建一个 .github/workflows 目录，并在其中创建一个 .yml 文件来定义GitHub Actions工作流，例如 run_script.yml。
-    * 由于GitHub Actions运行在Ubuntu环境中，而Ubuntu使用apt-get包管理器而不是yum。为了在Ubuntu环境中运行并安装sshpass和openssh-client，你需要使用适合的包管理器和命令。
-    * 请注意，使用密码认证相对 `不太安全`，因此要确保密码的复杂性和保密性。同时，为了避免密码泄露，不要在代码中直接包含密码，而是通过GitHub Secrets来管理。
-
-[怎么配置GitHub Secrets&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useLinux.html)
-
-::: info run_script.yml 文件
+* 执行脚本
 ```sh
-name: Run Root Script  # 定义工作流的名称
+./update.sh
+```
 
-on:
-  push:  # 当代码推送到指定分支时触发工作流
-    branches:
-      - master  # 监视 main 分支的变化
-  workflow_dispatch:  # 允许手动触发工作流
+## github自动执行服务器脚本
 
-jobs:
-  run-script:
-    runs-on: ubuntu-latest  # 使用Ubuntu环境来运行工作流，但连接到CentOS服务器
+> 通过 `github avtions` 实现代码提交，服务器自动执行脚本更新服务器内容
 
-    steps:
-    - name: Checkout code  # 步骤1：检出代码
-      uses: actions/checkout@v2  # 使用官方的actions/checkout@v2动作，从仓库中检出代码
+[请参考&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useGithubActions.html#github执行linux系统脚本)
 
-    - name: Install SSH client and sshpass  # 步骤2：安装 SSH 客户端和 sshpass
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y openssh-client sshpass  # 在Ubuntu环境中安装openssh-client和sshpass
 
-    - name: Run script on server  # 步骤3：在服务器上运行脚本
-      env:
-        SSH_HOST: ${{ secrets.SSH_HOST }}  # 从 GitHub Secrets 中读取 SSH 主机名
-        SSH_USER: ${{ secrets.SSH_USER }}  # 从 GitHub Secrets 中读取 SSH 用户名
-        SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}  # 从 GitHub Secrets 中读取 SSH 密码
-      run: |
-        sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST './up.sh'
-        # 使用 sshpass 提供密码，并通过 SSH 连接到服务器运行 /root/your_script.sh 脚本
-        # sshpass -p "$SSH_PASSWORD": 使用 sshpass 工具自动输入 SSH 密码
-        # ssh -o StrictHostKeyChecking=no: 禁用 SSH 主机密钥检查
-        # $SSH_USER@$SSH_HOST: 使用提供的用户名和主机名连接到服务器
-        # 'sudo /root/your_script.sh': 在连接的服务器上以 root 权限运行脚本
+## 升级脚本
+
+执行脚本可以实现的效果
+
+* 拉取代码
+    - 这里强烈建议使用 `ssh` 的方式链接github仓库。[ssh链接请参考&nbsp;&nbsp;&nbsp;🚘](/other/tools/gitCommand.html#ssh链接)
+    - 不然使用https的方式 `git pull` 经常失败，导致达不到我们想要的效果
+* 使用服务器的node进行打包
+* 执行nginx更新命令
+
+环境准备
+
+* 服务器需要下载nvm
+* 通过nvm下载打包需要的node
+* 打包使用pnpm就下载pnpm
+
+::: tip 脚本内容
+```sh
+# git pull的时候，代码远端采用ssh绑定
+# 通过github actions执行脚本必须显式声明PATH
+
+# 确保 pnpm 和 Node.js 在 PATH 中
+export PATH=/root/.nvm/versions/node/v18.20.3/bin/:$PATH
+
+# 定义重试函数
+retry() {
+  local n=1
+  local max=5
+  local delay=5
+  while true; do
+    "$@" && break || {
+      if [[ $n -lt $max ]]; then
+        ((n++))
+        echo "Command failed. Attempt $n/$max:"
+        sleep $delay;
+      else
+        echo "The command has failed after $n attempts."
+        return 1
+      fi
+    }
+  done
+}
+
+# 拉取代码并重试
+retry git -C /path/to/core/blog pull
+
+# 在脚本开头记录开始时间
+echo "Script started at $(date)" >> /var/log/up_script.log
+cd /path/to/core/blog && pnpm i && pnpm run build
+
+# 你的脚本内容
+echo "Executing script commands" >> /var/log/up_script.log
+
+nginx -s reload
+
+# 在脚本末尾记录结束时间
+echo "Script finished at $(date)" >> /var/log/up_script.log
 ```
 :::
-
-#### 升级脚本

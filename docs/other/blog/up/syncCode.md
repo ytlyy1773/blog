@@ -97,6 +97,8 @@ jobs:
             debug: true # 启用 `debug` 开关
     ```
 
+[怎么配置GitHub Secrets&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useGithubActions.html#怎么配置github-secrets)
+
 ## gitee pages Actions <Badge type="danger" text="已弃用" />
 
 - 需要注意 `gitee pages` 目前已经 `停止服务`，具体的启用时间等官方说明
@@ -135,29 +137,3 @@ jobs:
       #     # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
       #     branch: github-pages
 ```
-
-## 配置GitHub Secrets
-
-1. 进入GitHub仓库设置：
-    * 打开你的GitHub仓库。
-    * 点击右上角的 Settings。
-
-2. 添加Secrets：
-    * 在左侧栏中找到 Secrets and variables，然后选择 Actions。
-    * 点击 New repository secret 来添加新的Secret。
-
-#### Secrets的示例内容
-
-> 假设你有一个服务器，IP地址为 192.168.1.100，用户名为 root，密码为 your_password，你需要将这些信息添加为Secrets：
-
-1. 添加SSH_HOST：
-    * Name: SSH_HOST
-    * Value: 192.168.1.100
-
-2. 添加SSH_USER：
-    * Name: SSH_USER
-    * Value: root
-
-3. 添加SSH_PASSWORD：
-    * Name: SSH_PASSWORD
-    * Value: your_password
