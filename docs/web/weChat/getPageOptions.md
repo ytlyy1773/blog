@@ -19,4 +19,4 @@ onShow() {
 
 ## 代码截图
 
-![onShow生命周期拿到onLoad生命周期里边的路由传参](http://www.jwblog.cn/images/pc/code/onshow.png)
+![onShow生命周期拿到onLoad生命周期里边的路由传参](https://www.jwblog.cn/images/pc/code/onshow.png)

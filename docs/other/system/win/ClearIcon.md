@@ -7,10 +7,10 @@ description: 多年从事开发工作，整理的工具集
 
 ## 去除前后效果对比
 ::: danger 去除之后（after）
-<image src="http://www.jwblog.cn/images/pc/blog/update-after.jpg" class="show-img" />
+<image src="https://www.jwblog.cn/images/pc/blog/update-after.jpg" class="show-img" />
 :::
 ::: info 去除之前（before）
-<image src="http://www.jwblog.cn/images/pc/blog/update-before.jpg" class="show-img" />
+<image src="https://www.jwblog.cn/images/pc/blog/update-before.jpg" class="show-img" />
 :::
 
 ## 具体实现

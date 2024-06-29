@@ -1,4 +1,4 @@
-const imgUrl = Object.freeze('http://www.jwblog.cn/images/')
+const imgUrl = Object.freeze('https://www.jwblog.cn/images/')
 
 import type { Theme } from 'vitepress'
 import DefaultTheme from "vitepress/theme";

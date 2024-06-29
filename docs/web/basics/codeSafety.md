@@ -25,11 +25,11 @@ outline: [2, 4]
 
 * 浏览器url地址栏
 
-    ![浏览器url地址栏](http://www.jwblog.cn/images/pc/code/share/encryptionShare001.png)
+    ![浏览器url地址栏](https://www.jwblog.cn/images/pc/code/share/encryptionShare001.png)
 
 * 区别&缺陷
 
-    ![区别&缺陷](http://www.jwblog.cn/images/pc/code/share/encryptionShare002.png)
+    ![区别&缺陷](https://www.jwblog.cn/images/pc/code/share/encryptionShare002.png)
 
 ::: tip Base64优缺点(Base64本质是一种编码方式，而非加密方式)
 * 优点
@@ -51,13 +51,13 @@ outline: [2, 4]
 
 加密、解密过程演示
 
-![加密、解密过程演示](http://www.jwblog.cn/images/pc/code/share/encryptionShare003.png)
+![加密、解密过程演示](https://www.jwblog.cn/images/pc/code/share/encryptionShare003.png)
 
 #### AES加密简介
 
 加密、解密过程演示
 
-![加密、解密过程演示](http://www.jwblog.cn/images/pc/code/share/encryptionShare004.png)
+![加密、解密过程演示](https://www.jwblog.cn/images/pc/code/share/encryptionShare004.png)
 
 ::: warning 前端加密步骤
 
@@ -72,8 +72,8 @@ outline: [2, 4]
 
 #### 如何加密
 
-![如何加密](http://www.jwblog.cn/images/pc/code/share/encryptionShare006.png)
+![如何加密](https://www.jwblog.cn/images/pc/code/share/encryptionShare006.png)
 
 #### 如何解密
 
-![如何解密](http://www.jwblog.cn/images/pc/code/share/encryptionShare007.png)
+![如何解密](https://www.jwblog.cn/images/pc/code/share/encryptionShare007.png)

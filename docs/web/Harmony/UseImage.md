@@ -18,7 +18,7 @@ Image('/assets/image/startIcon.png')  // [!code error]
 
 ::: info 方法二：使用网络图片
 ```js
-Image('http://www.jwblog.cn/images/pc/blog/update-after.jpg')  // [!code error]
+Image('https://www.jwblog.cn/images/pc/blog/update-after.jpg')  // [!code error]
     .width(100)
     .aspectRatio(1)
 ```
