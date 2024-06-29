@@ -7,13 +7,9 @@ description: 在css中使用vue的变量
 
 ## 原理
 
-::: info 原理
-```js
-使用vue的动态行内样式，也就是 :style="{ '--color': color }"
-动态绑定一个css变量--color
-在class中使用 var() 函数去使用这个变量
-```
-:::
+- 使用vue的动态行内样式，也就是 `:style="{ '--color': color }"`
+- 动态绑定一个css变量 `--color`
+- 在class中使用 `var()` 函数去使用这个变量
 
 ## 示例
 

@@ -5,9 +5,8 @@ description: CSS使用sass语法
 
 # CSS使用sass语法
 
-## 流程
+## sass高阶用法
 
-::: info 源代码
 ```css
 @mixin pubBgi($url, $width: 100%, $height: 100%) {
     width: $width;
@@ -20,4 +19,3 @@ description: CSS使用sass语法
     @include pubBgi('user', 200px, 200px);
 }
 ```
-:::

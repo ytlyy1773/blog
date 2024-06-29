@@ -1,7 +1,7 @@
 export default [
     {
         text: 'chatGPT',
-        link: '/chatGPT/index.md',
+        link: '/chatGPT/search.md',
     },
     {
         text: '前端',
@@ -37,7 +37,7 @@ export default [
             },
             {
                 text: '开发工具集',
-                link: '/other/tools/index.md',
+                link: '/other/tools/collect.md',
             },
             {
                 text: '如何搭建博客',

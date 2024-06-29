@@ -5,13 +5,13 @@ description: 微信小程序page没有watch监听，借助Object.defineProperty�
 
 # 借助Object.defineProperty实现小程序的watch
 
-## 示例
+## 使用示例
 
-::: info 使用
-```js
+```js{7-12}
+page() {
   onLoad(options) {
     // 将页面注入到setWatcher中
-    getApp().setWatcher(this)
+    getApp().setWatcher(this) // [!code --]
   },
 
   watch: {
@@ -22,13 +22,12 @@ description: 微信小程序page没有watch监听，借助Object.defineProperty�
       console.log('222::', newVal)
     }
   }
+}
 ```
-:::
 
 
-## 代码
+## 封装setWatcher函数
 
-::: info 一、方法封装
 ```js
 // 自定义watch
 function setWatcher(page) {
@@ -77,9 +76,9 @@ module.exports = {
   setWatcher
 }
 ```
-:::
 
-::: info 二、挂载
+引入挂载
+
 ```js
 import { setWatcher } from './utils/custom/watch'
 
@@ -96,4 +95,3 @@ App({
   }
 })
 ```
-:::

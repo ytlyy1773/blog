@@ -64,9 +64,9 @@ function getWebVue() {
       items: [
         { text: "Vue项目常用插件", link: "/web/vue/plugins.md" },
         { text: "Vue + ts项目技巧", link: "/web/vue/projectTemplate.md" },
-        { text: "vue2项目打包方式webpack升级vite", link: "/web/vue/upgradation/index.md" },
+        { text: "vue2项目打包方式webpack升级vite", link: "/web/vue/upgradation/upVite.md" },
         { text: "Vue2重置data里边的数据", link: "/web/vue/resetData.md" },
-        { text: "妙用Computed", link: "/web/vue/useComputed/index.md" },
+        { text: "妙用Computed", link: "/web/vue/useComputed.md" },
         { text: "js获取电脑ip", link: "/web/vue/local.md" },
         { text: "在css中使用vue的变量", link: "/web/vue/sassLinkage.md" },
         { text: "Object.freeze() | Ts的Readonly 在vue中的应用", link: "/web/vue/freeze.md" },
@@ -76,9 +76,9 @@ function getWebVue() {
       text: "Component",
       collapsed: true,
       items: [
-        { text: "Component-封装上传图片", link: "/web/vue/uploadImage/index.md" },
-        { text: "Component-封装dialog弹窗", link: "/web/vue/dialog/index.md" },
-        { text: "Component-封装图片预览功能", link: "/web/vue/preview/index.md" },
+        { text: "Component-封装上传图片", link: "/web/vue/uploadImage/core.md" },
+        { text: "Component-封装dialog弹窗", link: "/web/vue/dialog/core.md" },
+        { text: "Component-封装图片预览功能", link: "/web/vue/preview/core.md" },
       ],
     },
     {
@@ -141,7 +141,7 @@ function getOtherTools() {
       text: "tools",
       collapsed: false,
       items: [
-        { text: "电脑工具合集", link: "/other/tools/index.md" },
+        { text: "电脑工具合集", link: "/other/tools/collect.md" },
         { text: "git命令", link: "/other/tools/gitCommand.md" },
         { text: "GitHub徽标", link: "/other/tools/link/auxiliary.md" }
       ],
@@ -150,7 +150,7 @@ function getOtherTools() {
       text: "前端",
       collapsed: false,
       items: [
-        { text: "前端开发工具", link: "/other/tools/web/index.md" }
+        { text: "前端开发工具", link: "/other/tools/web/collect.md" }
       ],
     },
   ]

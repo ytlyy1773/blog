@@ -7,16 +7,19 @@ description: 面试经典问题，iphone单机事件有300毫秒延迟的处理
 
 > iphone手机H5页面有300毫秒延迟的处理
 
-## 解释
+## 常见的处理方法
 
-::: info 一、禁用缩放
+* 禁用缩放
+* FastClick插件
+* touchstart事件代替click
+
+## 禁用缩放
 > html声明
 ```html
 <meta name="viewport" content="width=device-width,user-scalable=no">
 ```
-:::
 
-::: info 二、FastClick插件
+## FastClick插件
 ```js
 1.npm i FastClick
 2.<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,9 +31,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // vue在Mounted声明周期里边声明挂载
 FastClick.attach(document.body);
 ```
-:::
 
-::: info 三、特殊场景可以用touchstart事件代替click
+
+## touchstart事件代替click
 ```js
 <div @touchstart="handle(1)" @click="handle(2)">单机事件</div>
 
@@ -45,5 +48,3 @@ function handle(type) {
   if(isiOS && type === 1) {}
 }
 ```
-:::
-

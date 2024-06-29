@@ -7,7 +7,7 @@ description: el-table设置高度之后合计行不显示解决方法
 
 ## 示例
 
-::: info 一、核心
+::: info 问题核心
 ```js-vue
 <el-table>的doLayout属性
 ```
@@ -15,7 +15,7 @@ description: el-table设置高度之后合计行不显示解决方法
 :::
 
 
-::: info vue2解决方案
+::: tip vue2解决方案
 ```js-vue
 updated() {
     this.$nextTick(() => {
@@ -24,7 +24,7 @@ updated() {
 }
 :::
 
-::: info vue3解决方案
+::: tip vue3解决方案
 ```js-vue
 const divRefs: Ref<any> = ref()
 onUpdated(() => {

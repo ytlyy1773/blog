@@ -65,9 +65,9 @@ function clearList() {
 }
 </style>
 
-## 解释
+## 挂载使用
 
-::: info 一、全局挂载
+#### 全局挂载
 ```js-vue
 // vue2全局挂载
 Vue.prototype.$upload = uploadImage
@@ -75,9 +75,9 @@ Vue.prototype.$upload = uploadImage
 // vue3全局挂载
 app.config.globalProperties.$upload = uploadImage
 ```
-:::
 
-::: info 二、使用
+
+#### 使用
 ```js-vue
 // vue2
 this.$upload().then(()=> {}).catch(err => {})
@@ -87,7 +87,7 @@ this.$upload().then(()=> {}).catch(err => {})
 const { proxy } = getCurrentInstance()
 proxy.$upload().then(()=> {}).catch(err => {})
 ```
-:::
+
 
 ::: details 源代码
 <<< ./upload.js

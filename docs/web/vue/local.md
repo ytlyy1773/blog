@@ -5,9 +5,7 @@ description: 使用javascript获取电脑ip
 
 # js获取电脑ip
 
-## 示例
-
-::: info 一、获取当前电脑内网ip
+## 获取当前电脑内网ip
 ```js
 function getLocalIp() {
   let needHost = ''
@@ -29,15 +27,16 @@ function getLocalIp() {
   return needHost
 }
 ```
-:::
 
+## 获取电脑ip,根据ip映射域名
 
-::: info 二、获取电脑ip,根据ip映射域名
-```js
-1.内网开发网络图片(阿里云图片)需要使用域名才可以正常访问
-2.映射关系可以放公司内部的服务器里边,可以多个项目使用
-```
-> 服务器文件内容`http://www.cs.com/file/ip.js`
+- 内网开发网络图片(阿里云图片)需要使用域名才可以正常访问
+- 映射关系可以放公司内部的服务器里边,可以多个项目使用
+
+#### 服务器文件内容
+
+> http://www.cs.com/file/ip.js
+
 ```js
 ipLocal = {
   '192.168.1.1' : 'zs.local.net', // 张三的电脑域名
@@ -45,8 +44,8 @@ ipLocal = {
   '192.168.1.3' : 'ww.local.net' // 王五的电脑域名
 }
 ```
-:::
 
+#### vue项目配置文件内容
 ::: code-group
 ```js-vue [CommonJS]
 // 支持require引入的项目使用`CommonJS`

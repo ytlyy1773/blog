@@ -5,10 +5,10 @@ description: 微信小程序出现弹窗页面禁止滚动
 
 # 微信小程序出现弹窗页面禁止滚动
 
-## 代码
+## overflow属性
 
-::: info 一、overflow: hidden;来控制
 > 默认值visible
+
 ```js
 // 原理
 弹窗出现的时候动态设置overflow: hidden;
@@ -22,13 +22,14 @@ page {
 // html标签的行内样式
 <view style="height:100%;overflow: {{ changeVal }};></view>
 ```
-:::
 
-::: info 二、html的catchtouchmove属性
-> 动态控制catchtouchmove的值
+## catchtouchmove属性
+
+在页面最大的容器view中 添加行内样式
+
 ```html
-在页面最大的容器view中 添加行内样式 <view catchtouchmove="true"></view>
-catchtouchmove接受一个布尔值，true就是禁止背景滚动，动态设置一个变量控制这个行内样式就可以了
+<view catchtouchmove="true"></view>
 ```
-:::
+
+catchtouchmove接受一个布尔值，true就是禁止背景滚动，动态设置一个变量控制这个行内样式就可以了
 

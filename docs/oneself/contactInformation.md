@@ -23,8 +23,8 @@ jiangwan1773@163.com
 
 ::: tip 扫码赞助
 <div class="img-box">
-    <img src="/public/image/wechat.png" class="code-1"/>
-    <img src="/public/image/zhifubao.png" class="code-1"/>
+    <img src="/public/image/wechat.png" alt="微信赞助" class="code-1"/>
+    <img src="/public/image/zhifubao.png" alt="支付宝赞助"  class="code-1"/>
 </div>
 :::
 

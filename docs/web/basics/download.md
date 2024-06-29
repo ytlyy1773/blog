@@ -7,18 +7,22 @@ description: JS实现文件下载
 
 ## 示例
 
-::: info 一、location.href 或 window.open
-```js
-window.location.href = url;  || window.open
-// 优点
-·单文件下载
-·使用简单
-// 缺点
-·多次调用前面的下载会被覆盖掉
-```
-:::
+## location.href 或 window.open
 
-::: info 二、a标签封装
+* 优点
+    - 单文件下载
+    - 使用简单
+* 缺点
+    - 多次调用前面的下载会被覆盖掉
+
+```js
+window.location.href = url;
+// 或者
+window.open(url)
+```
+
+
+## a标签封装
 ```js
 /**
  * @param [String] url  文件地址
@@ -49,9 +53,8 @@ function downFile(url: string, fileName?: string) {
     xhr.send()
 }
 ```
-:::
 
-::: info 三、图片下载
+## 图片下载
 ```js
 // 图片下载
 function imgDown(imgsrc: string, CustomName?: string) {
@@ -71,4 +74,3 @@ function imgDown(imgsrc: string, CustomName?: string) {
     })
 }
 ```
-:::

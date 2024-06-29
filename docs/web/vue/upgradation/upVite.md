@@ -1,6 +1,7 @@
 ---
 title: Vue2项目打包方式webpack升级vite
 description: Vue2项目打包方式webpack升级vite
+outline: [2, 4]
 ---
 
 # Vue2项目打包方式webpack升级vite
@@ -14,18 +15,16 @@ description: Vue2项目打包方式webpack升级vite
 
 ## 升级结果
 
-::: info 提升
-```js
-1.升级完成项目启动由约3min多减少约2s内
-2.代码更新效果时间约10s减少到无感
-3.代码包体积减少1/4以上
-4.打包时间减少2/5左右
-```
-:::
+- 升级完成项目启动由约3min多减少约2s内
+- 代码更新效果时间约10s减少到无感
+- 代码包体积减少1/4以上
+- 打包时间减少2/5左右
 
 ## 升级流程
 
-::: info 一、安装依赖
+#### 一、安装依赖
+
+::: info 依赖说明
 ```js
 npm install vue@2.7.14
 npm install vite
@@ -45,8 +44,9 @@ npm install -D sass
 | sass     | vite打包需要安装sass，版本过低的sass需要升级sass版本 |
 :::
 
-::: info 二、修改打包命令
-> package.json文件
+#### 二、修改打包命令
+
+::: info package.json文件
 ```json
 "scripts": {
     "dev": "vite --mode dev",
@@ -56,36 +56,42 @@ npm install -D sass
 ```
 :::
 
-::: info 三、修改vite打包入口
-> index.html
+#### 三、修改vite打包入口
+
+::: info index.html
 ```html
 <script type="module" src="/src/index.js"></script>
 ```
 :::
 
-::: info 四、根目录新建vite.config.ts文件
-> 顶部配置文件
-:::
+#### 四、根目录新建vite.config.ts文件
 
-::: info 五、遇到的问题
-> 1.css的`/deep/`
-<div>vite打包css不可以使用sass的/deep/语法</div>
-<div>全局替换成<span class="cp-span">::v-deep</span></div>
+[配置文件请参考&nbsp;&nbsp;&nbsp;🚘](/web/vue/upgradation/upVite.html#配置文件)
 
-> 2.webpack中使用require引入文件
-<div>vite中需要改成<span class="cp-span">import</span>引入</div>
+## 遇到的问题
 
-> 3.svg字体图标的批量导入变更
+#### css的`/deep/`
+
+* vite打包css不可以使用sass的/deep/语法
+* 全局替换成 `::v-deep`
+
+#### webpack中使用require引入文件
+vite中需要改成 `import` 引入
+
+#### svg字体图标的批量导入变更
 ```js
 const req = require.context('./svg', false, /\.svg$/)
 const requireAll = requireContext => requireContext.keys().map(requireContext)
 requireAll(req)
 ```
 
-> 4.盗版浏览器
-<div>升级的项目是对外的，遇到了<span class="cp-span">2345浏览器非官网版本</span>白屏</div>
-<div>报错<span class="cp-span-warn">Uncaught ReferenceError: globalThis is not defined</span></div>
-<div>粗暴的解决方案（暂未有其他解决方案）</div>
+
+#### 盗版浏览器
+升级的项目是对外的，遇到了 `2345浏览器非官网版本` 白屏
+
+报错<span class="cp-span-warn">Uncaught ReferenceError: globalThis is not defined</span>
+
+粗暴的解决方案（暂未有其他解决方案）
 
 ```js-vue
 // 在index.html文件添加
@@ -95,13 +101,14 @@ requireAll(req)
     }
 </script>
 ```
-:::
 
 
-## 使用说明
-::: info vue-router的使用
-vue2可以使用`ref`和`reactive`，没有使用`proxy`实现，还是用了`defineProperty`的`getter, setter`
-> 先看一下`vue3` + `vue-router ^4.0`
+## vue2生态升级使用
+
+#### vue-router的使用
+
+> vue2可以使用`ref`和`reactive`，没有使用`proxy`实现，还是用了`defineProperty`的`getter, setter`
+
 ```js-vue{2}
 <script>
     import { useRoute } from 'vue-router';
@@ -109,11 +116,12 @@ vue2可以使用`ref`和`reactive`，没有使用`proxy`实现，还是用了`de
     route.path // /home
 </script>
 ```
-> 如何在`vue2.7 + vite`中使用`vue-router`
+
+在`vue2.7 + vite`中使用`vue-router`
+
 ```js-vue{2}
 <script>
     import { useRoute } from 'vue-router/composables'
     const route = useRoute();
 </script>
 ```
-:::

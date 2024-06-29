@@ -29,9 +29,9 @@ function openDialog() {
 // =======  属性返回  =======
 </script>
 
-## 解释
+## 代码说明
 
-::: info 一、vue文件使用代码
+#### vue文件使用代码
 ```js-vue
 // =======  依赖引入  =======
 import { getCurrentInstance } from 'vue'
@@ -49,13 +49,13 @@ function showDialog() {
     })
 }
 ```
-:::
 
-::: details 二、函数封装: 源代码
+#### 函数封装: 源代码
+
 <<< ./dialog.ts
-:::
 
-::: details 三、vue组件封装: 源代码
+#### vue组件封装
+::: details 源代码
 <<< ./dialogModule.vue
 :::
 

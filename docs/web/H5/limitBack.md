@@ -9,10 +9,9 @@ description: vue代码里边如何限制浏览器返回
 
 ## 代码
 
-::: info 源代码
-> 不同于VueRouter里边跳转的replace方法可以做到不能跳转回上一页
+* 不同于VueRouter里边跳转的replace方法可以做到不能跳转回上一页
+* 限制无法回退页面
 
-> 限制无法回退页面
 ```js-vue
 onMounted(() => {
     history.pushState(null, null, document.URL)
@@ -28,5 +27,4 @@ function backPage() {
     }
 }
 ```
-:::
 

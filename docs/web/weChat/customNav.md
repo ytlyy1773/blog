@@ -5,9 +5,9 @@ description: 微信小程序自定义顶部导航栏组件
 
 # 小程序自定义顶部导航栏组件
 
-## 代码
+## 组件源代码
 
-::: info 一、html部分
+::: code-group
 ```html
 <!-- 封装顶部Nav组件 -->
 <view class="custom-nav" style="height:{{zHeight}}px;">
@@ -42,10 +42,7 @@ description: 微信小程序自定义顶部导航栏组件
   </view>
 </view>
 ```
-:::
 
-
-::: info 二、js部分
 ```js
 Component({
   properties: {
@@ -99,9 +96,7 @@ Component({
 });
 
 ```
-:::
 
-::: info 三、css部分
 ```css
 .custom-nav {
   width: 100%;

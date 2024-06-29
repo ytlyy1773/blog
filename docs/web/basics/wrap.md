@@ -9,21 +9,20 @@ description: CSS解决纯英文文字不会自动换行
 
 ## 示例
 
-::: info 源代码
+> 只需要两行代码就可以搞定
 
 ```css
- {
-  // 只需要两行代码就可以搞定
+{
   word-wrap: break-word;
   word-break: break-all;
 }
 ```
 
-> 效果对比:
+## 效果对比
 
 <div>asdhaklssdhaklsdhaklsdhklasdhkdhaklsdhklaasdhaklssdhaklsdhaklsdhklasdhkdhaklsdhklasdhkasdhaklssdhaklsdhaklsdhklasdhkdhaklsdhklasdhk</div>
+
 <div class="text">asdhaklssdhaklsdhaklsdhklasdhkdhaklsdhklaasdhaklssdhaklsdhaklsdhklasdhkdhaklsdhklasdhkasdhaklssdhaklsdhaklsdhklasdhkdhaklsdhklasdhk</div>
-:::
 
 <style lang="scss" scoped>
 .text {
