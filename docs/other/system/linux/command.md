@@ -5,7 +5,7 @@ description: linux系统的常用命令
 
 # linux常用命令
 
-## 个人常用
+## 个人常用linux命令
 
 ```bash
 ssh-keygen -R ip # 清理服务器密钥
@@ -14,6 +14,7 @@ touch myscript.sh # 新建脚本
 mkdir fileName # 新建文件夹
 mv moveFileName /path/to/package # 移动文件夹到某个位置
 rm -rf fileName # 删除文件夹和文以及子内容
+scp fileName root@ip:/root/ # 本地传递文件到服务器/root目录下
 ```
 
 ## linux文件管理常用命令
