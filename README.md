@@ -10,13 +10,13 @@
 ## 网站链接
 
 - :car: [官网](http://www.jwblog.cn)
-- :car: [使用github访问](https://jiangwan1773.github.io/blog/)
+- :car: [使用github访问](https://ytlyy1773.github.io/blog/)
 > gitee page服务关闭，所以gitee的访问方式暂时关闭
 
 ## 源码链接
 
-- :beginner: [github仓库地址](https://github.com/jiangwan1773/blog)
-- :beginner: [gitee仓库地址](https://gitee.com/jiangwan1773/blog)
+- :beginner: [github仓库地址](https://github.com/ytlyy1773/blog)
+- :beginner: [gitee仓库地址](https://gitee.com/ytlyy1773/blog)
 
 ## 环境
 
