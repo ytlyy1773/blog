@@ -16,7 +16,7 @@ hero:
           link: /other/blog/basics/write.md
         - theme: brand
           text: Github官网
-          link: https://jiangwan1773.github.io/blog/
+          link: https://ytlyy1773.github.io/blog/
         - theme: alt
           text: 赞助
           link: /oneself/contactInformation.html
