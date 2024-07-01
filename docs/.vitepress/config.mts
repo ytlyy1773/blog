@@ -70,7 +70,7 @@ export default defineConfig({
             options: {
               appId: "2TMERJKE3X",
               apiKey: "e1e11e41381126a2bd77c23a3f84168e",
-              indexName: "blog",
+              indexName: "一条懒羊羊",
               placeholder: "请输入关键词",
             },
           },
