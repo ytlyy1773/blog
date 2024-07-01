@@ -15,7 +15,7 @@ hero:
           text: 搭建博客教程
           link: /other/blog/basics/write.md
         - theme: brand
-          text: Github官网
+          text: 国际官网
           link: https://ytlyy1773.github.io/blog/
         - theme: alt
           text: 赞助
