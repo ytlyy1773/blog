@@ -69,8 +69,8 @@ export default defineConfig({
             provider: "algolia",
             options: {
               appId: "2TMERJKE3X",
-              apiKey: "e1e11e41381126a2bd77c23a3f84168e",
-              indexName: "一条懒羊羊",
+              apiKey: "97f4c12910364df801c8d45bbf3b96a9",
+              indexName: "blog",
               placeholder: "请输入关键词",
             },
           },
