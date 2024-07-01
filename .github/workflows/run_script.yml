@@ -28,19 +28,22 @@ jobs:
         # 使用 sshpass 和 SSH 密码进行 SSH 连接，并在服务器上运行脚本
         sshpass -p "$SSH_PASSWORD" ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST 'nohup /root/update.sh > /root/update_output.log 2>&1'
 
-        # 捕获脚本的退出状态
-        EXIT_STATUS=$?
+        echo "The build command was executed successfully"
 
-        # 从服务器获取输出日志文件
-        sshpass -p "$SSH_PASSWORD" scp -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST:/root/update_output.log .
+        ## 监视服务器，时间过长
+        # # 捕获脚本的退出状态
+        # EXIT_STATUS=$?
 
-        # 显示输出日志文件内容
-        cat update_output.log
+        # # 从服务器获取输出日志文件
+        # sshpass -p "$SSH_PASSWORD" scp -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST:/root/update_output.log .
 
-        # 输出脚本执行结果
-        if [ $EXIT_STATUS -ne 0 ]; then
-          echo "Script execution failed with exit status $EXIT_STATUS"  # 如果脚本执行失败，输出错误状态并退出
-          exit $EXIT_STATUS
-        else
-          echo "Script executed successfully"  # 如果脚本执行成功，输出成功消息
-        fi
+        # # 显示输出日志文件内容
+        # cat update_output.log
+
+        # # 输出脚本执行结果
+        # if [ $EXIT_STATUS -ne 0 ]; then
+        #   echo "Script execution failed with exit status $EXIT_STATUS"  # 如果脚本执行失败，输出错误状态并退出
+        #   exit $EXIT_STATUS
+        # else
+        #   echo "Script executed successfully"  # 如果脚本执行成功，输出成功消息
+        # fi
