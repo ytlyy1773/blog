@@ -12,6 +12,7 @@
     },
     "devDependencies": {
         "cross-env": "^7.0.3",
-        "sass": "^1.67.0"
+        "sass": "^1.67.0",
+        "vite-plugin-imagemin": "^0.6.1"
     }
 }
