@@ -1,8 +1,6 @@
 import { defineConfig } from "vitepress";
 import nav from "./config/nav";
 import sidebar from "./config/sidebar";
-// plugin
-import viteImagemin from 'vite-plugin-imagemin'
 
 const chineLanguage = {
   docFooter: {
@@ -57,6 +55,7 @@ export default defineConfig({
         ? "https://jiangwan1773.github.io/blog"
         : "https://www.jwblog.cn",
   },
+  // mpa: true,
   lastUpdated: true,
   themeConfig: {
     nav,
@@ -94,10 +93,5 @@ export default defineConfig({
       copyright: "版权所有 © 2023-至今 jiangwan1773",
     },
     ...chineLanguage,
-  },
-  vite: {
-    plugins: [
-      viteImagemin() // 压缩图片
-    ]
   },
 });
