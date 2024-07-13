@@ -31,7 +31,7 @@ function openDialog() {
 
 ## 代码说明
 
-#### vue文件使用代码
+### vue文件使用代码
 ```js-vue
 // =======  依赖引入  =======
 import { getCurrentInstance } from 'vue'
@@ -50,11 +50,11 @@ function showDialog() {
 }
 ```
 
-#### 函数封装: 源代码
+### 函数封装: 源代码
 
 <<< ./dialog.ts
 
-#### vue组件封装
+### vue组件封装
 ::: details 源代码
 <<< ./dialogModule.vue
 :::

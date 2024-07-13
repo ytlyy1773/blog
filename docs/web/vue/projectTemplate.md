@@ -31,7 +31,7 @@ description: 作者开发Vue3 + ts项目的一些小技巧
 
 
 
-#### 用户代码片段code
+### 用户代码片段code
 > 建议添加快捷方式使用`tem3t`自动生成模板
 
 ```json

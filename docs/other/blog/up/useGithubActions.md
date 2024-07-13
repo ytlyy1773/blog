@@ -1,7 +1,7 @@
 ---
 title: 如何使用github actions自动化工作流
 description: linux云服务器使用教程
-outline: [2, 4]
+outline: [2, 3]
 ---
 
 # 如何使用github actions自动化工作流
@@ -39,7 +39,7 @@ GitHub Actions 是一种在 GitHub 上自动执行任务的平台。它允许你
     * 在左侧栏中找到 Secrets and variables，然后选择 Actions。
     * 点击 New repository secret 来添加新的Secret。
 
-#### Secrets的示例内容
+### Secrets的示例内容
 
 > 假设你有一个服务器，IP地址为 192.168.1.100，用户名为 root，密码为 your_password，你需要将这些信息添加为Secrets：
 

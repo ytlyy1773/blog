@@ -67,7 +67,7 @@ function clearList() {
 
 ## 挂载使用
 
-#### 全局挂载
+### 全局挂载
 ```js-vue
 // vue2全局挂载
 Vue.prototype.$upload = uploadImage
@@ -77,7 +77,7 @@ app.config.globalProperties.$upload = uploadImage
 ```
 
 
-#### 使用
+### 使用
 ```js-vue
 // vue2
 this.$upload().then(()=> {}).catch(err => {})

@@ -1,7 +1,7 @@
 ---
 title: 如何使用git提交代码
 description: 如何使用git提交代码，把git代码提交应用于实际项目
-outline: [2, 4]
+outline: [2, 3]
 ---
 
 # 如何使用git提交代码
@@ -52,7 +52,7 @@ git pull --rebase origin master
 
 ## git回滚代码的方式
 
-#### git revert
+### git revert
 
 ```sh
 git revert HEAD
@@ -60,7 +60,7 @@ git revert HEAD
 
 `git revert` 会创建一个新的提交，并且不会改变提交历史，适合已经共享到远程仓库的情况。
 
-#### git reset
+### git reset
 * 回滚到特定提交并保留更改：
     ```sh
     git reset --soft <commit-hash>
@@ -74,7 +74,7 @@ git revert HEAD
 
 ## ssh链接
 
-#### 生成 SSH 密钥对
+### 生成 SSH 密钥对
 
 如果还没有 SSH 密钥，可以通过以下命令生成：
 
@@ -84,7 +84,7 @@ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 
 按提示操作，生成密钥对后，公钥会保存在 ~/.ssh/id_rsa.pub 中，私钥会保存在 ~/.ssh/id_rsa 中。
 
-#### 将公钥添加到 GitHub
+### 将公钥添加到 GitHub
 
 * 复制公钥内容：
 ```sh
@@ -94,7 +94,7 @@ cat ~/.ssh/id_rsa.pub
 * 点击 "New SSH key"，将公钥内容粘贴到 Key 字段中，并设置一个 Title，点击 "Add SSH key"。
 * id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人。
 
-#### 配置 Git 使用 SSH
+### 配置 Git 使用 SSH
 
 确保 Git 使用 SSH 方式连接 GitHub，可以使用以下命令：
 

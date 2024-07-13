@@ -1,7 +1,7 @@
 ---
 title: 怎么使用nginx
 description: 不同系统下怎么使用nginx
-outline: [2, 4]
+outline: [2, 3]
 ---
 
 # 怎么使用nginx
@@ -48,13 +48,13 @@ nginx -s reload
 - 刷新 `localhost` 预览自己的博客项目
 :::
 
-#### 借助nginx实现自己的图片服务器
+### 借助nginx实现自己的图片服务器
 [参考链接](/other/blog/up/setupOss.html)
 
 
 ## `linux` 系统
 
-#### Ubuntu下载nginx
+### Ubuntu下载nginx
 
 使用 `apt update` 命令更新软件包列表。这将确保你拥有最新的软件包信息。
 
@@ -77,7 +77,7 @@ apt install nginx
 ```
 :::
 
-#### CentOs下载nginx
+### CentOs下载nginx
 
 ```sh
 yum install nginx
@@ -94,7 +94,7 @@ yum install nginx
 ```
 :::
 
-#### 修改nginx配置
+### 修改nginx配置
 
 ```sh
 cd /etc/nginx

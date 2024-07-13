@@ -1,7 +1,7 @@
 ---
 title: 怎么写博客
 description: 搭建个人博客教程，使用vitepress编写个人博客项目
-outline: [2, 4]
+outline: [2, 3]
 ---
 
 # 怎么写博客
@@ -12,7 +12,7 @@ outline: [2, 4]
 * 博客是一个不断积累的过程，可以借鉴其他，但不建议完全照搬，要有自己的想法
 * 可以多参考其他 `开源博客` 的内容。[优质博客集&nbsp;&nbsp;&nbsp;🚘](https://github.com/foru17/front-end-collect?tab=readme-ov-file)
 
-#### 我的博客大概费用
+### 我的博客大概费用
 
 > 如果不想花钱可以使用 [`github pages`](/other/blog/up/usePage.html)
 
@@ -49,7 +49,7 @@ outline: [2, 4]
 
 [官网直通车&nbsp;&nbsp;&nbsp;🚘](https://vitepress.dev/zh/)
 
-#### 需要了解什么？
+### 需要了解什么？
 
 > vitepress采用md为主要书写语言，vue语言多为辅助
 
@@ -64,12 +64,12 @@ outline: [2, 4]
 3. `Node` 环境
     * vitepress是一个前端框架，需要node环境
 
-#### 本地开发需要的环境
+### 本地开发需要的环境
 
 - `Node.js` 18 及以上版本。
 - 支持 `Markdown` 语法的编辑器，推荐 `Vscode`
 
-#### 进入开发
+### 进入开发
 
 > `vitepress` 官网有详细的操作流程和初始化模版，直接参考官网
 
@@ -77,7 +77,7 @@ outline: [2, 4]
 
 > 略微区别于开发单页面应用程序的点
 
-#### 不同环境打包的问题
+### 不同环境打包的问题
 
 * 正常的环境配置是 `不会生效` 的需要做特殊处理
 * github actions的运行环境默认是 Linux
@@ -108,7 +108,7 @@ base: process.env.BUILD_ENV === "github" ? "/blog/" : "/"
 }
 ```
 
-#### 禁止使用index.md
+### 禁止使用index.md
 
 * 除了首页使用index，其余一律不使用index
 * 使用index是一个重定向的目录，seo不会收录这样的目录

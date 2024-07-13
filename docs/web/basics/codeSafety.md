@@ -1,7 +1,7 @@
 ---
 title: 前端加密安全
 description: 前端怎么做数据接口的加密安全处理
-outline: [2, 4]
+outline: [2, 3]
 ---
 
 # 前端加密安全
@@ -10,7 +10,7 @@ outline: [2, 4]
 
 ## 加密流程
 
-#### 加密场景和加密方式
+### 加密场景和加密方式
 * 前端加密场景有哪些？
     - 请求接口
     - 路由跳转携带参数
@@ -21,7 +21,7 @@ outline: [2, 4]
     - AES
     - ...
 
-#### 简单的Base64加密使用场景
+### 简单的Base64加密使用场景
 
 * 浏览器url地址栏
 
@@ -43,7 +43,7 @@ outline: [2, 4]
     - 兼容性的问题，ie8以前的浏览器不支持
 :::
 
-#### Sha256加密简介
+### Sha256加密简介
 
 - 比较流行，也是最强的加密函数之一
 - 非对称性加密（加密之后，无法通过密文解密）
@@ -53,7 +53,7 @@ outline: [2, 4]
 
 ![加密、解密过程演示](https://www.jwblog.cn/images/pc/code/share/encryptionShare003.png)
 
-#### AES加密简介
+### AES加密简介
 
 加密、解密过程演示
 
@@ -70,10 +70,10 @@ outline: [2, 4]
 * 使用前端js库CryptoJS生成密文
 :::
 
-#### 如何加密
+### 如何加密
 
 ![如何加密](https://www.jwblog.cn/images/pc/code/share/encryptionShare006.png)
 
-#### 如何解密
+### 如何解密
 
 ![如何解密](https://www.jwblog.cn/images/pc/code/share/encryptionShare007.png)

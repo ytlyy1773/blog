@@ -1,7 +1,7 @@
 ---
 title: 如何使用github pages
 description: github page是什么，github page的使用教程
-outline: [2, 4]
+outline: [2, 3]
 ---
 
 # 如何使用github pages
@@ -48,7 +48,7 @@ outline: [2, 4]
 
 `2.` 看到 `Build and deployment` 的 `Source` 选择 `GitHub Actions` 自动化部署
 
-#### 自动化脚本
+### 自动化脚本
 
 [vitepress部署脚本说明](https://vitepress.dev/zh/guide/deploy)
 
@@ -130,7 +130,7 @@ jobs:
         uses: actions/deploy-pages@v4
 ```
 
-#### 实现效果
+### 实现效果
 
 - 配置完成之后 `master` 分支有提交就会触发脚本自动构建部署网站，也就是实现了 `CD`
 - `CD` 即持续交付/部署

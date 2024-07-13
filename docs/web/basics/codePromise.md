@@ -1,7 +1,7 @@
 ---
 title: Promise理解
 description: 认识Promise、理解Promise、使用Promise
-outline: [2, 4]
+outline: [2, 3]
 ---
 
 # Promise理解
@@ -14,17 +14,17 @@ outline: [2, 4]
 
 ## Promise说明
 
-#### Promise是什么
+### Promise是什么
 * Promise 是一个对象，也是一个构造函数
 * Promise 对象是 JavaScript 的异步操作解决方案，为异步操作提供统一接口。
 
-#### 三种状态
+### 三种状态
 
 * 等待中（pending）：初始状态，既没有被兑现，也没有被拒绝   常见于（网络请求，网速慢的情况下）。
 * 已兑现（fulfilled）：意味着操作成功完成   常见于（网络请求成功的情况下）。
 * 已拒绝（rejected）：意味着操作失败   常见于（网络请求失败的情况下）
 
-#### 链式调用
+### 链式调用
 
 ``` js
 Promise.prototype.then()
