@@ -45,7 +45,7 @@ export default [
             },
             {
                 text: 'Monorepo开发策略',
-                link: 'https://jiangwan1773.github.io/Monorepo-project/',
+                link: 'https://ytlyy1773.github.io/Monorepo-project/',
             }
         ],
     },
