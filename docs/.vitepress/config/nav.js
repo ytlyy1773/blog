@@ -46,6 +46,19 @@ export default [
             {
                 text: 'Monorepo开发策略',
                 link: 'https://ytlyy1773.github.io/Monorepo-project/',
+            },
+            {
+                text: '518套简历模版',
+                items: [
+                    {
+                        text: '国际github下载',
+                        link: 'https://github.com/ytlyy1773/curriculum-vitae',
+                    },
+                    {
+                        text: '国内gitee下载',
+                        link: 'https://gitee.com/ytlyy1773/curriculum-vitae',
+                    }
+                ]
             }
         ],
     },
