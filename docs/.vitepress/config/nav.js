@@ -49,26 +49,17 @@ export default [
             },
             {
                 text: '518套简历模版',
-                items: [
-                    {
-                        text: '国际github下载',
-                        link: 'https://github.com/ytlyy1773/curriculum-vitae',
-                    },
-                    {
-                        text: '国内gitee下载',
-                        link: 'https://gitee.com/ytlyy1773/curriculum-vitae',
-                    }
-                ]
+                link: 'https://github.com/ytlyy1773/curriculum-vitae',
             }
         ],
     },
     {
         text: '作者相关',
         items: [
-            {
-                text: '简历',
-                link: 'http://www.jwblog.cn/resume.pdf',
-            },
+            // {
+            //     text: '简历',
+            //     link: 'http://www.jwblog.cn/resume.pdf',
+            // },
             {
                 text: '联系作者',
                 link: '/oneself/contactInformation.md',
