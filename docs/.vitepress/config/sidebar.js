@@ -7,6 +7,7 @@ export default {
   "/other/tools": getOtherTools(),
   "/other/system": getComputerList(),
   "/other/blog": getDevelopBlog(),
+  "/api/softwareInstallation": getSoftwareInstallation(),
 };
 
 function getWebBasics() {
@@ -200,5 +201,11 @@ function getDevelopBlog() {
         { text: "如何使用github actions自动化工作流", link: "/other/blog/up/useGithubActions.md" },
       ],
     },
+  ]
+}
+
+function getSoftwareInstallation() {
+  return [
+    { text: "安装mysql", link: "/api/softwareInstallation/mysql.html" }
   ]
 }

@@ -29,6 +29,19 @@ export default [
         ],
     },
     {
+        text: '后端',
+        items: [
+            {
+                text: '安装软件教程',
+                link: '/api/softwareInstallation/mysql.md',
+            },
+            {
+                text: 'NodeJs',
+                link: '/api/nodejs/nest.md',
+            },
+        ],
+    },
+    {
         text: '其他',
         items: [
             {
