@@ -172,6 +172,13 @@ function getComputerList() {
       items: [
         { text: "linux常用命令", link: "/other/system/linux/command.md" }
       ],
+    },
+    {
+      text: "mac",
+      collapsed: false,
+      items: [
+        { text: "无法安装第三方软件", link: "/other/system/mac/installError.md" }
+      ],
     }
   ]
 }

@@ -72,17 +72,23 @@ outline: [2, 3]
 
 ### 下载链接
 
-[官网下载链接&nbsp;&nbsp;&nbsp;🚘](https://downloads.mysql.com/archives/community/)
+&nbsp;&nbsp;&nbsp;&nbsp;[官网下载链接&nbsp;&nbsp;&nbsp;🚘](https://downloads.mysql.com/archives/community/)
 
 ### 安装步骤
 
 * 选择自己电脑对应的版本和系统
 
-    ![mysql版本](https://www.jwblog.cn/images/pc/api/mysql/mysql001.png)
+    ![mysql版本](https://www.jwblog.cn/images/pc/api/mysql001.png)
+
+* 点击软件安装
+
+* 安装报错 <span class="cp-span-warn">无法打开“***App”,因为它不是从App Store下载</span>
+
+    [查看解决方案&nbsp;&nbsp;&nbsp;🚘](/other/system/mac/installError.html)
 
 * 安装mysql，设置密码（大于8位数）
 
-    ![mysql版本](https://www.jwblog.cn/images/pc/api/mysql/mysql002.png)
+    ![mysql安装](https://www.jwblog.cn/images/pc/api/mysql002.png)
 
 * 一直点击下一步同意即可
 
@@ -163,4 +169,10 @@ outline: [2, 3]
     sudo chmod -R 755 /usr/local/mysql/data
     ```
 
+## linux安装mysql
+
+> 待定...
+
 ## windows安装mysql
+
+> 待定...
