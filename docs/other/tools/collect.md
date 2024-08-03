@@ -6,7 +6,6 @@ description: 多年从事开发工作，整理的工具集
 # 开发工具集
 
 > 工欲善其事，必先利其器
-
 ## 软件推荐
 
 ::: info utools
@@ -40,9 +39,18 @@ description: 多年从事开发工作，整理的工具集
 
 ## 科学上网
 
-::: tip 一元机场
+::: danger 一元机场
 
 > 性价比超高 `年费12¥` &nbsp;&nbsp;[官网直通车&nbsp;&nbsp;&nbsp;🚘](https://xn--4gq62f52gdss.ink/#/register?code=r1GYrham)
+
+```js
+全平台支持(ios + android + win + mac)
+```
+:::
+
+::: tip iKuuu
+
+> 账户上充值 `1元` 可以一直白嫖 &nbsp;&nbsp;[官网直通车&nbsp;&nbsp;&nbsp;🚘](https://ikuuu.pw/auth/register?code=ndXW)
 
 ```js
 全平台支持(ios + android + win + mac)
