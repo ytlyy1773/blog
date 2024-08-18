@@ -58,7 +58,7 @@ export default [
             },
             {
                 text: 'Monorepo开发策略',
-                link: 'https://ytlyy1773.github.io/Monorepo-project/',
+                link: 'https://www.mnrp.top',
             },
             {
                 text: '518套简历模版',
