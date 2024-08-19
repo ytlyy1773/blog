@@ -56,6 +56,11 @@ export default [
                 text: '如何搭建博客',
                 link: '/other/blog/basics/write.md',
             },
+        ],
+    },
+    {
+        text: '开源项目',
+        items: [
             {
                 text: 'Monorepo开发策略',
                 link: 'https://www.mnrp.top',

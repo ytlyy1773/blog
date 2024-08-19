@@ -2,14 +2,17 @@ const imgUrl = Object.freeze('https://www.jwblog.cn/images/')
 
 import type { Theme } from 'vitepress'
 import DefaultTheme from "vitepress/theme";
+import 'animate.css';
+import MyLayout from '../custom/components/MyLayout.vue'
 // 引入antd组件库
 import "ant-design-vue/dist/reset.css";
 import { Button, Input, Modal } from "ant-design-vue";
 // 自定义主题颜色
-import "./custom.css";
+import "../custom/css/index.scss";
 
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
+  Layout: MyLayout,
   enhanceApp({ app }) {
     app.use(Button)
     app.use(Input)

@@ -115,3 +115,36 @@ features:
       title: 用户体验
       details: 兼容pc端、平板、手机多种方式，满足不同场景需求
 ---
+
+<style lang='scss'>
+    .container {
+        .main {
+            .name {
+                animation: fadeInLeft;
+                animation-duration: 0.6s;
+            }
+            .text {
+                animation: fadeInRight;
+                animation-duration: 0.9s;
+            }
+            .tagline {
+                animation: fadeInLeft;
+                animation-duration: 1.2s;
+            }
+        }
+        .items {
+            .item:first-child {
+                animation: fadeInUpBig;
+                animation-duration: 0.6s;
+            }
+            .item:nth-child(2) {
+                animation: fadeInUpBig;
+                animation-duration: 0.9s;
+            }
+            .item:nth-child(3) {
+                animation: fadeInUpBig;
+                animation-duration: 1.2s;
+            }
+        }
+    }
+</style>
