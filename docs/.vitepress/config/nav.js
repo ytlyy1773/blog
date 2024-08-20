@@ -26,6 +26,10 @@ export default [
                 text: 'html + cs + js',
                 link: '/web/basics/regExp',
             },
+            {
+                text: '前端知识',
+                link: '/web/knowledge/npmPublish',
+            },
         ],
     },
     {

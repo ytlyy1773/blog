@@ -3,6 +3,7 @@ export default {
   "/web/vue": getWebVue(),
   "/web/Harmony": getWebHarmony(),
   "/web/weChat": getWebWeChat(),
+  "/web/knowledge": getKnowledge(),
   "/web/H5": getWebH5(),
   "/other/tools": getOtherTools(),
   "/other/system": getComputerList(),
@@ -37,6 +38,7 @@ function getWebBasics() {
       text: "css",
       collapsed: true,
       items: [
+        { text: "CSS动画库推荐", link: "/web/basics/css/tool.md" },
         { text: "CSS实现0.5px的线", link: "/web/basics/line.md" },
         { text: "CSS处理一行或多行文字超出用省略号", link: "/web/basics/hidden.md" },
         { text: "CSS解决纯英文文字不会自动换行", link: "/web/basics/wrap.md" },
@@ -70,7 +72,8 @@ function getWebVue() {
         { text: "妙用Computed", link: "/web/vue/useComputed.md" },
         { text: "js获取电脑ip", link: "/web/vue/local.md" },
         { text: "在css中使用vue的变量", link: "/web/vue/sassLinkage.md" },
-        { text: "Object.freeze() | Ts的Readonly 在vue中的应用", link: "/web/vue/freeze.md" },
+        { text: "vue中freeze和Readonly的区别", link: "/web/vue/freeze.md" },
+        { text: "vue组件发布npm", link: "/web/vue/publishNpm.md" },
       ],
     },
     {
@@ -131,6 +134,17 @@ function getWebH5() {
         { text: "iphone单机事件有300毫秒延迟的处理", link: "/web/H5/delay.md" },
         { text: "iphone底部安全距离", link: "/web/H5/safeDistance.md" },
         { text: "限制浏览器返回", link: "/web/H5/limitBack.md" },
+      ],
+    },
+  ]
+}
+
+function getKnowledge() {
+  return [
+    {
+      text: "前端知识",
+      items: [
+        { text: "发布npm包", link: "/web/knowledge/npmPublish.md" },
       ],
     },
   ]

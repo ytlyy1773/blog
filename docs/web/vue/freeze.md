@@ -1,9 +1,9 @@
 ---
-title: 冻结属性 Object.freeze | Readonly
-description: Object.freeze() | Ts的Readonly 在vue中的应用
+title: vue中freeze和Readonly的区别
+description: Object.freeze() | Ts的Readonly 在vue中的应用以及区别
 ---
 
-# Object.freeze() | Ts的Readonly 在vue中的应用
+# vue中freeze和Readonly的区别
 
 ## 相似之处
 - TypeScript 的 Readonly 和 JavaScript 的 Object.freeze 都会使对象变为只读，即无法修改对象的属性或方法。
