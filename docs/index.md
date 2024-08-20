@@ -14,23 +14,20 @@ hero:
           text: Vue
           link: /web/vue/plugins.html
         - theme: alt
-          text: 搭建博客教程
+          text: 博客教程
           link: /other/blog/basics/write.md
         - theme: brand
-          text: 国际官网
-          link: https://ytlyy1773.github.io/blog/
-        - theme: alt
-          text: 赞助
-          link: /oneself/contactInformation.html
-        - theme: brand
-          text: Github
+          text: Github源码
           link: https://github.com/jiangwan1773/blog
+        - theme: alt
+          text: 国际访问
+          link: https://ytlyy1773.github.io/blog/
     image:
       src: image/index-bag-logo.svg
 features:
     - icon: 📝
       title: 持续集成
-      details: 随着内容的不断更新，博客也在不断丰富
+      details: 不断丰富多样化的博客内容
     - icon: '<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>内容丰富</title>
     <defs>
