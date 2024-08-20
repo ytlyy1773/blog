@@ -24,7 +24,6 @@ outline: [2, 3]
 
 ### 一、安装依赖
 
-::: info 依赖说明
 ```js
 npm install vue@2.7.14
 npm install vite
@@ -42,11 +41,10 @@ npm install -D sass
 | vitejs/plugin-vue2-jsx     | 兼容vue2的jsx语法 |
 | vitejs/plugin-legacy     | 传统浏览器兼容 |
 | sass     | vite打包需要安装sass，版本过低的sass需要升级sass版本 |
-:::
 
 ### 二、修改打包命令
 
-::: info package.json文件
+::: info `package.json` 文件
 ```json
 "scripts": {
     "dev": "vite --mode dev",
@@ -58,7 +56,7 @@ npm install -D sass
 
 ### 三、修改vite打包入口
 
-::: info index.html
+::: info `index.html` 修改入口文件
 ```html
 <script type="module" src="/src/index.js"></script>
 ```
@@ -70,15 +68,17 @@ npm install -D sass
 
 ## 遇到的问题
 
-### css的`/deep/`
+### css的 `/deep/`
 
-* vite打包css不可以使用sass的/deep/语法
+* vite打包css不可以使用sass的 `/deep/` 语法
 * 全局替换成 `::v-deep`
 
 ### webpack中使用require引入文件
+
 vite中需要改成 `import` 引入
 
 ### svg字体图标的批量导入变更
+
 ```js
 const req = require.context('./svg', false, /\.svg$/)
 const requireAll = requireContext => requireContext.keys().map(requireContext)
