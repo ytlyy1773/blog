@@ -146,5 +146,8 @@ features:
                 animation-duration: 1.2s;
             }
         }
+        .VPButton.brand {
+            box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);
+        }
     }
 </style>
