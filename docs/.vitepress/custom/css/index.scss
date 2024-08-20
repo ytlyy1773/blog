@@ -7,11 +7,15 @@
     --vp-home-hero-image-filter: blur(40px);
     --vp-button-brand-bg: var(--primary);
     --vp-button-brand-hover-bg: var(--primary-hover);
-    --vp-c-indigo-1: #3366ff;
+    --vp-c-indigo-1: #1677ff;
 }
 
 .dark {
     --vp-c-bg: rgba(0, 0, 0, 0.1);
+}
+
+.main .vp-doc .github-dark {
+    background: rgb(40, 44, 52);
 }
 
 .ant-input {

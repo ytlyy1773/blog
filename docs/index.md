@@ -1,6 +1,8 @@
 ---
 layout: home
 
+pageClass: blog-page
+
 head: [['link', { rel: 'icon', href: 'image/index-bag-logo.svg' }]]
 
 hero:
@@ -117,7 +119,7 @@ features:
 ---
 
 <style lang='scss'>
-    .container {
+    .blog-page {
         .main {
             .name {
                 animation: fadeInLeft;

@@ -55,7 +55,12 @@ export default defineConfig({
         ? "https://jiangwan1773.github.io/blog"
         : "https://www.jwblog.cn",
   },
-  // mpa: true,
+  markdown: {
+    theme: {
+      light: 'github-dark',
+      dark: 'one-dark-pro',
+    }
+  },
   lastUpdated: true,
   themeConfig: {
     nav,
