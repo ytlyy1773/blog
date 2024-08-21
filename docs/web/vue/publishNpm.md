@@ -210,10 +210,24 @@ new Vue({
 </template>
 ```
 
-然后运行项目
+然后运行项目，看打包内容是否正确
 
 ```sh
 npm run serve
+```
+
+### 其他方案
+
+新建文件夹 `node_modules/vue-components-package`
+
+采用复制的方式把 `lib` 和 `package.json` 文件复制到对应项目的 `node_modules/vue-components-package` 文件夹下
+
+修改测试项目跟目录 `package.json` 文件的 `dependencies` 字段，手动添加包信息，注意包名和版本号要和拷贝过来的一致
+
+```json
+"dependencies": {
+    "vue-components-package": "^1.0.0",
+},
 ```
 
 ## 发布npm包
