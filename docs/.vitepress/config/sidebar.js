@@ -184,6 +184,7 @@ function getComputerList() {
       text: "linux",
       collapsed: false,
       items: [
+        { text: "linux发行版", link: "/other/system/linux/release.md" },
         { text: "linux常用命令", link: "/other/system/linux/command.md" }
       ],
     },
