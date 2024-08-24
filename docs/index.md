@@ -6,9 +6,9 @@ pageClass: blog-page
 head: [['link', { rel: 'icon', href: 'image/index-bag-logo.svg' }]]
 
 hero:
-    name: '一条懒羊羊的博客'
+    name: '一条懒羊羊'
     text: '仅供参考、学习使用'
-    tagline: '博客部分内容需要科学上网'
+    tagline: '部分内容需要科学上网'
     actions:
         - theme: brand
           text: Vue
@@ -57,7 +57,7 @@ features:
       title: 内容丰富与互动性
       details: 包含Vue和WeChat文档，支持体验chatGpt
     - icon: '<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>用户体验</title>
+    <title>体验</title>
     <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
             <stop stop-color="#4CC6FF" offset="0%"></stop>
@@ -74,7 +74,7 @@ features:
     </defs>
     <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="画板" transform="translate(-258.000000, -41.000000)">
-            <g id="用户体验" transform="translate(258.000000, 41.000000)">
+            <g id="体验" transform="translate(258.000000, 41.000000)">
                 <rect id="矩形" fill="#E8EAED" x="0" y="0" width="48" height="48" rx="6"></rect>
                 <g id="编组" transform="translate(2.000000, 6.000000)">
                     <circle id="椭圆形" fill="#4D4BE2" cx="21.5" cy="17.5" r="17.5"></circle>
@@ -111,7 +111,7 @@ features:
         </g>
     </g>
 </svg>'
-      title: 用户体验
+      title: 体验
       details: 兼容pc端、平板、手机多种方式，满足不同场景需求
 ---
 
