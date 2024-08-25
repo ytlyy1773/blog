@@ -209,7 +209,7 @@ http {
 
 ### 页面刷新内容丢失
 
-> 在路由二级页面刷新页面，获取到的数据是首页内容
+> 刷新页面，路由url末尾会多拼接一个/
 
 ```nginx
 server {
@@ -220,35 +220,21 @@ server {
 
     index index.html;
 
-    location / {
-        try_files $uri $uri.html $uri/ =404;
+    # 将所有以斜杠结尾的请求重定向到没有斜杠的URL
+    location ~ ^(.+)/$ {
+        return 301 $scheme://$host$1;
     }
 
-    location ~ ^/[^/]+$ {
-        try_files $uri $uri/ /$uri.html /index.html;
+    location / {
+        try_files $uri $uri.html $uri/ @remove_slash;
+    }
+
+    # 处理找不到文件时的情况
+    location @remove_slash {
+        rewrite ^(.+)/$ $1 permanent;
     }
 }
 ```
-
-设置默认首页为 index.html。当用户访问网站根目录时，如果没有指定具体的页面，Nginx 会默认返回 index.html 这个文件。
-
-**try_files $uri $uri.html $uri/ =404;**
-
-> 匹配所有请求
-
-* 首先尝试直接查找 URI 指定的文件。
-* 如果找不到，尝试查找加上 .html 后缀的文件。
-* 如果还是找不到，尝试查找 URI 指定的目录。
-* 如果以上都找不到，则返回 404 错误。
-
-**location ~ ^/[^/]+$\\**
-
-> 匹配根目录下的所有文件
-
-* 首先尝试直接查找 URI 指定的文件。
-* 如果找不到，尝试查找 URI 指定的目录。
-* 然后尝试查找 /$uri.html 这样的文件（用于处理一些特殊的 URL 形式）。
-* 如果以上都找不到，则返回 index.html。
 
 ### 客户端无法请求接口
 
