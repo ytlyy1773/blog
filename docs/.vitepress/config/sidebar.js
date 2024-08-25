@@ -98,11 +98,11 @@ function getWebVue() {
 
 function getWebHarmony() {
   return [
-    { text: "Harmony 属性和参数的区别", link: "/web/harmony/difference.md" },
+    { text: "Harmony 属性和参数的区别", link: "/web/harmony/distinction.md" },
     { text: "Harmony 实现双飞翼(圣杯)布局", link: "/web/harmony/holy-grail.md" },
     { text: "Harmony 实现宽高等比", link: "/web/harmony/aspect-ratio.md" },
     { text: "Harmony 使用Image资源的4种方法", link: "/web/harmony/use-image.md" },
-    { text: "Harmony 控制组件是否可见", link: "/web/harmony/conditional-rendering.md" },
+    { text: "Harmony 控制组件是否可见", link: "/web/harmony/show.md" },
   ]
 }
 
@@ -131,7 +131,7 @@ function getWebH5() {
       collapsed: false,
       items: [
         { text: "font-size在移动端设备上字体变大的问题", link: "/web/h5/font-deformation.md" },
-        { text: "iphone单机事件有300毫秒延迟的处理", link: "/web/h5/delay.md" },
+        { text: "iphone单机事件有300毫秒延迟的处理", link: "/web/h5/handle-delay.md" },
         { text: "iphone底部安全距离", link: "/web/h5/safe-distance.md" },
         { text: "限制浏览器返回", link: "/web/h5/limit-back.md" },
       ],
