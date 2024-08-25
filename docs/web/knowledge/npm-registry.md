@@ -33,7 +33,7 @@ npm config get registry
 **输出官方镜像地址**
 
 ```sh
-npm config get registry
+https://registry.npmjs.org
 ```
 
 ## 配置阿里巴巴镜像地址
