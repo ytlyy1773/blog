@@ -59,7 +59,13 @@ pnpm run start
 * pm2启动
 
 ```sh
-pm2 start pnpm -- run start
+pm2 start pnpm --name “自定义你的进程名字” -- run [实际执行的命令]
+```
+
+**示例**
+
+```sh
+pm2 start pnpm --name "blog" -- run start
 ```
 
 ## 保活
@@ -133,7 +139,7 @@ $ pm2 unstartup systemd
 sudo env PATH=$PATH:${环境变量 PATH} ${PM2 的完整路径} startup systemd -u root --hp /root
 ```
 
-示例
+**示例**
 
 ```sh
 sudo env PATH=$PATH:/root/加密加密加密加密/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin /加密加密加密加密/ons/node/v18.20.4/lib/node_modules/pm2/bin/pm2 startup systemd -u root --hp /root
