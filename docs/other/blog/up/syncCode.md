@@ -62,7 +62,7 @@ jobs:
 
     获取私钥：
 
-    ```
+    ```sh
     cat ~/.ssh/id_rsa
     ```
 
@@ -78,23 +78,23 @@ jobs:
     ```yml
     name: syncToGitee
     on:
-    push:
+      push:
         branches:
-        - master
+          - master
     jobs:
-    repo-sync:
+      repo-sync:
         runs-on: ubuntu-latest
         steps:
-        - name: Mirror the Github organization repos to Gitee.
+          - name: Mirror the Github organization repos to Gitee.
             uses: Yikun/hub-mirror-action@master
             with:
-            src: 'github/jiangwan1773'
-            dst: 'gitee/jiangwan1773'
-            dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-            dst_token:  ${{ secrets.GITEE_TOKEN }}
-            static_list: "blog" # 仓库名字
-            force_update: true # 强制同步
-            debug: true # 启用 `debug` 开关
+              src: 'github/ytlyy1773'
+              dst: 'gitee/ytlyy1773'
+              dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+              dst_token:  ${{ secrets.GITEE_TOKEN }}
+              static_list: "blog" # 仓库名字
+              force_update: true # 强制同步
+              debug: true # 启用 `debug` 开关
     ```
 
 [怎么配置GitHub Secrets&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useGithubActions.html#怎么配置github-secrets)
