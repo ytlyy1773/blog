@@ -144,7 +144,8 @@ function getKnowledge() {
     {
       text: "前端知识",
       items: [
-        { text: "发布npm包", link: "/web/knowledge/npmPublish.md" },
+        { text: "发布npm包", link: "/web/knowledge/npm-publish.md" },
+        { text: "使用阿里云npm镜像加速", link: "/web/knowledge/npm-registry.md" },
       ],
     },
   ]
