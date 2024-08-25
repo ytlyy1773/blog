@@ -15,21 +15,29 @@ outline: [2, 3]
 ## 代码层面
 
 - 使用语意化的标签，如：`<header>`、`<section>`、`h1`等
+
 - 一个页面应该只具有一个 `h1` 标签
-```
+
+```md
 # 这是md的h1标签写法   >>>   <h1>这是md的h1标签写法</h1>
 ##### 这是md的h6标签写法   >>>   <h1>这是md的h6标签写法</h1>
 ```
+
 - 页面的 `head` 标签内要有多个具有相应意义的 `meta` 标签
+
     - Title Tag是重要的直接排名影响因素
+
 ```js
 ---
 title: SEO优化
 description: vitepress项目博客如何做好seo优化工作
 ---
 ```
+
 - 不需要无用的 `keywords` 标签
+
     - keywords已被谷歌弃用了
+
     - 有些文章依旧还在推荐这个属性
 
 推荐 `vitepress` 的 `config.mts` 里边`全局`添加一个 `author` 的标签
@@ -46,6 +54,7 @@ head: [
 ### 禁止使用index.md/index.html
 
 * 除了首页使用index，其余一律不使用index
+
 * 使用index是一个重定向的目录，seo不会收录这样的目录
 
 ::: danger 坏的示例
@@ -85,26 +94,109 @@ https://www.jwblog.cn/web/vue/upgradation/
 ## 配置层面
 
 * `Gzip压缩`
+
 * `ssl凭证`
+
 * `robots.txt`
+
 * `网站地图 Sitemap`
 
 ## Gzip压缩
 
-> Gzip压缩，是一种网站速度优化技术，也是一把SEO优化利器
+* Gzip压缩，是一种网站速度优化技术，也是一把 `SEO优化` 利器
 
-##### 优点
+* `低投入高收益`，平民作家必须开启，可以显著提升网站访问速度
+
+**优点**
 
 * 提升网站加载速度: GZIP压缩能够`显著`减少网页文件的大小，从而缩短页面加载时间，提升用户体验。
+
 * 提高用户参与度: 用户更倾向于访问加载速度快的网站，更快地加载速度可以提高用户参与度，降低跳出率。
+
 * 提升搜索引擎排名: 谷歌等搜索引擎将网站加载速度作为排名因素之一，GZIP压缩能够提升网站速度，从而`间接`提升网站排名。
+
 * 节省带宽成本: 压缩后的网页文件占用的带宽更少，可以节省服务器带宽成本。
 
-##### 使用Gzip压缩
+### vitepress使用Gzip压缩
 
-* vitepress不需要额外的安装插件，其他`非vitepress`项目需使用Gzip压缩依赖才可以
-* `低投入高收益`，平民作家必须开启，可以显著提升网站访问速度
-* 服务端 `nginx` 需要启用 `Gzip` 压缩，具体配置后续更新
+> vitepress不需要额外的安装插件，其他`非vitepress`项目需使用Gzip压缩依赖才可以
+
+### nginx配置gzip压缩
+
+```nginx
+http {
+    gzip on;
+    gzip_min_length 1100;
+    gzip_buffers 16 8k;
+    gzip_http_version 1.1;
+    gzip_comp_level 6;
+    gzip_types text/plain text/css text/javascript application/x-javascript application/xml application/json;
+    gzip_vary on;
+}
+```
+
+**配置说明**
+
+* **gzip on**: 开启 gzip 压缩。
+
+* **gzip_min_length 1100**: 只有大于 1100 字节的文件才会被压缩。
+
+* **gzip_buffers 16 8k**: 设置用于压缩的内存缓冲区。
+
+* **gzip_http_version 1.1**: 只为 HTTP 1.1 版本的请求启用 gzip。
+
+* **gzip_comp_level 6**: 设置压缩级别，1-9 之间，数字越大压缩比越高，但消耗的 CPU 也越多。
+
+* **gzip_types**: 指定需要压缩的文件类型。
+
+* **gzip_vary on**: 在响应头中添加 Vary: Accept-Encoding，告诉浏览器根据 Accept-Encoding 请求头来缓存不同的压缩版本。
+
+## 缓存配置
+
+Nginx 可以通过缓存静态文件来减少对后端服务器的请求，从而提高响应速度。
+
+### 文件系统缓存
+
+> 优化Nginx打开文件的性能
+
+```nginx
+http {
+  open_file_cache max=10000 inactive=60s;
+  open_file_cache_valid 30s;
+  open_file_cache_min_uses 2;
+}
+```
+
+* **max=10000**: 最多缓存10000个文件的描述符。
+
+* **inactive=60s**: 如果60秒内没有被访问,则从缓存中删除。
+
+* **open_file_cache_valid 30s**: 每30秒检查一次缓存中的文件是否仍然存在。
+
+* **open_file_cache_min_uses 2**: 文件必须至少使用2次才会被缓存。
+
+### 代理缓存
+
+> 设置Nginx的代理缓存
+
+```nginx
+http {
+  proxy_cache mycache;
+  proxy_cache_path /var/cache/nginx/proxy levels=1:2 keys_zone=mycache:10m inactive=20m;
+}
+```
+
+* **proxy_cache mycache**: 启用名为"mycache"的缓存。
+
+* **proxy_cache_path**: 设置缓存的具体参数。
+
+    * **/var/cache/nginx/proxy**: 缓存文件的存储路径。
+
+    * **levels=1:2**: 设置缓存文件的目录层级。
+
+    * **keys_zone=mycache:10m**: 设置共享内存区域的名称和大小。
+
+    * **inactive=20m**: 如果20分钟内没有被访问,则从缓存中删除。
 
 ## SSL凭证
 
@@ -113,20 +205,31 @@ https://www.jwblog.cn/web/vue/upgradation/
 ### 装SSL的好处?
 
 * Google 于2017年1月宣布装SSL的网站会给比较好的网站权重并优先收录，所以安装SSL可以得到`较好的排名`。
+
 * 有装SSL时浏览器会出现安全(或锁头图案)，没安装会出现不安全的提示。
+
 * 网站资料万一被截走，装SSL的网站资料是加密的，不会因此泄漏个资。
+
 * 装SSL(OV、EV) 可以证明网站是合法组织，提高网站的可信度，SSL(DV)仅以网址认证。
+
 * 如果装SSL因为网站加密不够严谨造成网站损失，是可以向SSL公司提出赔偿的。
 
 ### SSL推荐
 
 * `freessl`&nbsp;&nbsp;&nbsp;&nbsp;[官网直通车&nbsp;&nbsp;&nbsp;🚘](https://freessl.cn/)
+
     - 便宜好用
+
     - 可以免费适用3月
+
     - 不嫌麻烦可以一直用免费的，只是需要3个月申请一下
+
 * 国内各大云服务器厂商
+
     - 阿里云
+
     - 腾讯云
+
     - 华为云
 
 [如何配置ssl证书&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/up-https.html)
