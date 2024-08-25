@@ -12,7 +12,7 @@ export default [
             },
             {
                 text: 'Harmony',
-                link: '/web/harmony/difference.md',
+                link: '/web/harmony/difference',
             },
             {
                 text: 'WeChat',
