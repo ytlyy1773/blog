@@ -10,12 +10,16 @@ description: 微信小程序全局添加分享功能
 ## 缺陷 & 思路
 
 - 全局添加分享功能，每个子页面都需要有一个分享方法（微信原生Api已经提供）
+
 - 页面本身的分享会覆盖全局封装的方法
+
 - 支持自定义的显示内容很少（微信小程序本身导致）
 
 ## 实现功能源代码
+
+> 全局分享功能，页面有空的onShareAppMessage()会不生效
+
 ```js
-// 全局分享功能，页面有空的onShareAppMessage()会不生效
 (function(){
     const PageTmp = Page;
     Page = (pageConfig) => {

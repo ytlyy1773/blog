@@ -25,10 +25,11 @@ export default defineConfig({
       "meta",
       { name: "author", content: "一条懒羊羊, jiangwan1773@163.com, 中国深圳" },
     ],
-    ["link", { rel: "icon", href: "/image/favicon.svg", type: "image/svg+xml" }],
-    ["link", { rel: "icon", href: "/image/favicon.png", type: "image/png"  }],
+    ["meta", { name: "theme-color", content: "#ffffff" }],
+    ["link", { rel: "icon", href: "https://www.jwblog.cn/image/favicon.svg", type: "image/svg+xml" }],
+    ["link", { rel: "icon", href: "https://www.jwblog.cn//image/favicon.png", type: "image/png"  }],
     ["meta", { name: "og:title", content: "jw的前端学习记录" }],
-    ["meta", { name: "og:image", content: "/image/logo.svg" }],
+    ["meta", { name: "og:image", content: "https://www.jwblog.cn/image/logo.svg" }],
     ["meta", { name: "og:description", content: "一条懒羊羊" }],
     [
       "meta",
@@ -85,7 +86,7 @@ export default defineConfig({
             },
           },
     logo: {
-      src: "/image/logo.svg",
+      src: "https://www.jwblog.cn/image/logo.svg",
       width: 24,
       height: 24,
     },
