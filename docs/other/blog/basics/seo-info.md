@@ -12,6 +12,20 @@ outline: [2, 3]
 
 [谷歌对seo的介绍](https://developers.google.com/search/docs?hl=zh-cn)
 
+## 结构层面
+
+`URL` 结构应 `简单明了`，包含关键词，便于用户和搜索引擎理解
+
+* **使用短 URL**： 短 URL 更容易被用户记忆和分享。
+
+* **避免特殊字符**： URL 中避免使用特殊字符，如空格、标点符号等。
+
+* **使用 (短横线命名) `kebab-case` 命名**： `kebab-case` 更容易被搜索引擎识别。
+
+* **关键词优化**： 将关键词自然地融入到 URL 中。
+
+* **避免重复内容**： 确保每个 URL 对应唯一的内容。
+
 ## 代码层面
 
 - 使用语意化的标签，如：`<header>`、`<section>`、`h1`等
@@ -40,18 +54,7 @@ description: vitepress项目博客如何做好seo优化工作
 
     - 有些文章依旧还在推荐这个属性
 
-推荐 `vitepress` 的 `config.mts` 里边`全局`添加一个 `author` 的标签
-
-```ts
-head: [
-    [
-      "meta",
-      { name: "author", content: "一条懒羊羊, *************@163.com, 中国深圳" },
-    ]
-]
-```
-
-### 禁止使用index.md/index.html
+**禁止使用index.md/index.html**
 
 * 除了首页使用index，其余一律不使用index
 
@@ -90,6 +93,38 @@ https://www.jwblog.cn/web/vue/upgradation/up-vite.html
 https://www.jwblog.cn/web/vue/upgradation/
 ```
 :::
+
+
+## 网页元数据
+
+网页的 `<head>` 部分包含了关于网页的元数据,这些数据虽然不会直接显示在页面上，但对于浏览器、搜索引擎和其他 web 服务来说非常重要。
+
+```ts
+head: [
+    [
+      "meta",
+      { name: "author", content: "一条懒羊羊, jiangwan1773@163.com, 中国深圳" },
+    ],
+    ["meta", { name: "theme-color", content: "#ffffff" }],
+    ["link", { rel: "icon", href: "https://www.jwblog.cn/image/favicon.svg", type: "image/svg+xml" }],
+    ["link", { rel: "icon", href: "https://www.jwblog.cn//image/favicon.png", type: "image/png"  }],
+    ["meta", { name: "og:title", content: "一条懒羊羊的博客" }],
+    ["meta", { name: "og:image", content: "https://www.jwblog.cn/image/logo.svg" }],
+    ["meta", { name: "og:description", content: "网页的内容介绍" }],
+    // 如下配置省略...
+    ...谷歌seo认证,
+    ...百度seo认证,
+    ...必应seo认证
+]
+```
+
+**`<meta>`标签**
+
+**\<meta\>** 标签提供关于 HTML 文档的元信息，比如描述、关键词、作者、最后修改时间等。这些信息不会显示在页面上，但会被浏览器、搜索引擎等读取和利用。
+
+**`<link>`标签**
+
+**\<link\>**  标签用于在当前文档中链接外部资源，比如样式表、图标、RSS feed 等。
 
 ## 配置层面
 
@@ -255,7 +290,7 @@ Sitemap: https://www.jwblog.cn/sitemap.xml
 
 也就是我们 `robots.txt` 文件里边的 `Sitemap` 配置项
 
-### Sitemap.xml文件示例
+**Sitemap.xml文件示例**
 ::: details `sitemap.xml` 文件示例
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -283,7 +318,7 @@ Sitemap: https://www.jwblog.cn/sitemap.xml
 ```
 :::
 
-### vitepress 自动生成sitemap文件
+**vitepress 自动生成sitemap文件**
 
 [官网使用介绍&nbsp;&nbsp;&nbsp;🚘](https://vitepress.dev/zh/guide/sitemap-generation)
 
@@ -312,7 +347,7 @@ export default {
 
 > 帮助监控和维护您的网站在 `搜索引擎` 搜索结果中的展示情况以及排查问题
 
-### 了解一下搜索引擎
+**搜索引擎**
 
 | 平台 | 2024全球使用占比 | 说明 |
 | --- | --- | --- |
@@ -320,7 +355,7 @@ export default {
 | Bing  | 3.42％ | 全球份额仅次于Google，国内支持，无广告 |
 | ~~百度~~  | 0.83％ | 国内最大的搜索引擎，广告满天飞，~~`不入流`~~ 的代表 |
 
-### 管控平台
+**管控平台**
 
 - 强烈推荐使用[Google Search Console&nbsp;&nbsp;🚘](https://search.google.com/search-console)，具有相当完善的功能，使用体验拉爆某度
 - 有详细网站分析使用报告
