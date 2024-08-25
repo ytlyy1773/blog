@@ -21,7 +21,7 @@ hero:
           link: https://github.com/jiangwan1773/blog
         - theme: alt
           text: 国际访问
-          link: https://ytlyy1773.github.io/blog/
+          link: https://jwblog.vercel.app
     image:
       src: image/index-bag-logo.svg
 features:

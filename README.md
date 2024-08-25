@@ -16,7 +16,7 @@
 
 - :car: [官网](http://www.jwblog.cn)
 
-- :car: [国际官网访问](https://ytlyy1773.github.io/blog/)
+- :car: [国际官网访问](https://jwblog.vercel.app)
 
 ## 源码链接
 

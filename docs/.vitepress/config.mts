@@ -18,8 +18,6 @@ export default defineConfig({
   title: "jw的前端学习记录",
   description: "一条懒羊羊",
   lang: "zh-CN",
-  // 打包配置来源子deploy.yml文件，  deploy.yml：这是一个github的自动化打包配置文件
-  base: process.env.BUILD_ENV === "github" ? "/blog/" : "/", // 打包兼容github page处理
   head: [
     [
       "meta",
