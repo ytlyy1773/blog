@@ -28,6 +28,14 @@ ssr root@110.110.110.110
 ssh-keygen -R ip
 ```
 
+### 服务器浏览项目
+
+> `linux` 没有所谓的图形界面，想要访问网站可以用命令进行访问
+
+```sh
+curl https://localhost
+```
+
 ## linu常用命令学习资源
 
 * [请参考&nbsp;&nbsp;&nbsp;🚘](/other/system/linux/command.html)
@@ -35,7 +43,17 @@ ssh-keygen -R ip
 * [45个常用Linux 命令&nbsp;&nbsp;&nbsp;🚘](https://juejin.cn/post/6844903930166509581)
 * [阿里云开发者社区&nbsp;&nbsp;&nbsp;🚘](https://developer.aliyun.com/article/842453)
 
-## Ubuntu
+## linu常见发行版
+
+> 以下三种博主都有使用过，服务器推荐使用 `Debain`
+
+- **Debain**
+
+- **Ubuntu**
+
+- **CentOs**
+
+## Debain/Ubuntu
 
 ### Ubuntu是什么
 
@@ -198,3 +216,40 @@ nginx -s reload
 echo "Script finished at $(date)" >> /var/log/up_script.log
 ```
 :::
+
+## linux常见发行版对比
+
+| 发行版名称 | 基于 | 桌面环境 | 特点 | 适用人群 |
+|---|---|---|---|---|
+| **Ubuntu** | Debian | GNOME | 易用性强，软件源丰富，社区活跃，适合新手和开发者 | 桌面用户、开发者、服务器 |
+| **CentOS** | Red Hat Enterprise Linux (RHEL) | GNOME | 稳定性高，安全性好，适合服务器 | 服务器管理员、企业用户 |
+| **Fedora** | Red Hat Enterprise Linux (RHEL) | GNOME | 最新技术，创新性强，适合开发者和对新技术感兴趣的用户 | 开发者、技术爱好者 |
+| **Debian** | 自身 | GNOME | 稳定性高，自由软件的典范，适合追求稳定和自由的用户 | 服务器管理员、开发者 |
+| **Linux Mint** | Ubuntu | Cinnamon | 易用性强，外观美观，适合对Windows 用户体验有需求的用户 | 桌面用户 |
+| **Arch Linux** | 自身 | 用户自定义 | 灵活性高，可高度定制，适合有经验的Linux 用户 | 高级用户 |
+| **Manjaro** | Arch Linux | KDE Plasma | 基于Arch Linux，易用性更好，适合想体验Arch Linux但又不想折腾的用户 | 中级用户 |
+| **Kali Linux** | Debian | GNOME | 渗透测试、安全审计，预装大量渗透测试工具 | 安全专业人员、黑客 |
+| **openSUSE** | 自身 | KDE Plasma | 社区活跃，易于使用，适合开发者和系统管理员 | 开发者、系统管理员 |
+
+### 各发行版特点简述
+
+* **Ubuntu:** 最受欢迎的Linux发行版之一，易于使用，软件源丰富，社区活跃。
+* **CentOS:** 稳定性高，安全性好，适合搭建服务器。
+* **Fedora:** 创新性强，经常引入最新的技术，适合开发者。
+* **Debian:** 稳定性高，自由软件的典范，适合追求稳定和自由的用户。
+* **Linux Mint:** 易用性强，外观美观，适合对Windows 用户体验有需求的用户。
+* **Arch Linux:** 灵活性高，可高度定制，适合有经验的Linux 用户。
+* **Manjaro:** 基于Arch Linux，易用性更好，适合想体验Arch Linux但又不想折腾的用户。
+* **Kali Linux:** 专为渗透测试和安全审计设计的。
+* **openSUSE:** 社区活跃，易于使用，适合开发者和系统管理员。
+
+### 选择建议
+
+* **新手:** Ubuntu、Linux Mint
+* **服务器:** CentOS、Debian
+* **开发者:** Ubuntu、Fedora、openSUSE
+* **渗透测试:** Kali Linux
+* **追求稳定性:** CentOS、Debian
+* **追求个性化:** Arch Linux、Manjaro
+
+**注意:** 这只是一份简单的对比，每个发行版都有其独特的优势和适用场景。建议你在选择发行版之前，多了解一些相关信息，或者在虚拟机中尝试一下不同的发行版，找到最适合自己的那个。

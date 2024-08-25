@@ -28,7 +28,7 @@ export default [
             },
             {
                 text: '前端知识',
-                link: '/web/knowledge/npm-publish',
+                link: '/web/knowledge/npm-registry',
             },
         ],
     },
