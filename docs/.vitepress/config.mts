@@ -36,6 +36,7 @@ export default defineConfig({
         content: "8-lfYPcn5-i4zwxIJonLSNdzZ02BmOE7_EGEEwEFOa4",
       },
     ], // jwblog.cn
+    ["meta", { name: "baidu-site-verification", content: "codeva-dJz0bkO4UV" }], // jwblog.cn
     ["meta", { name: "baidu-site-verification", content: "codeva-ntA7Ws8139" }], // jwblog.cn
     [
       "script",
