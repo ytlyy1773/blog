@@ -66,7 +66,6 @@ export default defineConfig({
       dark: 'one-dark-pro',
     }
   },
-  lastUpdated: true,
   themeConfig: {
     nav,
     sidebar,
@@ -98,6 +97,9 @@ export default defineConfig({
         link: "https://gitee.com/ytlyy1773/blog",
       },
     ],
+    lastUpdated: {
+      text: '最后更新于'
+    },
     footer: {
       message: '<a href="https://beian.miit.gov.cn/">豫ICP-备2023019165</a>',
       copyright: "版权所有 © 2023-至今 jiangwan1773",
