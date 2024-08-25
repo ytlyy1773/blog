@@ -27,7 +27,7 @@ hero:
 features:
     - icon: 📝
       title: 持续集成
-      details: 不断丰富多样化的博客内容
+      details: 不断丰富多样化的内容
     - icon: '<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>内容丰富</title>
     <defs>

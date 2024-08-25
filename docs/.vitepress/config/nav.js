@@ -63,7 +63,7 @@ export default [
         ],
     },
     {
-        text: '开源项目',
+        text: '开源',
         items: [
             {
                 text: 'Monorepo开发策略',
