@@ -1,7 +1,7 @@
 export default [
     {
         text: 'chatGPT',
-        link: '/chatGPT/search.md',
+        link: '/chatgpt/search.md',
     },
     {
         text: '前端',
@@ -12,15 +12,15 @@ export default [
             },
             {
                 text: 'Harmony',
-                link: '/web/Harmony/Difference.md',
+                link: '/web/harmony/difference.md',
             },
             {
                 text: 'WeChat',
-                link: '/web/weChat/codeWatch',
+                link: '/web/wechat/code-watch',
             },
             {
                 text: 'H5',
-                link: '/web/H5/fontDeformation',
+                link: '/web/h5/font-deformation',
             },
             {
                 text: 'html + cs + js',
@@ -37,7 +37,7 @@ export default [
         items: [
             {
                 text: '安装软件教程',
-                link: '/api/softwareInstallation/mysql.md',
+                link: '/api/install-software/mysql.md',
             },
             {
                 text: 'NodeJs',
@@ -50,7 +50,7 @@ export default [
         items: [
             {
                 text: '操作系统',
-                link: '/other/system/win/ClearIcon.md',
+                link: '/other/system/win/clear-icon.md',
             },
             {
                 text: '开发工具集',
@@ -84,11 +84,11 @@ export default [
             // },
             {
                 text: '联系作者',
-                link: '/oneself/contactInformation.md',
+                link: '/oneself/author.md',
             },
             {
                 text: '微信小程序',
-                link: '/oneself/weChatCode.md',
+                link: '/oneself/author-wechat.md',
             },
         ],
     },

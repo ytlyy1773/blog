@@ -232,4 +232,4 @@ npm run serve
 
 ## 发布npm包
 
-[发布npm包教程](/web/knowledge/npmPublish.html)
+[发布npm包教程](/web/knowledge/npm-publish.html)

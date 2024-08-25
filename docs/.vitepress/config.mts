@@ -25,6 +25,11 @@ export default defineConfig({
       "meta",
       { name: "author", content: "一条懒羊羊, jiangwan1773@163.com, 中国深圳" },
     ],
+    ["link", { rel: "icon", href: "/image/favicon.svg", type: "image/svg+xml" }],
+    ["link", { rel: "icon", href: "/image/favicon.png", type: "image/png"  }],
+    ["meta", { name: "og:title", content: "jw的前端学习记录" }],
+    ["meta", { name: "og:image", content: "/image/logo.svg" }],
+    ["meta", { name: "og:description", content: "一条懒羊羊" }],
     [
       "meta",
       {

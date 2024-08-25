@@ -8,7 +8,7 @@ outline: [2, 3]
 
 ## 前置准备工作
 
-如果不想花钱可以使用 [`github pages`](/other/blog/up/usePage.html)
+如果不想花钱可以使用 [`github pages`](/other/blog/up/use-page.html)
 
 ::: tip 所需
 - 云服务器 （年花费200rmb左右）
@@ -62,7 +62,7 @@ outline: [2, 3]
 
 [官网直通车&nbsp;&nbsp;&nbsp;🚘](https://nginx.org/en/)
 
-[nginx的详细使用&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useNginx.html)
+[nginx的详细使用&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/use-nginx.html)
 
 ## 网站备案
 
@@ -89,4 +89,4 @@ outline: [2, 3]
 
 ## 如何使用linux云服务器
 
-[参考链接](/other/blog/up/useLinux.html)
+[参考链接](/other/blog/up/use-linux.html)

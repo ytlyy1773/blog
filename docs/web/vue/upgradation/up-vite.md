@@ -64,7 +64,7 @@ npm install -D sass
 
 ### 四、根目录新建vite.config.ts文件
 
-[配置文件请参考&nbsp;&nbsp;&nbsp;🚘](/web/vue/upgradation/upVite.html#配置文件)
+[配置文件请参考&nbsp;&nbsp;&nbsp;🚘](/web/vue/upgradation/up-vite.html#配置文件)
 
 ## 遇到的问题
 

@@ -97,7 +97,7 @@ jobs:
               debug: true # 启用 `debug` 开关
     ```
 
-[怎么配置GitHub Secrets&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useGithubActions.html#怎么配置github-secrets)
+[怎么配置GitHub Secrets&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/use-github-actions.html#怎么配置github-secrets)
 
 ## gitee pages Actions <Badge type="danger" text="已弃用" />
 

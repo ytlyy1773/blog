@@ -84,7 +84,7 @@ outline: [2, 3]
 
 * 安装报错 <span class="cp-span-warn">无法打开“***App”,因为它不是从App Store下载</span>
 
-    [查看解决方案&nbsp;&nbsp;&nbsp;🚘](/other/system/mac/installError.html)
+    [查看解决方案&nbsp;&nbsp;&nbsp;🚘](/other/system/mac/install-error.html)
 
 * 安装mysql，设置密码（大于8位数）
 

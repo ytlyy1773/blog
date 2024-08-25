@@ -65,7 +65,7 @@ apt update
 
 ### 使用nginx教程
 
-[请参考&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useNginx.html)
+[请参考&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/use-nginx.html)
 
 ## CentOs
 
@@ -97,7 +97,7 @@ yum install git
 
 ### 使用git教程
 
-[请参考&nbsp;&nbsp;&nbsp;🚘](/other/tools/gitCommand.html)
+[请参考&nbsp;&nbsp;&nbsp;🚘](/other/tools/git-command.html)
 
 ## 编写linux执行脚本
 
@@ -136,7 +136,7 @@ chmod +x update.sh
 
 > 通过 `github avtions` 实现代码提交，服务器自动执行脚本更新服务器内容
 
-[请参考&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/useGithubActions.html#github执行linux系统脚本)
+[请参考&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/use-github-actions.html#github执行linux系统脚本)
 
 
 ## 升级脚本
@@ -144,7 +144,7 @@ chmod +x update.sh
 执行脚本可以实现的效果
 
 * 拉取代码
-    - 这里强烈建议使用 `ssh` 的方式链接github仓库。[ssh链接请参考&nbsp;&nbsp;&nbsp;🚘](/other/tools/gitCommand.html#ssh链接)
+    - 这里强烈建议使用 `ssh` 的方式链接github仓库。[ssh链接请参考&nbsp;&nbsp;&nbsp;🚘](/other/tools/git-command.html#ssh链接)
     - 不然使用https的方式 `git pull` 经常失败，导致达不到我们想要的效果
 * 使用服务器的node进行打包
 * 执行nginx更新命令

@@ -60,6 +60,7 @@ console.log(Object.hasOwn(obj, 'gender')); // false
 ```
 
 ## Reflect.has() 方法
+
 ```js
 const obj = {
   name: 'John',

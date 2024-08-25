@@ -49,7 +49,7 @@ nginx -s reload
 :::
 
 ### 借助nginx实现自己的图片服务器
-[参考链接](/other/blog/up/setupOss.html)
+[参考链接](/other/blog/up/setup-oss.html)
 
 
 ## `linux` 系统

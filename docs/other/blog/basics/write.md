@@ -14,7 +14,7 @@ outline: [2, 3]
 
 ### 我的博客大概费用
 
-> 如果不想花钱可以使用 [`github pages`](/other/blog/up/usePage.html)
+> 如果不想花钱可以使用 [`github pages`](/other/blog/up/use-page.html)
 
 | 项目 | 必要 | 费用 | 备注 |
 | :--- | :--- | :--- | :--- |
@@ -113,4 +113,4 @@ base: process.env.BUILD_ENV === "github" ? "/blog/" : "/"
 * 除了首页使用index，其余一律不使用index
 * 使用index是一个重定向的目录，seo不会收录这样的目录
 
-[具体解释请参考seo&nbsp;&nbsp;&nbsp;🚘](/other/blog/basics/seoInfo.html)
+[具体解释请参考seo&nbsp;&nbsp;&nbsp;🚘](/other/blog/basics/seo-info.html)

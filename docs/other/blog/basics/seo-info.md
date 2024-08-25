@@ -59,12 +59,15 @@ https://www.jwblog.cn/web/vue/upgradation/
 :::
 
 ::: tip 好的示例
+
+> 推荐路由命名使用 `kebab-case` 格式，有利于用户体验和搜索引擎抓取。
+
 ```yml
 # 项目的文件目录结构
-web/vue/upgradation/upVite.md
+web/vue/upgradation/up-vite.md
 
 # 项目打包后的结果
-https://www.jwblog.cn/web/vue/upgradation/upVite.html
+https://www.jwblog.cn/web/vue/upgradation/up-vite.html
 ```
 :::
 
@@ -72,7 +75,7 @@ https://www.jwblog.cn/web/vue/upgradation/upVite.html
 ::: warning 影响seo
 ```yml
 # 谷歌的seo会收录以下路由
-https://www.jwblog.cn/web/vue/upgradation/upVite.html
+https://www.jwblog.cn/web/vue/upgradation/up-vite.html
 
 # 谷歌的seo检测重定向不会收录
 https://www.jwblog.cn/web/vue/upgradation/
@@ -126,7 +129,7 @@ https://www.jwblog.cn/web/vue/upgradation/
     - 腾讯云
     - 华为云
 
-[如何配置ssl证书&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/upHttps.html)
+[如何配置ssl证书&nbsp;&nbsp;&nbsp;🚘](/other/blog/up/up-https.html)
 
 ## robots.txt
 
