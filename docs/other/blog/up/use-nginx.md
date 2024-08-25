@@ -203,3 +203,91 @@ http {
     }
 }
 ```
+
+
+## nginx常见问题
+
+### 页面刷新内容丢失
+
+> 在路由二级页面刷新页面，获取到的数据是首页内容
+
+```nginx
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    root /项目存放路径/open-api-blog/out;
+
+    index index.html;
+
+    location / {
+        try_files $uri $uri.html $uri/ =404;
+    }
+
+    location ~ ^/[^/]+$ {
+        try_files $uri $uri/ /$uri.html /index.html;
+    }
+}
+```
+
+设置默认首页为 index.html。当用户访问网站根目录时，如果没有指定具体的页面，Nginx 会默认返回 index.html 这个文件。
+
+**try_files $uri $uri.html $uri/ =404;**
+
+> 匹配所有请求
+
+* 首先尝试直接查找 URI 指定的文件。
+* 如果找不到，尝试查找加上 .html 后缀的文件。
+* 如果还是找不到，尝试查找 URI 指定的目录。
+* 如果以上都找不到，则返回 404 错误。
+
+**location ~ ^/[^/]+$\\**
+
+> 匹配根目录下的所有文件
+
+* 首先尝试直接查找 URI 指定的文件。
+* 如果找不到，尝试查找 URI 指定的目录。
+* 然后尝试查找 /$uri.html 这样的文件（用于处理一些特殊的 URL 形式）。
+* 如果以上都找不到，则返回 index.html。
+
+### 客户端无法请求接口
+
+> 在服务器可以访问到相应的接口服务，通过nginx转发的就不可以
+
+```nginx
+server {
+    location ^~ /api/ {
+        proxy_pass http://localhost:3000/;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+将上边的代码补充道nginx的配置文件中
+
+<span class="cp-span-warn">location ^~ /api/</span> 是核心
+
+* `proxy_pass http://localhost:3000/`;
+
+    将匹配到的请求代理到 http://127.0.0.1:3000 这个地址。
+
+    后面的 / 表示将请求的 URI 路径部分完整地传递给后端服务器。
+
+* `proxy_set_header Host $host`;
+
+    将原始请求的 Host 头部信息传递给后端服务器，以便后端服务器能够正确地处理请求。
+
+* `proxy_set_header X-Real-IP $remote_addr`;
+
+    将客户端的真实 IP 地址添加到 X-Real-IP 头部中，以便后端服务器能够获取客户端的真实 IP 地址。
+
+* `proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for`;
+
+    将客户端的 IP 地址以及之前经过的代理服务器的 IP 地址添加到 X-Forwarded-For 头部中。
+
+* `proxy_set_header X-Forwarded-Proto $scheme`;
+
+    将客户端使用的协议（http 或 https）添加到 X-Forwarded-Proto 头部中。
