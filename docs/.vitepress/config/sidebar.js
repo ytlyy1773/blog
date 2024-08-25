@@ -115,7 +115,7 @@ function getWebWeChat() {
         { text: "借助Object.defineProperty实现小程序的watch", link: "/web/wechat/code-watch.md" },
         { text: "小程序自定义顶部导航栏组件", link: "/web/wechat/custom-nav.md" },
         { text: "小程序生命周期", link: "/web/wechat/life-cycle.md" },
-        { text: "微信小程序全局添加分享功能", link: "/web/wechat/share.md" },
+        { text: "微信小程序全局添加分享功能", link: "/web/wechat/global-share.md" },
         { text: "onShow生命周期拿到onLoad生命周期里边的路由传参", link: "/web/wechat/get-page-options.md" },
         { text: "微信小程序出现弹窗页面禁止滚动", link: "/web/wechat/prohibit-scrolling.md" },
         { text: "微信request的二次封装", link: "/web/wechat/api-request.md" },
