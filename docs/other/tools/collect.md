@@ -36,32 +36,3 @@ description: 多年从事开发工作，整理的工具集
 ```
 :::
 
-
-## 科学上网
-
-::: danger 一元机场
-
-> 性价比超高 `年费12¥` &nbsp;&nbsp;[官网直通车&nbsp;&nbsp;&nbsp;🚘](https://xn--4gq62f52gdss.ink/#/register?code=r1GYrham)
-
-```js
-全平台支持(ios + android + win + mac)
-```
-:::
-
-::: tip iKuuu
-
-> 账户上充值 `1元` 可以一直白嫖 &nbsp;&nbsp;[官网直通车&nbsp;&nbsp;&nbsp;🚘](https://ikuuu.pw/auth/register?code=ndXW)
-
-```js
-全平台支持(ios + android + win + mac)
-```
-:::
-
-::: info 树洞
-
-> 稳定支持chatGpt `年费150rmb+` &nbsp;&nbsp;[官网直通车&nbsp;&nbsp;&nbsp;🚘](https://com.ss.sssuusss.com/auth/register?code=QAVGMB)
-
-```js
-全平台支持(ios + android + win + mac)
-```
-:::

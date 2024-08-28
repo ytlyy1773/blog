@@ -159,6 +159,7 @@ function getOtherTools() {
       collapsed: false,
       items: [
         { text: "电脑工具合集", link: "/other/tools/collect.md" },
+        { text: "科学上网", link: "/other/tools/internet.md" },
         { text: "git命令", link: "/other/tools/git-command.md" },
         { text: "GitHub徽标", link: "/other/tools/link/logo.md" }
       ],
