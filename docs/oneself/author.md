@@ -19,7 +19,7 @@ jiangwan1773@163.com
 ```
 :::
 
-<!-- ## 成为网站的赞助者
+## 成为网站的赞助者
 
 ::: tip 扫码赞助
 <div class="img-box">
@@ -41,4 +41,4 @@ jiangwan1773@163.com
             margin-right: 0;
         }
     }
-</style> -->
+</style>
