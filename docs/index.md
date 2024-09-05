@@ -14,14 +14,11 @@ hero:
           text: Vue
           link: /web/vue/plugins.html
         - theme: alt
-          text: 博客教程
-          link: /other/blog/basics/write.md
+          text: 国际访问
+          link: https://jwblog.vercel.app
         - theme: brand
           text: Github源码
           link: https://github.com/jiangwan1773/blog
-        - theme: alt
-          text: 国际访问
-          link: https://jwblog.vercel.app
     image:
       src: image/index-bag-logo.svg
 features:

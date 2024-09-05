@@ -66,6 +66,10 @@ export default [
         text: '开源',
         items: [
             {
+                text: '开源 Api 接口',
+                link: 'https://www.openapijs.com',
+            },
+            {
                 text: 'Monorepo开发策略',
                 link: 'https://www.mnrp.top',
             },
@@ -78,10 +82,10 @@ export default [
     {
         text: '作者相关',
         items: [
-            // {
-            //     text: '简历',
-            //     link: 'http://www.jwblog.cn/resume.pdf',
-            // },
+            {
+                text: '简历',
+                link: 'http://www.jwblog.cn/resume.pdf',
+            },
             {
                 text: '联系作者',
                 link: '/oneself/author.md',

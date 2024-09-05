@@ -57,7 +57,7 @@ export default defineConfig({
   sitemap: {
     hostname:
       process.env.BUILD_ENV === "github"
-        ? "https://jiangwan1773.github.io/blog"
+        ? "https://jwblog.vercel.app"
         : "https://www.jwblog.cn",
   },
   markdown: {
