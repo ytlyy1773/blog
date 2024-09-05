@@ -2,7 +2,7 @@
     "scripts": {
         "dev": "vitepress dev docs",
         "build": "vitepress build docs",
-        "build:github": "cross-env BUILD_ENV=github vitepress build docs",
+        "build:github": "cross-env BUILD_ENV=vercel vitepress build docs",
         "preview": "vitepress preview docs"
     },
     "dependencies": {

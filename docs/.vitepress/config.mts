@@ -56,7 +56,7 @@ export default defineConfig({
   ],
   sitemap: {
     hostname:
-      process.env.BUILD_ENV === "github"
+      process.env.BUILD_ENV === "vercel"
         ? "https://jwblog.vercel.app"
         : "https://www.jwblog.cn",
   },
