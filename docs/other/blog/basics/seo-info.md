@@ -160,13 +160,59 @@ head: [
 
 ```nginx
 http {
+    # 启用 gzip
     gzip on;
-    gzip_min_length 1100;
-    gzip_buffers 16 8k;
-    gzip_http_version 1.1;
+
+    # 压缩级别（1-9）
     gzip_comp_level 6;
-    gzip_types text/plain text/css text/javascript application/x-javascript application/xml application/json;
+
+    # 最小压缩文件大小
+    gzip_min_length 256;
+
+    # Nginx 作为反向代理时启用压缩
+    gzip_proxied any;
+
+    # 缓冲区大小
+    gzip_buffers 16 16k;
+
+    # 支持的 HTTP 版本
+    gzip_http_version 1.1;
+
+    # 压缩类型
+    gzip_types
+        application/atom+xml
+        application/javascript
+        application/json
+        application/ld+json
+        application/manifest+json
+        application/rss+xml
+        application/vnd.geo+json
+        application/vnd.ms-fontobject
+        application/x-font-ttf
+        application/x-web-app-manifest+json
+        application/xhtml+xml
+        application/xml
+        font/opentype
+        image/bmp
+        image/svg+xml
+        image/x-icon
+        text/cache-manifest
+        text/css
+        text/plain
+        text/vcard
+        text/vnd.rim.location.xloc
+        text/vtt
+        text/x-component
+        text/x-cross-domain-policy;
+
+    # 对不同的浏览器采取不同的压缩方式
     gzip_vary on;
+
+    # 禁用 IE6 及以下版本的 gzip 功能
+    gzip_disable "MSIE [1-6]\.(?!.*SV1)";
+
+    include /etc/nginx/conf.d/*.conf;
+    include /etc/nginx/sites-enabled/*;
 }
 ```
 
