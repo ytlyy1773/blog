@@ -40,7 +40,7 @@ description: 微信小程序全局添加分享功能
 
 ## 代码截图
 
-![全局代码](https://www.jwblog.cn/images/pc/code/share.png)
+![全局代码](https://www.jwblog.cn/images/code/share.png)
 
-![局部代码](https://www.jwblog.cn/images/pc/code/replaceShare.png)
+![局部代码](https://www.jwblog.cn/images/code/replaceShare.png)
 

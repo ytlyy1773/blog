@@ -78,7 +78,7 @@ outline: [2, 3]
 
 * 选择自己电脑对应的版本和系统
 
-    ![mysql版本](https://www.jwblog.cn/images/pc/api/mysql001.png)
+    ![mysql版本](https://www.jwblog.cn/images/api/mysql001.png)
 
 * 点击软件安装
 
@@ -88,7 +88,7 @@ outline: [2, 3]
 
 * 安装mysql，设置密码（大于8位数）
 
-    ![mysql安装](https://www.jwblog.cn/images/pc/api/mysql002.png)
+    ![mysql安装](https://www.jwblog.cn/images/api/mysql002.png)
 
 * 一直点击下一步同意即可
 

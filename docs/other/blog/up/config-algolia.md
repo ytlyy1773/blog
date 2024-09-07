@@ -20,11 +20,11 @@ outline: [2, 3]
 
 点击控制台 `Apis keys` 申请Apis keys
 
-![申请algolia 的 Apis keys](https://www.jwblog.cn/images/pc/blog/algolia_index.png)
+![申请algolia 的 Apis keys](https://www.jwblog.cn/images/blog/algolia_index.png)
 
 复制我们需要的内容到vitepress配置文件夹里边
 
-![Apis keys所需key位置](https://www.jwblog.cn/images/pc/blog/algolia_key.png)
+![Apis keys所需key位置](https://www.jwblog.cn/images/blog/algolia_key.png)
 
 - `Application ID` 填入 `options.appId`
 - `Search-Only API Key` 填入 `options.apiKey`

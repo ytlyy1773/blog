@@ -15,4 +15,4 @@ transform: scaleY(0.5);
 
 ## 效果示例
 
-![0.5px的线](https://www.jwblog.cn/images/pc/code/line_one.png)
+![0.5px的线](https://www.jwblog.cn/images/code/line_one.png)
