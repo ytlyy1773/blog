@@ -17,8 +17,8 @@ hero:
           text: 国际访问
           link: https://jwblog.vercel.app
         - theme: brand
-          text: Github源码
-          link: https://github.com/jiangwan1773/blog
+          text: Open Interface
+          link: https://www.openapijs.com/
     image:
       src: image/index-bag-logo.svg
 features:
