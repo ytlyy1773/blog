@@ -6,7 +6,7 @@ pageClass: blog-page
 head: [['link', { rel: 'icon', href: 'image/index-bag-logo.svg' }]]
 
 hero:
-    name: '一条懒羊羊的博客'
+    name: '一条懒羊羊'
     text: '仅供参考、学习使用'
     tagline: '部分内容需要科学上网'
     actions:

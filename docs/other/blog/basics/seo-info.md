@@ -108,7 +108,7 @@ head: [
     ["meta", { name: "theme-color", content: "#ffffff" }],
     ["link", { rel: "icon", href: "https://www.jwblog.cn/image/favicon.svg", type: "image/svg+xml" }],
     ["link", { rel: "icon", href: "https://www.jwblog.cn//image/favicon.png", type: "image/png"  }],
-    ["meta", { name: "og:title", content: "一条懒羊羊的博客" }],
+    ["meta", { name: "og:title", content: "一条懒羊羊" }],
     ["meta", { name: "og:image", content: "https://www.jwblog.cn/image/logo.svg" }],
     ["meta", { name: "og:description", content: "网页的内容介绍" }],
     // 如下配置省略...
