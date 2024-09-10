@@ -1,5 +1,5 @@
 ---
-title: 安装mysql
+title: mac安装mysql
 description: 包含Mac、Windows、Linux不同系统安装MySQL详细教程
 outline: [2, 3]
 ---
@@ -168,11 +168,3 @@ outline: [2, 3]
     sudo chown -R _mysql:_mysql /usr/local/mysql/data
     sudo chmod -R 755 /usr/local/mysql/data
     ```
-
-## linux安装mysql
-
-> 待定...
-
-## windows安装mysql
-
-> 待定...

@@ -30,7 +30,7 @@ vue create vue-components-package
 
 ### 编写vue组件
 
-::: info 新建 `src/packages/HelloWord.vue` 文件
+::: info 新建 `src/packages/HelloWorld.vue` 文件
 
 > 需要注意的是，组件必须有 `name`，这将会是用户使用的组件名称
 
@@ -74,7 +74,7 @@ export default {
 > 需要注意的是，组件必须有 `name`，这将会是用户使用的组件名称
 
 ```js
-import HelloWorld from "@/packages/HelloWorld.vue";
+import HellowWorld from "@/packages/HellowWorld.vue";
 
 const components = [HellowWorld];
 

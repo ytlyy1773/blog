@@ -231,6 +231,15 @@ function getDevelopBlog() {
 
 function getSoftwareInstallation() {
   return [
-    { text: "安装mysql", link: "/api/install-software/mysql.html" }
+    {
+      text: "docker",
+      collapsed: false,
+      items: [
+        { text: "docker", link: "/api/install-software/docker/index.html" },
+        { text: "mysql", link: "/api/install-software/docker/mysql.html" },
+        { text: "redis", link: "/api/install-software/docker/redis.html" },
+        { text: "mac安装mysql", link: "/api/install-software/mysql.html" }
+      ],
+    },
   ]
 }

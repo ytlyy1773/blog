@@ -36,8 +36,8 @@ export default [
         text: '后端',
         items: [
             {
-                text: '安装软件教程',
-                link: '/api/install-software/mysql.md',
+                text: '安装软件',
+                link: '/api/install-software/docker/index.md',
             },
             {
                 text: 'NodeJs',
