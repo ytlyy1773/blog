@@ -16,7 +16,7 @@ const chineLanguage = {
 
 export default defineConfig({
   title: "一条懒羊羊",
-  description: "一条懒羊羊的博客，记录vue， wechat， nodejs， harmony等前端知识。开发推荐使用软件， vitepress博客搭建教程，linux使用教程， 如何深度优化网站seo",
+  description: "一条懒羊羊的博客，专注于前端开发技术分享，涵盖Vue、Wechat、Node.js、Harmony等框架教程。提供详实的开发工具推荐、Vitepress博客搭建指南、Linux实用技巧和SEO优化策略，帮助开发者提升技能，快速解决开发难题。",
   lang: "zh-CN",
   head: [
     [
