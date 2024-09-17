@@ -74,6 +74,7 @@ function getWebVue() {
         { text: "在css中使用vue的变量", link: "/web/vue/css-use-vue.md" },
         { text: "vue中freeze和Readonly的区别", link: "/web/vue/freeze.md" },
         { text: "vue组件发布npm", link: "/web/vue/publish-npm.md" },
+        { text: "常见的打包格式", link: "/web/vue/packaging-format.md" },
       ],
     },
     {

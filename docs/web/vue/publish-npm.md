@@ -1,12 +1,16 @@
 ---
 title: vue组件发布npm
-description: 二次封装或开发vue新组件，发布到npm
+description: 如何开发Vue组件并将其打包发布到npm。包括环境设置、Vue CLI项目创建、组件编码、Webpack配置、本地测试及最终的npm发布流程。
 outline: [2, 3]
 ---
 
 # vue组件发布npm
 
 > 举例vue2的npm组件包发布
+
+## 知识科普
+
+[常见的打包格式](/web/vue/packaging-format)
 
 ## 环境准备
 
