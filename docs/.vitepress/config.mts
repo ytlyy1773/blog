@@ -101,7 +101,9 @@ export default defineConfig({
       text: '最后更新于'
     },
     footer: {
-      message: '<a href="https://beian.miit.gov.cn/">豫ICP-备2023019165</a>',
+      message: `<div style='display: flex; align-items: center; width: fit-content; margin: 0 auto; flex-wrap: nowrap;'>
+      <img src="https://beian.mps.gov.cn/web/assets/logo01.6189a29f.png" style="width: 16px;margin-right: 10px;"> <a style='margin-right: 10px; cursor: pointer;' href="https://beian.mps.gov.cn/#/query/webSearch?code=41132402411828" rel="noreferrer" target="_blank">豫公网安备41132402411828</a><a style='cursor: pointer;' href="https://beian.miit.gov.cn/">豫ICP-备2023019165</a>
+      </div>`,
       copyright: "版权所有 © 2023-至今 jiangwan1773",
     },
     ...chineLanguage,
