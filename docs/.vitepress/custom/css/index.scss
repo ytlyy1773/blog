@@ -33,3 +33,9 @@
     font-size: var(--vp-code-font-size);
     color: #fc3b40;
 }
+
+.VPFooter .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
