@@ -41,7 +41,7 @@ export default [
             },
             {
                 text: 'NodeJs',
-                link: '/api/nodejs/nest.md',
+                link: '/api/nodejs/sql.md',
             },
         ],
     },

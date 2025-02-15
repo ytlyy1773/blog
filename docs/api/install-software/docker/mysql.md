@@ -51,20 +51,63 @@ docker images
 > 简单的运行 MySQL 容器
 
 ```sh
-docker run --name your_mysql -e MYSQL_ROOT_PASSWORD=12345678a -p 3306:3306 -d --restart=always mysql
+docker run -d \
+  --name mysql-server \
+  -e MYSQL_ROOT_PASSWORD=123456 \
+  -p 3306:3306 \
+  -v /path/to/mysql/data:/data/mysqldata \
+  --restart=unless-stopped \
+  mysql:latest
 ```
 
-* `--name mysql`：给容器命名为 “mysql”。
+* `-d`：以守护进程（后台）模式运行容器。
+
+* `--name mysql-server`：给容器命名为 “mysql-server”。
 
 * `-e MYSQL_ROOT_PASSWORD=123456`：设置 MySQL 的 root 用户密码为 "12345678a"（实际使用中请设置更复杂的密码）。
 
 * `-p 3306:3306`：映射容器的 3306 端口到主机的 3306 端口。
 
-* `-d`：以守护进程（后台）模式运行容器。
-
-* `--restart=alway`s：确保容器在 Docker 启动时自动启动。
+* `--restart=always`：确保容器在 Docker 启动时自动启动。
 
 * `mysql`：指定使用的 MySQL 镜像（Docker 会从官方仓库拉取最新的 MySQL 镜像，如果本地没有的话）。
+
+**补充**
+
+* 1. `--restart=always`
+
+    **含义**：无论容器是正常退出还是异常退出，Docker 都会自动重启该容器。
+
+    **行为**：
+
+        如果容器因为内部应用崩溃、被用户手动停止（如使用 docker stop 命令）或 Docker 守护进程重启等原因退出，Docker 都会自动重启容器。
+        容器会一直运行，直到手动将其删除（docker rm）。
+
+    **适用场景**：适用于需要持续运行的服务，例如数据库服务、Web 服务器等，确保服务始终可用。
+
+* 2. `--restart=unless-stopped`
+
+    **含义**：容器会在以下情况下自动重启：
+
+        容器异常退出（例如应用崩溃）。
+
+        Docker 守护进程重启。
+
+    **行为**：
+
+        如果容器被手动停止（如使用 docker stop 命令），Docker 不会自动重启它。
+
+        如果容器被手动删除（docker rm），则不会重启。
+
+        如果 Docker 守护进程重启（例如系统重启），容器会自动启动。
+
+    **适用场景**：适用于需要在系统重启后自动恢复运行，但又允许用户手动停止容器的场景。
+
+* 3. 总结区别
+
+    `--restart=always`：无论容器是正常退出还是异常退出，都会自动重启。
+
+    `--restart=unless-stopped`：只有在容器异常退出或 Docker 守护进程重启时才会自动重启，手动停止后不会重启。
 
 ### 企业容器
 
